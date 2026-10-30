@@ -1,0 +1,6957 @@
+.vjs-cbcustom .vjs-control:hover:before, .vjs-cbcustom .vjs-control:focus,
+.vjs-cbcustom .vjs-control :focus:before {
+  text-shadow: none;
+  box-shadow: none;
+}
+.vjs-cbcustom .vjs-control.vjs-progress-control .vjs-progress-holder {
+  margin: 0;
+}
+.vjs-cbcustom .vjs-control.vjs-progress-control {
+  position: absolute;
+  top: -25%;
+  left: 0px;
+  height: 50%;
+  width: 100%;
+  margin: 0;
+}
+.vjs-cbcustom .vjs-control {
+  width: 2em;
+  margin-left: 3px;
+  margin-right: 3px;
+  outline: none;
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+}
+.vjs-cbcustom .vjs-control-bar button {
+  background: none !important;
+  color: #fff !important;
+}
+.vjs-cbcustom .vjs-control-bar span {
+  background: none !important;
+  color: #fff !important;
+}
+.vjs-cbcustom .vjs-control-bar {
+  height: 45px;
+  padding-top: 3px;
+  font-size: 14px;
+  background-color: rgba(43, 51, 63, 0.7);
+}
+.vjs-cbcustom .vjs-control-bar .vjs-menu li.vjs-selected span {
+  color: #2b333f !important;
+}
+.vjs-cbcustom .vjs-duration,
+.vjs-cbcustom .vjs-time-divider,
+.vjs-cbcustom .vjs-current-time {
+  display: inline-block;
+}
+.vjs-cbcustom .vjs-time-control {
+  padding-left: 1px;
+  padding-right: 1px;
+  min-width: 0px;
+  width: auto;
+}
+.vjs-cbcustom .vjs-fullscreen-control {
+  position: absolute;
+  right: 5px;
+  height: 42px;
+}
+.vjs-cbcustom .vjs-progress-holder .vjs-play-progress {
+  background-color: #f47321;
+}
+.vjs-cbcustom .vjs-slider-bar {
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+}
+.vjs-cbcustom .vjs-slider:focus {
+  text-shadow: none;
+  box-shadow: none;
+}
+.vjs-cbcustom .vjs-big-play-button {
+  display: none;
+}
+.vjs-cbcustom {
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+/**
+ * Generic mixins
+ */
+.noscript .chat-input .button-send,
+.noscript .info .description .bio-title,
+.noscript .cam_nav .link,
+.noscript .video div,
+.noscript .bio .attribute .label,
+.noscript .pics-title {
+  font-family: "UbuntuMedium", Helvetica, Arial, sans-serif;
+}
+.noscript .cam_nav .subnav-1,
+.noscript .cam_nav .subnav-2 {
+  font-size: 0;
+  display: inline-block;
+  vertical-align: bottom;
+}
+.noscript .cam_nav .subnav-2 a {
+  display: block;
+  font-size: 10px;
+  color: rgb(220, 85, 0);
+  padding: 7px 11px 5px;
+  background-color: rgb(252, 234, 219);
+  border: 1px solid rgb(139, 179, 218);
+  border-bottom: none;
+  border-radius: 4px 4px 0 0;
+}
+.noscript .cam_nav .subnav-2 {
+  position: absolute;
+  bottom: 0;
+  right: 96px;
+}
+.noscript .cam_nav .link.selected {
+  font-size: 15px;
+  color: rgb(220, 85, 0);
+  background-color: rgb(255, 255, 255);
+  border-bottom: none;
+}
+.noscript .cam_nav .link {
+  display: inline-block;
+  vertical-align: bottom;
+  height: 27px;
+  position: relative;
+  top: 1px;
+  box-sizing: border-box;
+  border: 1px solid rgb(139, 179, 218);
+  border-image: initial;
+  border-radius: 4px 4px 0 0;
+  font-size: 13px;
+  margin-right: 2px;
+  padding: 4px 11px 0;
+  color: rgb(94, 129, 164);
+  background-color: rgb(221, 233, 245);
+}
+.noscript .cam_nav {
+  width: 100%;
+  -webkit-tap-highlight-color: transparent;
+  padding: 10px 32px 0 32px;
+  background: url(../../tsdefaultassets/gender_tab_bg.gif?0437047d9c3a) repeat-x rgb(226, 226, 226);
+  border-bottom: 1px solid rgb(139, 179, 218);
+  position: relative;
+}
+.noscript .container .cam-offline,
+.noscript .container .room {
+  display: inline-block;
+}
+.noscript .container {
+  padding: 4px 0;
+  margin: 11px 32px;
+  background-color: rgb(224, 224, 224);
+  border: 1px solid rgb(172, 172, 172);
+  border-radius: 4px;
+  font-size: 0;
+  min-width: 1000px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.noscript .content .cam,
+.noscript .content .chat {
+  height: 100%;
+  vertical-align: top;
+  display: table-cell;
+}
+.noscript .content .chat {
+  border: 1px solid rgb(172, 172, 172);
+  border-radius: 4px;
+  width: 100%;
+}
+.noscript .content {
+  width: 100%;
+  border-spacing: 4px 0;
+}
+.noscript .cam .video .room-subject {
+  padding: 8px 9px;
+  color: rgb(73, 73, 73);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  box-sizing: border-box;
+}
+.noscript .cam .video div {
+  font-size: 12px;
+  visibility: visible;
+}
+.noscript .cam .video .player {
+  width: 100%;
+  height: 480px;
+}
+.noscript .cam .video {
+  vertical-align: top;
+  background-color: rgb(255, 255, 255);
+  border-radius: 4px 4px 0 0;
+  border: 1px solid rgb(172, 172, 172);
+}
+.noscript .cam .video.hd {
+  width: 854px;
+}
+.noscript .cam .video.sd {
+  width: 640px;
+}
+.noscript .cam-offline {
+  font-weight: bold;
+  color: #0c6a93;
+  margin: 10px 0 10px 5px;
+  width: 100%;
+  font-size: 12px;
+}
+.noscript .chat .tabs div {
+  font-size: 11px;
+  border-radius: 4px 4px 0 0;
+  margin-right: 2px;
+  padding: 3px 8px;
+  min-width: 32px;
+  display: inline-block;
+  color: rgb(220, 85, 0);
+  background-color: rgb(255, 255, 255);
+}
+.noscript .chat .tabs {
+  background: rgb(127, 127, 127);
+  padding: 3px 3px 0;
+}
+.noscript .chatbox .messages span {
+  display: block;
+  font-size: 12px;
+  margin-top: 4px;
+}
+.noscript .chatbox .messages {
+  height: 100%;
+  overflow-y: scroll;
+}
+.noscript .chatbox {
+  padding: 10px 10px 44px 10px;
+  box-sizing: border-box;
+  height: 490px;
+  position: relative;
+  background-color: #fff;
+}
+.noscript .room .info {
+  border-radius: 4px;
+  border: 1px solid rgb(172, 172, 172);
+}
+.noscript .room {
+  border: 0;
+  padding: 4px 4px 0;
+  width: 100%;
+  position: static;
+  overflow: hidden;
+  -webkit-tap-highlight-color: transparent;
+  background-color: transparent;
+  border-radius: unset;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.noscript .info .header .bio-tab {
+  background: rgb(255, 255, 255);
+  color: rgb(220, 85, 0);
+}
+.noscript .info .header div {
+  display: inline-block;
+  border-radius: 4px 4px 0 0;
+  font-size: 13px;
+  margin-right: 2px;
+  padding: 5px 11px 4px;
+  color: rgb(76, 76, 76);
+  background: rgb(201, 201, 201);
+}
+.noscript .info .header {
+  font-size: 0;
+  padding: 4px 0 0 5px;
+  background: rgb(116, 116, 116) none;
+  border-radius: 4px 4px 0 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.noscript .info .description .bio-title {
+  font-size: 14px;
+  color: rgb(73, 73, 73);
+  margin: 18px 0;
+}
+.noscript .info .description {
+  position: static;
+  overflow: auto;
+  -webkit-tap-highlight-color: transparent;
+  background-color: rgb(255, 255, 255);
+  padding: 15px;
+  font-size: 14px;
+}
+.noscript .bio .attribute .label {
+  color: rgb(12, 106, 147);
+  font-size: 14px;
+  width: 150px;
+}
+.noscript .bio .attribute .label,
+.noscript .bio .attribute .data {
+  display: inline-block;
+  vertical-align: top;
+}
+.noscript .bio .attribute.about-me .data {
+  width: 85%;
+}
+.noscript .bio .attribute {
+  color: #000000;
+  font-weight: normal;
+  margin: 9px 0;
+}
+.noscript .video .player .room-status,
+.noscript .video .player .nojs-overlay {
+  position: absolute;
+}
+.noscript .video .player {
+  width: 100%;
+  font-size: 0;
+  position: relative;
+}
+.noscript .room-status div {
+  height: auto;
+  width: 100%;
+  position: absolute;
+  overflow: hidden;
+  -webkit-tap-highlight-color: transparent;
+  box-sizing: border-box;
+  padding: 0 50px;
+  left: 0;
+  text-align: center;
+  pointer-events: none;
+  z-index: 1;
+  top: 127px;
+  font-size: 32px;
+  color: rgb(114, 192, 255);
+}
+.noscript .room-status {
+  height: 100%;
+  width: 100%;
+  font-size: 12px;
+  background-color: rgb(70, 70, 70);
+}
+.noscript .player .nojs-overlay {
+  display: inline-block;
+  background: rgba(0, 0, 0, 0.65);
+  border-radius: 3px;
+  border: 1px solid #5c5c5c;
+  top: 35%;
+  right: 10%;
+  left: 10%;
+  padding: 25px;
+}
+.noscript .nojs-overlay div {
+  font-family: "UbuntuRegular", Helvetica, Arial, sans-serif;
+  text-align: center;
+}
+.noscript #overlay-text {
+  color: #aeaeae;
+  font-size: 14px;
+}
+.noscript #overlay-title {
+  padding-bottom: 10px;
+  font-size: 25px;
+  color: #ffffff;
+}
+.noscript .photo_list {
+  overflow: auto;
+}
+.noscript .photoset-detail {
+  position: relative;
+  border: 1px solid #ccc;
+  padding: 4px;
+  margin: 0 12px 2px 0;
+}
+.noscript .chat-input .button-send a {
+  display: block;
+  padding: 4px 5px;
+  color: #e0e0e0;
+}
+.noscript .chat-input .button-send {
+  position: absolute;
+  bottom: 3px;
+  right: 3px;
+  line-height: 13px;
+  overflow: hidden;
+  width: auto;
+  font-size: 12px;
+  border-radius: 4px;
+  background: linear-gradient(rgb(169, 169, 169) 0%, rgb(173, 173, 173) 50%, rgb(139, 139, 139) 60%);
+}
+.noscript .chat-input {
+  box-sizing: border-box;
+  font-size: 12px;
+  color: #727272;
+  font-family: "UbuntuRegular", Helvetica, Arial, sans-serif;
+  width: 100%;
+  position: absolute;
+  bottom: 2px;
+  right: 0;
+  padding: 5px;
+}
+.noscript .chatjs-warning span {
+  margin-left: 10px;
+  font-weight: bold;
+}
+.noscript .chatjs-warning {
+  height: 28px;
+  min-width: 300px;
+  line-height: 30px;
+  border: 1px solid #b1b1b1;
+  background-color: rgb(224, 224, 224);
+  position: relative;
+  -webkit-border-radius: 4px 4px 0 0;
+  -moz-border-radius: 4px;
+}
+.noscript .message {
+  position: relative;
+  height: 100%;
+  padding: 5px;
+}
+.noscript .pics-title {
+  position: absolute;
+  color: #0c6a93;
+  width: 150px;
+}
+.noscript .pics-description {
+  height: 100%;
+  padding-left: 150px;
+  color: #000;
+  margin: 0 0 9px;
+}
+.noscript .photoset-detail {
+  position: relative;
+  border: 1px solid #ccc;
+  padding: 4px;
+  margin: 0 12px 2px 0;
+  font-size: 0;
+}
+.noscript .photo-videos .label,
+.noscript .photo-videos .ps-content {
+  display: inline-block;
+  margin-bottom: 20px;
+}
+.noscript .photo-videos .ps-content .content-wrapper {
+  display: inline-block;
+}
+.noscript .photo-videos .more-photosets {
+  display: block;
+}
+.noscript .photoset-name {
+  font-size: 14px;
+  color: rgb(12, 106, 147);
+  max-width: 145px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  text-decoration: none;
+}
+.noscript .photoset-label.fanclub_only, .noscript .photoset-label.fanclub_or_purchase, .noscript .photoset-label.purchase_only {
+  background-color: #090;
+}
+.noscript .photoset-label {
+  position: absolute;
+  bottom: 7px;
+  right: 8px;
+  padding: 1px 3px;
+  text-align: center;
+  color: #fff;
+  font-size: 10px;
+  background-color: #6d85b5;
+}
+.noscript .photoset-preview {
+  position: absolute;
+  top: 7px;
+  left: 7px;
+  border: none;
+}
+.noscript #fan_club_exclusive_label {
+  background-color: #090;
+}
+.noscript .user_uploads .thumbnail_label_tokens {
+  top: 87px;
+  background-color: #6d85b5;
+}
+.noscript a {
+  text-decoration: underline;
+}
+.noscript {
+  min-width: 1000px;
+}
+
+.content div.labelContainer,
+.MoreRooms div.labelContainer {
+  bottom: 76px;
+  float: right;
+  height: 17px;
+  position: absolute;
+  right: 0;
+}
+.content div.labelContainer .thumbnail_label,
+.content div.labelContainer .thumbnail_label_featured,
+.MoreRooms div.labelContainer .thumbnail_label,
+.MoreRooms div.labelContainer .thumbnail_label_featured {
+  border-radius: 2px;
+  bottom: 0;
+  margin: 0 2px;
+  opacity: 0.92;
+  overflow: visible;
+  padding: 2px 6px;
+  position: relative;
+}
+.content div.labelContainer .thumbnail_label_featured,
+.MoreRooms div.labelContainer .thumbnail_label_featured {
+  border-bottom: none;
+}
+.content div.labelContainer .spyTokens:before,
+.content div.labelContainer .privateTokens:before,
+.MoreRooms div.labelContainer .spyTokens:before,
+.MoreRooms div.labelContainer .privateTokens:before {
+  background: #000;
+  border-radius: 2px;
+  bottom: 20px;
+  color: #ffffff;
+  content: attr(data-tooltip);
+  display: none;
+  opacity: 0.92;
+  padding: 2px 6px;
+  position: absolute;
+  right: 0;
+  white-space: nowrap;
+}
+.content div.labelContainer .privateTokens:hover:before,
+.content div.labelContainer .spyTokens:hover:before,
+.MoreRooms div.labelContainer .privateTokens:hover:before,
+.MoreRooms div.labelContainer .spyTokens:hover:before {
+  display: block;
+}
+.content div.labelContainer .hidden,
+.MoreRooms div.labelContainer .hidden {
+  display: none;
+}
+.content div.labelContainer .spyTokens,
+.MoreRooms div.labelContainer .spyTokens {
+  background-color: var(--wl-tag-spy-price-color, #f37321);
+  color: var(--wl-tag-font-color, #ffffff);
+  pointer-events: auto;
+}
+.content div.labelContainer .privateTokens,
+.MoreRooms div.labelContainer .privateTokens {
+  background-color: var(--wl-tag-private-group-color, #cc0000);
+  color: var(--wl-tag-font-color, #ffffff);
+  pointer-events: auto;
+}
+
+.evolveMode #main.roomPage,
+.evolveMode #main.chat_roomlogin {
+  background: var(--background-ultra-low-contrast);
+}
+.evolveMode #main.roomPage .content,
+.evolveMode #main.chat_roomlogin .content {
+  padding: 0;
+}
+.evolveMode #main.chat_roomlogin .PasswordPrompt {
+  margin: var(--spacing-md) var(--spacing-3xl) !important;
+}
+.evolveMode #main.roomPage .PasswordPrompt {
+  margin: var(--spacing-md) 0 !important;
+}
+.evolveMode .PasswordPrompt {
+  background-color: var(--background-neutral);
+  border: 1px solid var(--border-low);
+  border-radius: var(--corner-radius-md);
+  height: unset !important;
+  min-height: 300px;
+  padding: var(--spacing-2xl);
+}
+.evolveMode .PasswordPrompt form label {
+  color: var(--text-primary);
+}
+.evolveMode .PasswordPrompt input[name=password] {
+  border: 1px solid var(--border-button-neutral);
+  background-color: var(--background-neutral);
+  color: var(--text-primary);
+}
+.evolveMode #main .PasswordPrompt h1,
+.evolveMode #main .PasswordPrompt p {
+  color: var(--text-primary);
+  margin-bottom: 0.67em;
+  margin-top: 0;
+}
+
+@-moz-keyframes spin {
+  from {
+    -moz-transform: rotate(0deg);
+  }
+  to {
+    -moz-transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes spin {
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+  }
+}
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@-moz-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+html,
+body {
+  padding: 0;
+  margin: 0;
+  min-height: 100%;
+  font-family: "UbuntuRegular", Arial, Helvetica, sans-serif;
+}
+
+body > object[type="application/x-shockwave-flash"] {
+  display: none;
+}
+
+#main {
+  min-height: 500px;
+}
+#main .bio-container h1 {
+  margin-bottom: 20px;
+  font-size: 1.2em;
+  line-height: 1.4em;
+}
+#main div,
+#main p,
+#main a,
+#main li,
+#main td,
+#main span {
+  -webkit-text-size-adjust: none;
+}
+#main .vjs-big-play-button {
+  display: none !important;
+}
+#main {
+  /*this css is only here to remove the box around videojs playbutton remove is no longer using videojs*/
+}
+#main .video-js button:focus {
+  outline: 0;
+}
+#main input[type=number]::-webkit-inner-spin-button,
+#main input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  appearance: none;
+  margin: 0;
+}
+#main input[type=number],
+#main input[type=number]:hover,
+#main input[type=number]:focus {
+  -moz-appearance: textfield;
+}
+#main select:not(.Select) {
+  font: 100% "UbuntuRegular", Arial, Helvetica, sans-serif;
+  background-color: #ffffff;
+}
+.darkmode #main select:not(.Select) {
+  background-color: #202c39;
+}
+#main a.underline-link:hover {
+  text-decoration: underline;
+}
+#main p {
+  margin: 0;
+}
+#main .theater-video-controls.solid-bg {
+  background: rgba(0, 0, 0, 0.6);
+}
+#main .theater-video-controls.dark-gradient-bg {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.4) 20%, rgba(0, 0, 0, 0));
+}
+#main .theater-video-controls.light-gradient-bg {
+  background: linear-gradient(180deg, rgba(50, 50, 50, 0) 0%, rgba(50, 50, 50, 0.4) 66%, rgba(50, 50, 50, 0.7) 100%);
+}
+#main .theater-video-controls .animated-icon {
+  -webkit-transition-property: all;
+  -webkit-transition-duration: 150ms;
+  -webkit-transition-timing-function: ease;
+  transition-property: all;
+  transition-duration: 150ms;
+  transition-timing-function: ease;
+}
+#main .theater-video-controls .hover-btn {
+  cursor: pointer;
+  transition: opacity 0.1s ease-in-out;
+}
+#main .theater-video-controls .hover-btn.hovering:not(.disabled) > *:not(.video-controls-tooltip) {
+  opacity: 1;
+}
+#main .theater-video-controls .hover-btn.hovering > .scale-big {
+  -webkit-transform: scale(1.15);
+  transform: scale(1.15);
+}
+#main .theater-video-controls .hover-btn.hovering > .scale-small {
+  -webkit-transform: scale(0.85);
+  transform: scale(0.85);
+}
+#main .theater-video-controls .hover-btn.hovering > .scale-wide {
+  -webkit-transform: scaleX(1.15);
+  transform: scaleX(1.15);
+}
+#main .theater-video-controls .hover-btn.hovering > .scale-thin {
+  -webkit-transform: scaleX(0.85);
+  transform: scaleX(0.85);
+}
+#main .theater-video-controls .hover-btn.disabled {
+  cursor: default;
+}
+#main .theater-video-controls .hover-btn.disabled > *:not(.video-controls-tooltip) {
+  opacity: 0.5;
+}
+#main .theater-video-controls .hover-btn > *:not(.video-controls-tooltip) {
+  opacity: 0.8;
+}
+#main .theater-video-controls .hover-btn.drop-shadow-container > *:not(.no-drop-shadow):not(.video-controls-tooltip) {
+  filter: drop-shadow(0px 0px 2px black);
+}
+
+.fullscreen-dropdown div:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+.fullscreen-dropdown div.active {
+  color: #f47321;
+}
+
+.vjs-control-bar.vjs-lock-showing {
+  display: flex !important;
+}
+
+.evolveMode #main {
+  display: flex;
+}
+.evolveMode #theatermode-root {
+  box-sizing: border-box;
+  margin: 0 var(--spacing-md);
+  isolation: isolate;
+}
+
+#StaffLinks .prevUsernamesSection {
+  background: rgb(247, 255, 0);
+  background: rgba(247, 255, 0, 0.23);
+  color: #503d08;
+}
+
+.darkmode .BioContents .bioHeader,
+.darkmode #tabs_content_container .bioHeader,
+.darkmode .psContainer .bioHeader {
+  color: #ffffff;
+}
+.BioContents .tokenText,
+#tabs_content_container .tokenText,
+.psContainer .tokenText {
+  color: #ffffff;
+}
+.darkmode .BioContents a,
+.darkmode #tabs_content_container a,
+.darkmode .psContainer a {
+  color: #68b5f0;
+}
+
+.darkmode #PhotoVideos:focus {
+  outline: none;
+}
+.darkmode #PhotoVideos .title {
+  color: #ffffff;
+}
+#PhotoVideos .link,
+#PhotoVideos .showMoreText {
+  color: #0c6a93;
+}
+.darkmode #PhotoVideos .link,
+.darkmode #PhotoVideos .showMoreText {
+  color: #68b5f0;
+}
+#PhotoVideos .createdAt {
+  color: #555555;
+}
+.darkmode #PhotoVideos .createdAt {
+  color: #b3b3b3;
+}
+#PhotoVideos .buttonBorder {
+  border-color: #000000;
+}
+#PhotoVideos .buttonBorder.rgba {
+  border-color: rgba(0, 0, 0, 0.35);
+}
+#PhotoVideos .buttonBgColor {
+  background-color: #488839;
+}
+#PhotoVideos .buttonBgColor.gradient {
+  background: linear-gradient(#57a863 26.52%, #488839 75.14%);
+}
+#PhotoVideos .buttonBgColor.grey {
+  background-color: #8b8b8b;
+}
+#PhotoVideos .buttonBgColor.grey.gradient {
+  background: linear-gradient(#a9a9a9 29.7%, #8b8b8b 70.67%);
+}
+#PhotoVideos .lockOverlayBg {
+  background-color: #333333;
+}
+#PhotoVideos .lockOverlayBg.rgba {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+#PhotoVideos .previewText {
+  color: white;
+}
+#PhotoVideos .errorMessage {
+  color: #000000;
+  background-color: #ffd0b8;
+  border-color: #cccccc;
+}
+#PhotoVideos .videoProcessing {
+  color: red;
+}
+#PhotoVideos .purchasedBadge {
+  color: #ffffff;
+  background-color: rgb(109, 133, 181);
+}
+#PhotoVideos .popoutIcon {
+  background: url(../../tsdefaultassets/popout.svg?cd939ba3d01e) no-repeat center;
+}
+.darkmode #PhotoVideos .popoutIcon {
+  background: url(../../tsdefaultassets/popout_darkmode.svg?4ed4b17ed080) no-repeat center;
+}
+.darkmode #PhotoVideos #broadcaster_links a,
+.darkmode #PhotoVideos #staff_links a {
+  color: #68b5f0;
+}
+#PhotoVideos .psToggleSort {
+  color: #0c6a93;
+}
+.darkmode #PhotoVideos .psToggleSort {
+  color: #68b5f0;
+}
+#PhotoVideos .psDropDownArrow {
+  width: 10px;
+  height: 7px;
+  padding-left: 2px;
+  padding-bottom: 3px;
+  margin-left: 4px;
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-size: 75%;
+  background-position: center;
+  background-image: url(../../tsdefaultassets/arrowdown_blue.svg?bc6f4860fe49);
+}
+.darkmode #PhotoVideos .psDropDownArrow {
+  background-image: url(../../tsdefaultassets/darkmode_arrowdown_blue.svg?4c0f9c6565ba);
+}
+
+.psSortingDropdown .psSortingContainer {
+  background: var(--wl-tab-inactive-color, #fff);
+}
+.darkmode .psSortingDropdown .psSortingContainer {
+  background: #222429;
+}
+.psSortingDropdown .psSortingContainer .psSortingOption {
+  color: var(--wl-tab-inactive-font-color, #525252);
+}
+.darkmode .psSortingDropdown .psSortingContainer .psSortingOption {
+  color: #b3b3b3;
+}
+.psSortingDropdown .psSortingContainer .psSortingOption:hover {
+  background: var(--wl-tab-active-color, #fceadc);
+  color: var(--wl-tab-active-font-color, #525252);
+}
+.darkmode .psSortingDropdown .psSortingContainer .psSortingOption:hover {
+  background: #303a42;
+  color: #b3b3b3;
+}
+
+.evolveMode #PhotoVideos .psToggleSort {
+  color: var(--text-button-brand);
+}
+.evolveMode #PhotoVideos .title {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  justify-content: flex-start;
+}
+.evolveMode #PhotoVideos .title span {
+  color: var(--text-primary);
+  font-family: "UbuntuMedium", Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+}
+.evolveMode #PhotoVideos .descriptionWrapper {
+  display: flex;
+  flex-direction: column;
+}
+.evolveMode #PhotoVideos .description {
+  color: var(--text-primary);
+  overflow-wrap: break-word;
+  font-family: "UbuntuRegular", Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+}
+.evolveMode #PhotoVideos .createdAt {
+  color: var(--text-secondary);
+  font-family: "UbuntuRegular", Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  line-height: 16px;
+}
+.evolveMode #PhotoVideos .popoutIcon {
+  background: none;
+  display: flex;
+  align-items: center;
+}
+.evolveMode #PhotoVideos .popoutIcon svg path {
+  fill: var(--text-brand-secondary);
+}
+.darkmode .evolveMode #PhotoVideos .popoutIcon {
+  background: none;
+}
+.evolveMode #PhotoVideos .link {
+  color: var(--text-button-brand);
+  font-family: "UbuntuRegular", Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  line-height: 16px;
+}
+.evolveMode #PhotoVideos .bottomSection {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 8px;
+  width: 100%;
+}
+.evolveMode #PhotoVideos .arrowContainer {
+  display: flex;
+  align-items: center;
+}
+.evolveMode #PhotoVideos .arrowContainer--right {
+  justify-content: flex-end;
+}
+.evolveMode #PhotoVideos .arrowContainer .arrowButtonWrapper {
+  height: fit-content;
+}
+.evolveMode #PhotoVideos #broadcaster_links a,
+.evolveMode #PhotoVideos #staff_links a,
+.evolveMode #PhotoVideos .showMoreText {
+  color: var(--text-brand-secondary);
+}
+.evolveMode #PhotoVideos #staff_links,
+.evolveMode #PhotoVideos .infoSection {
+  color: var(--text-primary);
+}
+.evolveMode #PhotoVideos .lockOverlay {
+  position: relative;
+  background: var(--overlay-high);
+  border-radius: var(--corner-radius-md);
+}
+.evolveMode #PhotoVideos .lockOverlay::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: var(--overlay-high);
+  pointer-events: none;
+  z-index: 2;
+}
+.evolveMode #PhotoVideos .lockOverlay img {
+  position: relative;
+  z-index: 1;
+  filter: blur(calc(var(--blur-400) / 2));
+}
+.evolveMode #PhotoVideos .resultText {
+  color: var(--text-primary);
+  font-family: "UbuntuRegular", Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+}
+.evolveMode #PhotoVideos .infoSection--photo {
+  margin-left: 48px;
+}
+.evolveMode #PhotoVideos .infoSection--photo .descriptionWrapper {
+  width: calc(100% - 48px);
+}
+.evolveMode #PhotoVideos .imageCirclesWrapper {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+}
+.evolveMode #PhotoVideos .imageCirclesWrapper .imageCircle {
+  background-color: var(--background-button-grey);
+  border-radius: 8px;
+}
+.evolveMode #PhotoVideos .imageCirclesWrapper .imageCircle--active {
+  background: var(--background-button-brand-primary);
+}
+
+.darkmode #shareTab .title {
+  color: #ffffff;
+}
+#shareTab .urlInput:focus {
+  outline: -webkit-focus-ring-color auto 1px;
+}
+.darkmode #shareTab .urlInput:is(textarea, input, button):is(:not(button, input[type=submit], input[type=button])) {
+  background-color: #202c39;
+}
+.darkmode #shareTab .urlInput:is(textarea, input, button):focus {
+  outline: none;
+  box-shadow: 0 0 0 2px #68b5f0;
+}
+.darkmode #shareTab .urlInput:is(select) {
+  background-color: #202c39;
+}
+.darkmode #shareTab .urlInput:is(select):focus {
+  outline: 2px solid #68b5f0;
+}
+#shareTab .urlInput {
+  border-color: #b1b1b1;
+  background-color: transparent;
+}
+.darkmode #shareTab .urlInput {
+  border-color: #6e6f70;
+  background-color: #202c39;
+  color: #ffffff;
+}
+
+.evolveMode#shareTab {
+  color: var(--text-primary);
+}
+
+.darkmode .appsTab a {
+  color: #68b5f0;
+}
+.appsTab .table {
+  border-color: #e0e0e0;
+}
+.darkmode .appsTab .table {
+  border-color: #2d3e50;
+}
+.appsTab .header {
+  background-color: #c9c9c9;
+}
+.darkmode .appsTab .header {
+  color: #ffffff;
+  background-color: grey;
+}
+.appsTab .noneSelected {
+  color: #808080;
+}
+.darkmode .appsTab .noneSelected {
+  color: #b3b3b3;
+}
+.appsTab .deactivate {
+  color: #af0000;
+}
+.darkmode .appsTab .deactivate {
+  color: #fe3d39;
+}
+.appsTab .orText {
+  color: #f47321;
+}
+.appsTab .row:hover td {
+  background-color: rgba(128, 128, 128, 0.2);
+}
+.appsTab .appDirectoryPopoutBtn:hover .popoutLabel {
+  text-decoration: underline;
+}
+.appsTab .popoutIcon {
+  background: url(../../images/asp/appdir-popout.svg?77444888b274) no-repeat center;
+}
+.darkmode .appsTab .popoutIcon {
+  background: url(../../images/asp/appdir-popout-darkmode.svg?761d3612d3cb) no-repeat center;
+}
+.appsTab .popoutLabel {
+  color: #0c6a93;
+  font-size: 14px;
+  font-family: "UbuntuMedium";
+}
+.darkmode .appsTab .popoutLabel {
+  color: #68b5f0;
+}
+
+.evolveMode .appsTab p {
+  color: var(--text-primary);
+  font-family: "UbuntuBold", Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.appCollection .sort {
+  color: #808285;
+}
+.darkmode .appCollection .sort {
+  color: #b3b3b3;
+}
+.appCollection .clearSearchButton {
+  background: url(../../images/asp/close.svg?37f41bd2d69f);
+}
+.appCollection .searchInput::-webkit-search-cancel-button {
+  -webkit-appearance: none;
+}
+.appCollection .aspCard, .appCollection .featuredCard {
+  border: 1px solid #ebecec;
+}
+.appCollection .aspCard .summary, .appCollection .featuredCard .summary {
+  color: #606367;
+}
+.darkmode .appCollection .aspCard .summary, .darkmode .appCollection .featuredCard .summary {
+  color: #b3b3b3;
+}
+.appCollection .aspCard .author, .appCollection .featuredCard .author {
+  color: #808080;
+}
+.darkmode .appCollection .aspCard .author, .darkmode .appCollection .featuredCard .author {
+  color: #888888;
+}
+.appCollection .featuredCard {
+  background-color: #ffffff;
+}
+.darkmode .appCollection .featuredCard {
+  background-color: inherit;
+}
+.appCollection .featuredCard.highlight {
+  background-color: #f8f9fa;
+}
+.darkmode .appCollection .featuredCard.highlight {
+  background-color: #17202a;
+}
+.appCollection .featuredCard .textHighlight {
+  color: blue;
+}
+.darkmode .appCollection .featuredCard .textHighlight {
+  color: #68b5f0;
+}
+.appCollection .aspPagination {
+  color: #525252;
+  border-color: #acacac;
+}
+.appCollection .aspPagination .pageBtn {
+  border: 1px solid #a7a7a7;
+  background-color: #ffffff;
+}
+.appCollection .aspPagination .highlight {
+  background-color: #c9c9c9;
+}
+
+.darkmode .appPage a {
+  color: #68b5f0;
+}
+.appPage .container {
+  background-color: #f8f9fa;
+  border: 1px solid #ebecec;
+}
+.darkmode .appPage .container {
+  background-color: #1c2733;
+  border: none;
+}
+.appPage .back {
+  background: url(../../images/asp/arrowleft.svg?aa693bd28022) no-repeat center;
+}
+.appPage .subText, .appPage .description {
+  color: #606367;
+}
+.darkmode .appPage .subText, .darkmode .appPage .description {
+  color: #888888;
+}
+.appPage .description {
+  background-color: #ffffff;
+}
+.darkmode .appPage .description {
+  background-color: #000000;
+}
+.appPage .appForm {
+  background-color: #ffffff;
+  border: 1px solid #ffffff;
+}
+.darkmode .appPage .appForm {
+  background-color: #202c39;
+  border: none;
+}
+.appPage .appForm .chevronDown {
+  background: url(../../images/asp/chevron_down.svg?f730e78ee68d) no-repeat center;
+}
+.appPage .appForm .chevronUp {
+  background: url(../../images/asp/chevron_up.svg?672bc569c6e9) no-repeat center;
+}
+.appPage .formError {
+  color: #ff0000;
+}
+.darkmode .appPage .formError {
+  color: #ffa6a6;
+}
+.appPage .footer {
+  background-color: #e5e5e5;
+}
+.darkmode .appPage .footer {
+  background-color: #253543;
+}
+
+.aspPanel {
+  border-color: #e0e0e0;
+}
+.darkmode .aspPanel {
+  border-color: #2d3e50;
+}
+.aspPanel .header {
+  color: #ffffff;
+  background-color: #2e698f;
+}
+.darkmode .aspPanel .header {
+  background-color: #2e698f;
+}
+.aspPanel .headerBadge {
+  color: #3e688c;
+  background-color: #ffffff;
+}
+.darkmode .aspPanel .headerBadge {
+  color: #68b5f0;
+  background-color: #2b3856;
+}
+.aspPanel .notice {
+  background-color: #fff7d9;
+  border: 1px solid #d8a217;
+}
+.darkmode .aspPanel .notice {
+  background-color: #1c2733;
+  border: 1px solid #2d3e50;
+}
+.aspPanel .activeStatus {
+  color: #005b14;
+}
+.darkmode .aspPanel .activeStatus {
+  color: #90ee90;
+}
+.aspPanel .row:hover td {
+  background-color: rgba(128, 128, 128, 0.2);
+}
+
+.darkmode .responsiveQrCode {
+  mix-blend-mode: lighten;
+  filter: invert(1);
+}
+
+.darkmode .GamesTab a {
+  color: #68b5f0;
+}
+.GamesTab .deactivate {
+  color: #af0000;
+}
+.darkmode .GamesTab .deactivate {
+  color: #fe3d39;
+}
+.GamesTab .orText {
+  color: #f47321;
+}
+.GamesTab .tabSection {
+  border: 1px solid #efefef;
+}
+.darkmode .GamesTab .tabSection {
+  border: none;
+}
+
+.evolveMode.GamesTab {
+  font-family: "UbuntuRegular", Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+}
+.evolveMode.GamesTab a {
+  color: var(--text-button-brand);
+}
+
+.evolveMode#roomTabs.darkmode .evolveMode.GamesTab {
+  color: var(--text-primary);
+}
+
+.evolveMode.EditBroadcastBioForm table,
+.evolveMode.EditBroadcastBioForm tbody {
+  display: block;
+  width: 100%;
+}
+.evolveMode.EditBroadcastBioForm table {
+  padding: 24px;
+}
+.evolveMode.EditBroadcastBioForm .EditBroadcastBioForm__row {
+  padding: var(--spacing-sm) 0;
+  display: block;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: var(--spacing-sm);
+  align-self: stretch;
+}
+.evolveMode.EditBroadcastBioForm .EditBroadcastBioForm__labelContainer {
+  display: block;
+  width: 100%;
+  text-align: left;
+  padding: 0 0 var(--spacing-sm) 0;
+  min-width: unset;
+  vertical-align: unset;
+}
+.evolveMode.EditBroadcastBioForm .EditBroadcastBioForm__fieldContainer {
+  display: block;
+  width: 100%;
+  max-width: 480px;
+}
+.evolveMode.EditBroadcastBioForm .EditBroadcastBioForm__label {
+  font-family: "UbuntuRegular", Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  line-height: 16px;
+  color: var(--text-primary);
+  text-align: left;
+  margin: 0;
+  padding: 0;
+}
+.evolveMode.EditBroadcastBioForm .EditBroadcastBioForm__label .required-asterisk {
+  color: var(--text-system-error);
+}
+.evolveMode.EditBroadcastBioForm .EditBroadcastBioForm__input {
+  font-family: "UbuntuRegular", Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  border: 1px solid var(--border-button-neutral);
+  border-radius: var(--corner-radius-full);
+  padding: var(--spacing-sm) var(--spacing-md);
+  color: var(--text-primary);
+  background-color: var(--background-neutral);
+  width: 100% !important;
+  box-sizing: border-box;
+  height: 36px;
+  margin: 0;
+}
+.evolveMode.EditBroadcastBioForm .EditBroadcastBioForm__input:focus {
+  outline: none;
+  border-color: var(--border-button-brand);
+}
+.evolveMode.EditBroadcastBioForm .EditBroadcastBioForm__input::placeholder {
+  color: var(--text-light);
+}
+.evolveMode.EditBroadcastBioForm .EditBroadcastBioForm__select {
+  appearance: none;
+  width: 100%;
+  border-radius: var(--corner-radius-full);
+  padding-right: 36px;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 16 16' fill='none'%3E%3Cpath d='M4 6l4 4 4-4' stroke='%23757575' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right var(--spacing-md) center;
+  background-size: 20px 20px;
+}
+.evolveMode.EditBroadcastBioForm .EditBroadcastBioForm__fieldContainer select[name$=_year],
+.evolveMode.EditBroadcastBioForm .EditBroadcastBioForm__fieldContainer select[name$=_month],
+.evolveMode.EditBroadcastBioForm .EditBroadcastBioForm__fieldContainer select[name$=_day] {
+  display: inline-block;
+  width: 124px !important;
+  box-sizing: border-box;
+  margin-right: var(--spacing-xs);
+}
+.evolveMode.EditBroadcastBioForm .EditBroadcastBioForm__fieldContainer select[name$=_year]:last-of-type,
+.evolveMode.EditBroadcastBioForm .EditBroadcastBioForm__fieldContainer select[name$=_month]:last-of-type,
+.evolveMode.EditBroadcastBioForm .EditBroadcastBioForm__fieldContainer select[name$=_day]:last-of-type {
+  margin-right: 0;
+}
+.evolveMode.EditBroadcastBioForm .EditBroadcastBioForm__fieldContainer select[name=gender] {
+  max-width: 294px;
+}
+.evolveMode.EditBroadcastBioForm .EditBroadcastBioForm__textarea {
+  border-radius: var(--corner-radius-md);
+  min-height: 88px;
+  resize: vertical;
+}
+.evolveMode.EditBroadcastBioForm .EditBroadcastBioForm__textarea::placeholder {
+  font-family: "UbuntuRegular", Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  color: var(--text-light);
+}
+.evolveMode.EditBroadcastBioForm .EditBroadcastBioForm__fieldContainer--checkbox {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-sm);
+}
+.evolveMode.EditBroadcastBioForm .EditBroadcastBioForm__checkboxGroup {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--spacing-sm);
+}
+.evolveMode.EditBroadcastBioForm .EditBroadcastBioForm__checkboxContainer {
+  font-family: "UbuntuRegular", Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  line-height: 16px;
+  display: inline-flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+  padding: 0;
+  color: var(--text-button-neutral);
+}
+.evolveMode.EditBroadcastBioForm .EditBroadcastBioForm__checkboxContainer .checkboxComponent {
+  margin: 0;
+  transform: none;
+}
+.evolveMode.EditBroadcastBioForm .EditBroadcastBioForm__checkbox.transparentCheckbox {
+  display: flex;
+  align-items: center;
+  flex: 0 0 auto;
+  border: 1px solid var(--border-button-neutral-high);
+  border-radius: var(--corner-radius-xs);
+  padding: 1px;
+}
+.evolveMode.EditBroadcastBioForm .activeChoicesContainer {
+  border-radius: var(--corner-radius-full);
+  width: 100%;
+  min-height: 36px;
+  padding: 8px 12px;
+  line-height: 20px;
+  margin-top: 0;
+  box-sizing: border-box;
+}
+.evolveMode.EditBroadcastBioForm .multiSelectDropdown .checkboxesDropdown {
+  background: var(--background-others-popup-neutral);
+}
+#roomTabs.evolveMode.darkmode .evolveMode.EditBroadcastBioForm .multiSelectDropdown .activeChoicesContainer {
+  background-color: transparent;
+}
+.evolveMode.EditBroadcastBioForm .EditBroadcastBioForm__helpText {
+  font-family: "UbuntuRegular", Arial, Helvetica, sans-serif;
+  font-size: 11px;
+  line-height: 16px;
+  color: var(--text-light);
+  margin-top: var(--spacing-xs);
+  width: auto;
+}
+.evolveMode.EditBroadcastBioForm .EditBroadcastBioForm__picsAndVideos {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--spacing-sm);
+  padding-top: var(--spacing-xs);
+}
+.evolveMode.EditBroadcastBioForm .EditBroadcastBioForm__picsAndVideos a {
+  font-family: "UbuntuRegular", Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  line-height: 16px;
+}
+.evolveMode.EditBroadcastBioForm .EditBroadcastBioForm__avNotice {
+  color: var(--text-primary);
+  font-family: "UbuntuRegular", Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  line-height: 16px;
+}
+.evolveMode.EditBroadcastBioForm .EditBroadcastBioForm__picsAndVideosSeparator {
+  font-family: "UbuntuRegular", Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  line-height: 16px;
+  color: var(--border-medium);
+}
+.evolveMode.EditBroadcastBioForm .EditBroadcastBioForm__submitButton {
+  display: inline-flex;
+  height: 40px;
+  padding: var(--spacing-sm) var(--spacing-lg);
+  justify-content: center;
+  align-items: center;
+  gap: var(--spacing-sm);
+  border-radius: var(--corner-radius-full);
+  background: var(--background-button-brand-primary);
+  margin: 0 0 0 24px;
+}
+
+.evolveMode.SettingsTab {
+  padding: var(--spacing-2xl);
+  color: var(--text-primary);
+}
+.evolveMode.SettingsTab .SettingsTab__subtabs {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+  padding-bottom: var(--spacing-2xl);
+}
+.evolveMode.SettingsTab .SettingsTab__subtabAnchor {
+  font-family: "UbuntuRegular", Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  line-height: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: var(--spacing-sm) var(--spacing-md);
+  border-radius: var(--corner-radius-sm);
+  color: var(--text-button-brand);
+  background: var(--background-low-contrast);
+  text-decoration: none;
+  user-select: none;
+  cursor: pointer;
+}
+.evolveMode.SettingsTab .SettingsTab__subtabAnchor.active {
+  background: var(--overlay-button-brand-secondary-press);
+}
+.evolveMode.SettingsTab .SettingsTab__subtabPanel + .SettingsTab__subtabPanel {
+  margin-top: var(--spacing-2xl);
+}
+.evolveMode.SettingsTab .SettingsTab__form > table {
+  display: contents;
+}
+.evolveMode.SettingsTab .SettingsTab__sections {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-2xl);
+}
+.evolveMode.SettingsTab .SettingsTab__section {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-lg);
+  padding-bottom: var(--spacing-2xl);
+  border-bottom: 1px solid var(--border-low);
+}
+.evolveMode.SettingsTab .SettingsTab__section > table {
+  display: contents;
+}
+.evolveMode.SettingsTab .SettingsTab__sectionBody {
+  display: contents;
+}
+.evolveMode.SettingsTab .SettingsTab__sectionTitle {
+  font-family: "UbuntuBold", Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+}
+.evolveMode.SettingsTab .SettingsTab__sectionField {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--spacing-sm);
+}
+.evolveMode.SettingsTab .SettingsTab__sectionFieldLabel {
+  font-family: "UbuntuMedium", Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  line-height: 16px;
+  padding: 0;
+  text-align: left;
+  width: 140px;
+  flex-shrink: 0;
+  color: var(--text-primary);
+}
+.evolveMode.SettingsTab .SettingsTab__sectionFieldLabel label {
+  margin: 0;
+  padding: 0;
+  color: var(--text-primary);
+}
+.evolveMode.SettingsTab .SettingsTab__sectionField:has(> .SettingsTab__sectionFieldContent > .SettingsTab__select) .SettingsTab__sectionFieldLabel {
+  display: flex;
+  align-items: center;
+  min-height: 36px;
+}
+.evolveMode.SettingsTab .SettingsTab__sectionFieldContent {
+  padding: 0;
+  min-width: 0;
+}
+.evolveMode.SettingsTab .SettingsTab__sectionFieldContent.highlightFieldContainer {
+  border-width: 1px;
+  border-style: solid;
+  border-radius: var(--corner-radius-sm);
+  padding: 0 var(--spacing-sm) var(--spacing-xs);
+}
+.evolveMode.SettingsTab .SettingsTab__sectionFieldContent--checkbox {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-sm);
+}
+.evolveMode.SettingsTab .SettingsTab__sectionFieldContent--multiSelect {
+  display: flex;
+  gap: var(--spacing-sm);
+  flex: 1 0 0;
+  min-width: 0;
+}
+.evolveMode.SettingsTab .SettingsTab__multiSelectColumn {
+  font-family: "UbuntuRegular", Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  line-height: 16px;
+  display: flex;
+  flex: 1 0 0;
+  flex-direction: column;
+  gap: var(--spacing-sm);
+  align-items: flex-start;
+  align-self: stretch;
+  min-width: 0;
+}
+.evolveMode.SettingsTab .SettingsTab__multiSelectHeader {
+  font-weight: normal;
+}
+.evolveMode.SettingsTab .SettingsTab__multiSelect {
+  font: inherit;
+  color: inherit;
+  box-sizing: border-box;
+  margin: 0;
+  padding: var(--spacing-sm) 0;
+  border: 1px solid var(--border-button-neutral);
+  border-radius: var(--corner-radius-md);
+  background-color: var(--background-neutral);
+  width: 100%;
+  flex: 1 1 auto;
+  min-height: 0;
+}
+.evolveMode.SettingsTab .SettingsTab__multiSelect option {
+  padding: var(--spacing-sm) var(--spacing-md);
+}
+.evolveMode.SettingsTab .SettingsTab__multiSelect option:hover {
+  background-color: var(--overlay-button-hover);
+}
+.evolveMode.SettingsTab .SettingsTab__input {
+  font-family: "UbuntuRegular", Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  box-sizing: border-box;
+  height: 36px;
+  width: 200px;
+  margin: 0;
+  padding: var(--spacing-sm) var(--spacing-md);
+  border-radius: var(--corner-radius-full);
+  border: 1px solid var(--border-button-neutral);
+  text-overflow: ellipsis;
+  background-color: var(--background-neutral);
+  color: var(--text-primary);
+}
+.evolveMode.SettingsTab input.SettingsTab__input.SettingsTab__passwordInput {
+  width: 274px !important;
+}
+.evolveMode.SettingsTab input.SettingsTab__input {
+  width: 200px !important;
+}
+.evolveMode.SettingsTab .SettingsTab__select {
+  font-family: "UbuntuRegular", Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  appearance: none;
+  box-sizing: border-box;
+  height: 36px;
+  width: fit-content;
+  max-width: 100%;
+  margin: 0;
+  padding: var(--spacing-sm) 36px var(--spacing-sm) var(--spacing-md);
+  border: 1px solid var(--border-button-neutral);
+  border-radius: var(--corner-radius-full);
+  background-color: var(--background-neutral);
+  color: var(--text-primary);
+  cursor: pointer;
+  background-image: url("../../images/evolve/chevron_down.svg?822a976cc848");
+  background-repeat: no-repeat;
+  background-position: right var(--spacing-md) center;
+  background-size: 20px 20px;
+}
+.darkMode .evolveMode.SettingsTab .SettingsTab__select {
+  background-image: url("../../images/evolve/chevron_down_dm.svg?0c4e12995db5");
+}
+.evolveMode.SettingsTab .SettingsTab__select:focus-visible {
+  outline: 2px solid var(--border-button-focused);
+  border-color: transparent;
+}
+.evolveMode.SettingsTab .SettingsTab__select.disabled, .evolveMode.SettingsTab .SettingsTab__select:disabled {
+  color: var(--text-light);
+  background-color: var(--background-mid-contrast);
+  cursor: not-allowed;
+}
+.evolveMode.SettingsTab .SettingsTab__textarea {
+  font-family: "UbuntuRegular", Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  box-sizing: border-box;
+  width: 100%;
+  margin: 0;
+  padding: var(--spacing-sm) var(--spacing-md);
+  border-radius: var(--corner-radius-md);
+  border: 1px solid var(--border-button-neutral);
+  background-color: var(--background-neutral);
+  color: var(--text-primary);
+  resize: both;
+}
+.evolveMode.SettingsTab .SettingsTab__textarea::placeholder {
+  font-family: "UbuntuRegular", Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  color: var(--text-light);
+}
+.evolveMode.SettingsTab .SettingsTab__plainInput {
+  font-family: "UbuntuRegular", Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  margin: 0;
+  padding: 0;
+  color: var(--text-primary);
+}
+.evolveMode.SettingsTab .SettingsTab__email {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  column-gap: var(--spacing-lg);
+  row-gap: 0;
+  color: var(--text-primary);
+}
+.evolveMode.SettingsTab .SettingsTab__email input {
+  font-family: "UbuntuRegular", Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  line-height: 16px;
+  border: none;
+  background: none;
+  padding: 0;
+  margin: 0;
+  width: auto !important;
+  max-width: 225px;
+  color: var(--text-primary);
+}
+.evolveMode.SettingsTab .SettingsTab__email .SettingsTab__emailEditButton {
+  padding: 0;
+}
+.evolveMode.SettingsTab .SettingsTab__email .SettingsTab__helpText {
+  flex-basis: 100%;
+  padding: 0;
+}
+.evolveMode.SettingsTab .SettingsTab__checkboxGroup {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--spacing-sm);
+}
+.evolveMode.SettingsTab .SettingsTab__checkboxContainer {
+  font-family: "UbuntuRegular", Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  line-height: 16px;
+  display: inline-flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+  padding: 0;
+  color: var(--text-button-neutral);
+}
+.evolveMode.SettingsTab .SettingsTab__checkboxContainer .checkboxComponent {
+  margin: 0;
+  transform: none;
+}
+.evolveMode.SettingsTab .SettingsTab__checkbox.transparentCheckbox {
+  display: flex;
+  align-items: center;
+  flex: 0 0 auto;
+  border: 1px solid var(--border-button-neutral-high);
+  border-radius: var(--corner-radius-xs);
+  padding: 1px;
+}
+.evolveMode.SettingsTab .SettingsTab__helpText {
+  display: flex;
+  font-family: "UbuntuRegular", Arial, Helvetica, sans-serif;
+  font-size: 11px;
+  line-height: 16px;
+  color: var(--text-secondary);
+  margin-top: var(--spacing-xs);
+  padding: 0 var(--spacing-md);
+  align-items: center;
+}
+.evolveMode.SettingsTab .SettingsTab__eventsApi {
+  font-family: "UbuntuRegular", Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  line-height: 16px;
+}
+.evolveMode.SettingsTab .SettingsTab__eventsApi .SettingsTab__eventsApiText {
+  display: flex;
+  flex: 1 0 0;
+  flex-direction: column;
+  gap: var(--spacing-sm);
+  min-width: 0;
+}
+.evolveMode.SettingsTab .SettingsTab__eventsApi .SettingsTab__eventsApiText p {
+  margin: 0;
+}
+.evolveMode.SettingsTab .SettingsTab__eventsApi a {
+  font-family: "UbuntuMedium", Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  line-height: 16px;
+  color: var(--text-brand-secondary);
+}
+.evolveMode.SettingsTab .SettingsTab__buttonGroup {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--spacing-lg);
+  align-self: stretch;
+}
+.evolveMode.SettingsTab .opt-in-flag-display {
+  display: flex;
+  margin-top: var(--spacing-sm);
+}
+.evolveMode.SettingsTab .opt-in-flag-display .OptInFlagDisplayHelpText {
+  font-family: "UbuntuRegular", Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  line-height: 16px;
+  margin-left: 0;
+}
+
+.OBSBroadcastInfo input#obs_token {
+  border: none;
+  width: 90%;
+  text-align: center;
+  color: #7f7f7f;
+}
+.OBSBroadcastInfo .infoOverlay {
+  background-color: #000000;
+}
+.OBSBroadcastInfo #obs_broadcast_info {
+  color: #7f7f7f;
+  background-color: #ffffff;
+  border-color: #cccccc;
+}
+.darkmode .OBSBroadcastInfo #obs_broadcast_info {
+  color: #b3b3b3;
+  background-color: #1c2733;
+  border-color: #17202a;
+}
+.OBSBroadcastInfo #obs_broadcast_info .supportLink {
+  color: #0c6a93;
+}
+.darkmode .OBSBroadcastInfo #obs_broadcast_info .supportLink {
+  color: #68b5f0;
+}
+.OBSBroadcastInfo #obs_broadcast_info .warning {
+  color: #0c6a93;
+}
+.darkmode .OBSBroadcastInfo #obs_broadcast_info .warning {
+  color: #68b5f0;
+}
+.darkmode .OBSBroadcastInfo #obs_broadcast_info .scroll {
+  border-color: #6e6f70;
+}
+.darkmode .OBSBroadcastInfo #obs_broadcast_info .scroll hr {
+  border-color: #6e6f70;
+}
+.OBSBroadcastInfo #obs_broadcast_info .scroll .tokenValue:focus {
+  outline: -webkit-focus-ring-color auto 1px;
+}
+.darkmode .OBSBroadcastInfo #obs_broadcast_info .scroll .tokenValue:is(textarea, input, button):is(:not(button, input[type=submit], input[type=button])) {
+  background-color: #202c39;
+}
+.darkmode .OBSBroadcastInfo #obs_broadcast_info .scroll .tokenValue:is(textarea, input, button):focus {
+  outline: none;
+  box-shadow: 0 0 0 2px #68b5f0;
+}
+.darkmode .OBSBroadcastInfo #obs_broadcast_info .scroll .tokenValue:is(select) {
+  background-color: #202c39;
+}
+.darkmode .OBSBroadcastInfo #obs_broadcast_info .scroll .tokenValue:is(select):focus {
+  outline: 2px solid #68b5f0;
+}
+.OBSBroadcastInfo #obs_broadcast_info .scroll .tokenValue {
+  background-color: transparent;
+}
+.darkmode .OBSBroadcastInfo #obs_broadcast_info .scroll .tokenValue {
+  color: #b3b3b3;
+}
+.darkmode .OBSBroadcastInfo #obs_broadcast_info .scroll .tokenValue:focus {
+  color: #ffffff;
+}
+.OBSBroadcastInfo #obs_broadcast_info .scroll .rtmpUrl {
+  color: #0c6a93;
+}
+.darkmode .OBSBroadcastInfo #obs_broadcast_info .scroll .rtmpUrl {
+  color: #68b5f0;
+}
+.OBSBroadcastInfo #obs_broadcast_info .button:focus {
+  outline: -webkit-focus-ring-color auto 1px;
+}
+.darkmode .OBSBroadcastInfo #obs_broadcast_info .button:is(textarea, input, button):is(:not(button, input[type=submit], input[type=button])) {
+  background-color: #202c39;
+}
+.darkmode .OBSBroadcastInfo #obs_broadcast_info .button:is(textarea, input, button):focus {
+  outline: none;
+  box-shadow: 0 0 0 2px #68b5f0;
+}
+.darkmode .OBSBroadcastInfo #obs_broadcast_info .button:is(select) {
+  background-color: #202c39;
+}
+.darkmode .OBSBroadcastInfo #obs_broadcast_info .button:is(select):focus {
+  outline: 2px solid #68b5f0;
+}
+.OBSBroadcastInfo #obs_broadcast_info .button, .darkmode .OBSBroadcastInfo #obs_broadcast_info .button {
+  background-color: var(--wl-signup-bg-color, #f47321);
+  color: #ffffff;
+  border: 1px solid var(--wl-signup-alt-bg-color, #cd5d26);
+  border-radius: 4px;
+}
+
+.evolveMode .OBSBroadcastInfo:has(.OBSBroadcastInfoContent) #obs_broadcast_info {
+  background: var(--background-others-popup-neutral);
+  border: none;
+  color: var(--text-primary);
+  padding: 0;
+}
+
+#gameInfoBar {
+  border-radius: 3px;
+  box-sizing: border-box;
+  margin-bottom: 6px;
+  overflow: visible;
+}
+
+.GameInfoBar {
+  color: #49494f;
+  background-color: white;
+  border-radius: 3px;
+  overflow: hidden;
+  padding: 6px;
+  position: relative;
+  display: flex;
+}
+.GameInfoBar .gameImage {
+  border-right: solid 1px #efefef;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.GameInfoBar .gameImage img {
+  border-radius: 5px;
+  margin-right: 8px;
+  object-fit: cover;
+  overflow: hidden;
+}
+.GameInfoBar .gameInfoBarTextContainer {
+  height: 100%;
+  vertical-align: center;
+  padding-left: 8px;
+  width: 100%;
+}
+.GameInfoBar .gameInfoBarTitle {
+  font-size: 14px;
+  line-height: 14px;
+  font-family: UbuntuMedium, Helvetica, Arial, sans-serif;
+  padding: 6px 0;
+}
+.GameInfoBar .gameInfoBarDescription {
+  padding-bottom: 6px;
+  width: 100%;
+}
+.GameInfoBar .gameInfoBarDescriptionText {
+  font-size: 12px;
+  line-height: 12px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+  -webkit-box-orient: vertical;
+  margin: 0;
+  width: 100%;
+}
+.GameInfoBar .gameInfoBarActions {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+}
+.GameInfoBar .stopStreamingButton {
+  border: 1px solid #49494f;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  line-height: 16px;
+  margin-right: 6px;
+  padding: 6px;
+  right: 0;
+}
+.GameInfoBar .publisherInfo {
+  margin: 6px 0;
+  padding: 8px;
+  text-align: right;
+  box-sizing: border-box;
+  width: 100%;
+}
+.darkmode .GameInfoBar {
+  color: #b3b3b3;
+  background-color: #2a2c2e;
+}
+.darkmode .GameInfoBar a {
+  color: #68b5f0;
+}
+.darkmode .GameInfoBar .gameImage {
+  border-right: solid 1px #666666;
+}
+.darkmode .GameInfoBar .stopStreamingButton {
+  border: 1px solid #b3b3b3;
+}
+
+.GameInfoBarCvolveStyle {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 12px;
+  padding: var(--spacing-md) var(--spacing-lg);
+  border-radius: 12px;
+  border: 1px solid var(--border-low);
+  box-sizing: border-box;
+  background-color: var(--background-neutral);
+  color: var(--text-primary);
+}
+.GameInfoBarCvolveStyle a {
+  color: var(--text-button-brand);
+}
+.GameInfoBarCvolveStyle .gameInfoBarCvolveStyleImage {
+  border-radius: 8px;
+  border: 1px solid var(--border-low);
+  object-fit: cover;
+  flex-shrink: 0;
+}
+.GameInfoBarCvolveStyle .gameInfoBarCvolveStyleText {
+  flex: 1 0 0;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.GameInfoBarCvolveStyle .gameInfoBarCvolveStylePrimary {
+  font-family: "UbuntuMedium", Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+.GameInfoBarCvolveStyle .gameInfoBarCvolveStyleSecondary {
+  font-family: "UbuntuRegular", Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  line-height: 16px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  color: var(--text-secondary);
+  flex-wrap: wrap;
+}
+.GameInfoBarCvolveStyle .gameInfoBarCvolveStyleButton {
+  box-sizing: border-box;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  border-radius: var(--corner-radius-full);
+  border: 0;
+  cursor: pointer;
+  position: relative;
+  font-family: "UbuntuRegular", Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+}
+.GameInfoBarCvolveStyle .gameInfoBarCvolveStyleButton:focus-visible {
+  outline: 2px solid var(--border-button-focused);
+  outline-offset: 2px;
+}
+.GameInfoBarCvolveStyle .gameInfoBarCvolveStyleButton:disabled {
+  color: var(--text-button-neutral-disabled);
+  cursor: not-allowed;
+}
+.GameInfoBarCvolveStyle .gameInfoBarCvolveStyleButton {
+  padding: var(--spacing-sm) var(--spacing-lg);
+  gap: var(--spacing-sm);
+  font-family: "UbuntuRegular", Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--text-button-brand);
+  background-color: transparent;
+  backdrop-filter: var(--blur-mid-backdrop-filter);
+  box-shadow: inset 0 0 0 1px var(--border-button-neutral);
+}
+.GameInfoBarCvolveStyle .gameInfoBarCvolveStyleButton:hover:not(:disabled) {
+  background-color: var(--overlay-button-brand-secondary-hover);
+}
+.GameInfoBarCvolveStyle .gameInfoBarCvolveStyleButton:active:not(:disabled) {
+  background-color: var(--overlay-button-brand-secondary-press);
+}
+
+.darkmode .OBSInfoSection a {
+  color: #68b5f0;
+}
+
+.GameSelection {
+  background-color: white;
+  color: #49494f;
+}
+.GameSelection .searchBar {
+  border: 1px solid #acacac;
+}
+.GameSelection .title {
+  color: #272f35;
+}
+.GameSelection .selectGameButton {
+  border: 1px solid #49494f;
+}
+.darkmode .GameSelection {
+  background-color: #202223;
+  color: #b3b3b3;
+  border: 1px solid #2e3137;
+}
+.darkmode .GameSelection .searchBar {
+  border: 1px solid #2e3137;
+}
+.darkmode .GameSelection .searchBar input[type=text] {
+  background-color: inherit;
+  color: inherit;
+}
+.darkmode .GameSelection .title {
+  color: white;
+}
+.darkmode .GameSelection .selectGameButton {
+  border: 1px solid #b3b3b3;
+}
+
+.darkmode .TokenStatsTab {
+  color: #b3b3b3;
+}
+.TokenStatsTab .lightText {
+  color: #666666;
+}
+.darkmode .TokenStatsTab .lightText {
+  color: #b3b3b3;
+}
+.TokenStatsTab .tokenStatsTable {
+  color: #525252;
+}
+.darkmode .TokenStatsTab .tokenStatsTable {
+  color: #d1d1d1;
+  border-color: #2d3e50;
+}
+.TokenStatsTab .tokenStatsTable table,
+.TokenStatsTab .tokenStatsTable td,
+.TokenStatsTab .tokenStatsTable th {
+  border-color: #e0e0e0;
+}
+.darkmode .TokenStatsTab .tokenStatsTable table,
+.darkmode .TokenStatsTab .tokenStatsTable td,
+.darkmode .TokenStatsTab .tokenStatsTable th {
+  border-color: #2d3e50;
+}
+.TokenStatsTab .tokenStatsTable .rowHeader {
+  background-color: #e0e0e0;
+}
+.darkmode .TokenStatsTab .tokenStatsTable .rowHeader {
+  background-color: #2d3e50;
+}
+.TokenStatsTab .tokenStatsTable .rowOdd {
+  background-color: #ffffff;
+}
+.darkmode .TokenStatsTab .tokenStatsTable .rowOdd {
+  background-color: #2a323f;
+}
+.TokenStatsTab .tokenStatsTable .rowEven {
+  background-color: #f8f9fa;
+}
+.darkmode .TokenStatsTab .tokenStatsTable .rowEven {
+  background-color: #202c39;
+}
+.TokenStatsTab .tokenStatsTable .transactionMessage {
+  color: #666666;
+}
+.darkmode .TokenStatsTab .tokenStatsTable .transactionMessage {
+  color: #b3b3b3;
+}
+.TokenStatsTab .loadMoreButton {
+  all: unset;
+  outline: revert;
+  color: #0c6a93;
+  cursor: pointer;
+  margin-bottom: 4px;
+}
+.darkmode .TokenStatsTab .loadMoreButton {
+  color: #68b5f0;
+}
+.TokenStatsTab .loadMoreButton.disabled {
+  color: #666666;
+  cursor: default;
+}
+.darkmode .TokenStatsTab .loadMoreButton.disabled {
+  color: #b3b3b3;
+}
+
+.evolveMode#roomTabs .TokenStatsTab {
+  color: var(--text-primary);
+  padding: var(--spacing-2xl) var(--spacing-lg) 0 var(--spacing-lg);
+  max-width: 792px;
+  font-family: "UbuntuRegular", Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+}
+.evolveMode#roomTabs .TokenStatsTab .subNavContainer {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--background-button-grey-light-transparent);
+  border-radius: 8px;
+  padding: 12px;
+}
+.evolveMode#roomTabs .TokenStatsTab .subNavContainer .hrefColor {
+  color: var(--text-button-brand);
+  font-family: "UbuntuRegular", Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  line-height: 16px;
+}
+.evolveMode#roomTabs .TokenStatsTab .subNavContainer .separator {
+  align-self: center;
+  width: 1px;
+  height: 16px;
+  background-color: var(--border-medium);
+  color: transparent;
+  font-size: 0;
+  line-height: 0;
+  overflow: hidden;
+}
+.evolveMode#roomTabs .TokenStatsTab hr {
+  background: var(--border-low);
+  border: none;
+  height: 1px;
+  margin: var(--spacing-2xl) 0;
+}
+.evolveMode#roomTabs .TokenStatsTab .tokenBalanceContainer {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-xs);
+  justify-content: flex-start;
+  color: var(--text-primary);
+  padding-bottom: var(--spacing-sm);
+  font-family: "UbuntuRegular", Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+}
+.evolveMode#roomTabs .TokenStatsTab .tokenBalanceContainer .TokenWrapper {
+  display: flex;
+}
+.evolveMode#roomTabs .TokenStatsTab .tokenBalanceContainer .tokenBalance {
+  font-family: "UbuntuBold", Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+}
+.evolveMode#roomTabs .TokenStatsTab h2 {
+  color: var(--text-primary);
+  margin: 0;
+  padding: 0;
+  font-family: "UbuntuBold", Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+}
+.evolveMode#roomTabs .TokenStatsTab .secondaryText {
+  color: var(--text-secondary);
+}
+.evolveMode#roomTabs .TokenStatsTab p {
+  margin: 0;
+  padding: 0;
+}
+.evolveMode#roomTabs .TokenStatsTab .transferTokensContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: var(--spacing-lg);
+}
+.evolveMode#roomTabs .TokenStatsTab .transferTokensContainer .transferTokensInfo {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-xs);
+}
+.evolveMode#roomTabs .TokenStatsTab .transferTokensContainer .transferLink {
+  box-sizing: border-box;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  border-radius: var(--corner-radius-full);
+  border: 0;
+  cursor: pointer;
+  position: relative;
+  font-family: "UbuntuRegular", Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+}
+.evolveMode#roomTabs .TokenStatsTab .transferTokensContainer .transferLink:focus-visible {
+  outline: 2px solid var(--border-button-focused);
+  outline-offset: 2px;
+}
+.evolveMode#roomTabs .TokenStatsTab .transferTokensContainer .transferLink:disabled {
+  color: var(--text-button-neutral-disabled);
+  cursor: not-allowed;
+}
+.evolveMode#roomTabs .TokenStatsTab .transferTokensContainer .transferLink {
+  color: var(--text-button-white);
+}
+.evolveMode#roomTabs .TokenStatsTab .transferTokensContainer .transferLink:hover:not(:disabled) {
+  background-image: linear-gradient(0deg, var(--overlay-button-hover-bright) 0%, var(--overlay-button-hover-bright) 100%);
+}
+.evolveMode#roomTabs .TokenStatsTab .transferTokensContainer .transferLink:active:not(:disabled) {
+  background-image: linear-gradient(0deg, var(--overlay-button-press) 0%, var(--overlay-button-press) 100%);
+}
+.evolveMode#roomTabs .TokenStatsTab .transferTokensContainer .transferLink:disabled {
+  color: var(--text-button-primary-disabled);
+  background-color: var(--background-button-grey);
+}
+.evolveMode#roomTabs .TokenStatsTab .transferTokensContainer .transferLink {
+  background-color: var(--background-button-brand-primary);
+  padding: 6px var(--spacing-md);
+  gap: var(--spacing-xs);
+  font-family: "UbuntuRegular", Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  height: fit-content;
+}
+.evolveMode#roomTabs .TokenStatsTab table.tokenStatsTable {
+  border: none;
+  border-collapse: separate;
+  border-spacing: 0;
+  color: var(--text-primary);
+  width: 100%;
+  overflow: hidden;
+  border-radius: var(--spacing-xs);
+  font-family: "UbuntuRegular", Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  line-height: 16px;
+}
+.evolveMode#roomTabs .TokenStatsTab table.tokenStatsTable th,
+.evolveMode#roomTabs .TokenStatsTab table.tokenStatsTable td {
+  padding-left: var(--spacing-lg);
+  height: 30px;
+}
+.evolveMode#roomTabs .TokenStatsTab table.tokenStatsTable th a,
+.evolveMode#roomTabs .TokenStatsTab table.tokenStatsTable td a {
+  color: var(--text-brand-secondary);
+}
+.evolveMode#roomTabs .TokenStatsTab table.tokenStatsTable .rowHeader {
+  background: var(--background-mid-contrast);
+}
+.evolveMode#roomTabs .TokenStatsTab table.tokenStatsTable .rowEven {
+  background: var(--background-neutral);
+}
+.evolveMode#roomTabs .TokenStatsTab table.tokenStatsTable .rowOdd {
+  background: var(--background-button-grey-light);
+}
+.evolveMode#roomTabs .TokenStatsTab .tableSection {
+  margin-bottom: var(--spacing-2xl);
+}
+.evolveMode#roomTabs .TokenStatsTab .tableHeader {
+  margin: 0 0 var(--spacing-lg) 0;
+}
+.evolveMode#roomTabs .TokenStatsTab th + th,
+.evolveMode#roomTabs .TokenStatsTab td + td {
+  border-left: 1px solid var(--background-mid-contrast);
+}
+.evolveMode#roomTabs .TokenStatsTab .transactionMessage {
+  color: var(--text-secondary);
+}
+.evolveMode#roomTabs .TokenStatsTab .loadMoreButton {
+  color: var(--text-brand-secondary);
+  text-align: center;
+}
+.evolveMode#roomTabs .TokenStatsTab .loadMoreButton.disabled {
+  color: var(--text-secondary);
+}
+.evolveMode#roomTabs .TokenStatsTab .tableContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  height: 280px;
+  width: 100%;
+}
+
+.MembershipsTab .membershipLightText {
+  color: #717171;
+}
+.darkmode .MembershipsTab .membershipLightText {
+  color: #b3b3b3;
+}
+.MembershipsTab .membershipHeader {
+  border-bottom-color: #4c4c4c;
+  width: 640px;
+}
+.darkmode .MembershipsTab .membershipHeader {
+  color: #ffffff;
+  border-bottom-color: #6e6f70;
+}
+.MembershipsTab .username {
+  color: #e45900;
+}
+.MembershipsTab:has(.MembershipFeedbackForm) td {
+  vertical-align: top;
+}
+.MembershipsTab:has(.MembershipFeedbackForm) .membershipHeader {
+  width: 830px;
+}
+
+.evolveMode .MembershipsTab {
+  font-family: "UbuntuRegular", Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+}
+.evolveMode .MembershipsTab .membershipHeader {
+  margin: 0 0 var(--spacing-lg) 0;
+  font-family: "UbuntuBold", Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  line-height: 28px;
+}
+.evolveMode .MembershipsTab .membershipHeader:not(:first-child) {
+  margin: var(--spacing-2xl) 0 var(--spacing-lg) 0;
+}
+.evolveMode .MembershipsTab a {
+  color: var(--text-button-brand);
+}
+
+.evolveMode#roomTabs.darkmode .evolveMode.MembershipsTab {
+  color: var(--text-primary);
+}
+
+.SatisfactionRating {
+  background-color: #ffffff;
+}
+.darkmode .SatisfactionRating {
+  background-color: #2d3e50;
+}
+.SatisfactionRating.modern .satisfactionSpan {
+  text-shadow: none;
+}
+.SatisfactionRating.modern .voteText {
+  text-shadow: none;
+}
+.SatisfactionRating .satisfactionSpan {
+  color: #7f7f7f;
+  text-shadow: 1px 1px 0px #94d2e6;
+}
+.darkmode .SatisfactionRating .satisfactionSpan {
+  color: #b3b3b3;
+  text-shadow: none;
+}
+.SatisfactionRating .voteText {
+  text-shadow: 1px 1px 0px #bababa;
+}
+.darkmode .SatisfactionRating .voteText {
+  text-shadow: none;
+}
+.SatisfactionRating .highPercent {
+  color: #298a08;
+}
+.SatisfactionRating .mediumPercent {
+  color: #af5c01;
+}
+.SatisfactionRating .lowPercent {
+  color: #af0101;
+}
+.SatisfactionRating .commentDate {
+  color: #6c6c78;
+}
+.darkmode .SatisfactionRating .commentDate {
+  color: #a7a7a7;
+}
+.SatisfactionRating .ratingHistory {
+  border-color: #0c6a93;
+}
+.darkmode .SatisfactionRating .ratingHistory {
+  background-color: #1c2733;
+  border-color: #2d3e50;
+  color: #b3b3b3;
+}
+.SatisfactionRating .ratingHistory .positiveVote {
+  background-color: #eeeeee;
+  border-color: #888888;
+}
+.darkmode .SatisfactionRating .ratingHistory .positiveVote {
+  background-color: #2d3e50;
+  border-color: #2d3e50;
+}
+.SatisfactionRating .ratingHistory .negativeVote {
+  background-color: #ffe9e5;
+  border-color: #888888;
+}
+.darkmode .SatisfactionRating .ratingHistory .negativeVote {
+  border-color: #2d3e50;
+  background-color: #202c39;
+}
+
+.evolveMode .SatisfactionRating {
+  background-color: transparent;
+}
+
+.roomCard {
+  border-color: #acacac;
+}
+.darkmode .roomCard {
+  border-color: #202c39;
+}
+.roomCard .cardTitle {
+  border-bottom-color: #acacac;
+}
+.darkmode .roomCard .cardTitle {
+  border-bottom-color: #2d3e50;
+}
+.roomCard li.cams {
+  background: url(../../images/cam.svg?aee4a41ba664) no-repeat 0 50%;
+  background-size: auto;
+}
+.darkmode .roomCard li.cams {
+  background: url(../../images/cam_white.svg?282a760aab80) no-repeat 0 50%;
+  background-size: auto;
+}
+.roomCard li.location {
+  background: url(../../images/location.svg?5021cfc1ff61) no-repeat 0 50%;
+  background-size: auto;
+}
+.darkmode .roomCard li.location {
+  background: url(../../images/location_white.svg?339f27869359) no-repeat 0 50%;
+  background-size: auto;
+}
+.roomCard .age {
+  float: left;
+  color: #49494f;
+  padding: 0 6px 0 0;
+  font: 1em/1.333em "UbuntuMedium", Arial, Helvetica, sans-serif;
+}
+.darkmode .roomCard .age {
+  color: #b3b3b3;
+}
+.roomCard .age_gender_container {
+  display: flex;
+  height: 17px;
+}
+.roomCard .genderf,
+.roomCard .genderm,
+.roomCard .genderc,
+.roomCard .genders,
+.roomCard .genderx {
+  width: 14px;
+  height: 14px;
+  display: inline-block;
+  float: left;
+}
+.roomCard .genderf {
+  background: url(../../images/ico-female.svg?818c9c4c368f) no-repeat 100% 0;
+  background-size: contain;
+}
+.roomCard .genderm {
+  background: url(../../images/ico-male.svg?251793534c73) no-repeat 100% 0;
+  background-size: contain;
+}
+.roomCard .genderc {
+  background: url(../../images/ico-couple.svg?b74df354b80e) no-repeat 100% 0;
+  background-size: contain;
+}
+.roomCard .genders {
+  background: url(../../images/ico-trans.svg?4984008acb01) no-repeat 100% 0;
+  background-size: contain;
+}
+.roomCard .genderx {
+  background: url(../../images/ico-blank.png?c807e40114dc) no-repeat 100% 0;
+  background-size: contain;
+}
+
+.thumbnail_flag {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  padding-left: 6px;
+  margin-top: 2px;
+  height: 17px;
+}
+
+.thumbnail_flag .fi {
+  border-radius: 2px;
+  display: flex;
+}
+
+.notificationsModal {
+  background-color: #e0e0e0;
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.75);
+  color: #494949;
+}
+.darkmode .notificationsModal {
+  color: #6e6f70;
+  background-color: #202c39;
+  border: 1px solid #2a323f;
+  box-shadow: 0px 0px 32px rgba(0, 0, 0, 0.32);
+}
+.notificationsModal .divotTop .divotBackground {
+  border-bottom-color: #e0e0e0;
+}
+.darkmode .notificationsModal .divotTop .divotBackground {
+  border-bottom-color: #202c39;
+}
+.notificationsModal .divotTop .divotBorder {
+  border-bottom-color: #e0e0e0;
+}
+.darkmode .notificationsModal .divotTop .divotBorder {
+  border-bottom-color: #2a323f;
+}
+.notificationsModal .title {
+  color: #0c6a93;
+}
+.darkmode .notificationsModal .title {
+  color: #ffffff;
+}
+.notificationsModal .confirmButton:focus {
+  outline: -webkit-focus-ring-color auto 1px;
+}
+.darkmode .notificationsModal .confirmButton:is(textarea, input, button):is(:not(button, input[type=submit], input[type=button])) {
+  background-color: #202c39;
+}
+.darkmode .notificationsModal .confirmButton:is(textarea, input, button):focus {
+  outline: none;
+  box-shadow: 0 0 0 2px #68b5f0;
+}
+.darkmode .notificationsModal .confirmButton:is(select) {
+  background-color: #202c39;
+}
+.darkmode .notificationsModal .confirmButton:is(select):focus {
+  outline: 2px solid #68b5f0;
+}
+.notificationsModal .confirmButton, .darkmode .notificationsModal .confirmButton {
+  background-color: #0c6a93;
+  color: #ffffff;
+  border: 1px solid #0c6a93;
+  border-radius: 4px;
+}
+.notificationsModal .denyButton:focus {
+  outline: -webkit-focus-ring-color auto 1px;
+}
+.darkmode .notificationsModal .denyButton:is(textarea, input, button):is(:not(button, input[type=submit], input[type=button])) {
+  background-color: #202c39;
+}
+.darkmode .notificationsModal .denyButton:is(textarea, input, button):focus {
+  outline: none;
+  box-shadow: 0 0 0 2px #68b5f0;
+}
+.darkmode .notificationsModal .denyButton:is(select) {
+  background-color: #202c39;
+}
+.darkmode .notificationsModal .denyButton:is(select):focus {
+  outline: 2px solid #68b5f0;
+}
+.notificationsModal .denyButton {
+  background-color: transparent;
+  color: #494949;
+  border: none;
+}
+.darkmode .notificationsModal .denyButton {
+  color: #b3b3b3;
+}
+.notificationsModal .denyButton:hover {
+  text-decoration: underline;
+}
+
+.followButton:focus {
+  outline: -webkit-focus-ring-color auto 1px;
+}
+.darkmode .followButton:is(textarea, input, button):is(:not(button, input[type=submit], input[type=button])) {
+  background-color: #202c39;
+}
+.darkmode .followButton:is(textarea, input, button):focus {
+  outline: none;
+  box-shadow: 0 0 0 2px #68b5f0;
+}
+.darkmode .followButton:is(select) {
+  background-color: #202c39;
+}
+.darkmode .followButton:is(select):focus {
+  outline: 2px solid #68b5f0;
+}
+.followButton, .darkmode .followButton {
+  background-color: var(--wl-signup-bg-color, #f47321);
+  color: #ffffff;
+  border: 1px solid var(--wl-signup-alt-bg-color, #cd5d26);
+  border-radius: 4px;
+}
+.followButton:hover {
+  text-decoration: underline;
+}
+
+.unfollowButton {
+  color: #ffffff;
+  background-color: #8b8b8b;
+  border-color: #8b8b8b;
+  border-right-color: #474747;
+}
+.darkmode .unfollowButton {
+  color: #b3b3b3;
+  background-color: #202c39;
+  border-color: #2d3e50;
+}
+.unfollowButton:hover {
+  text-decoration: underline;
+}
+
+.notificationBtnMenu {
+  background-color: #fff;
+  color: #49494f;
+}
+.darkmode .notificationBtnMenu {
+  background-color: #1c2733;
+  color: #b3b3b3;
+}
+.notificationBtnMenu .notification-item {
+  border-color: #acacac;
+  color: #49494f;
+}
+.darkmode .notificationBtnMenu .notification-item {
+  border-color: #2d3e50;
+  color: #b3b3b3;
+}
+.notificationBtnMenu .notification-item.selected {
+  color: #f47321;
+}
+.notificationBtnMenu .notification-item:hover {
+  background-color: #fceadc;
+}
+.darkmode .notificationBtnMenu .notification-item:hover {
+  background-color: #885336;
+}
+.notificationBtnMenu .title {
+  background-color: #fafafa;
+  border-color: #acacac;
+}
+.darkmode .notificationBtnMenu .title {
+  background-color: #1c2733;
+  border-color: #2d3e50;
+  color: #ffffff;
+}
+.notificationBtnMenu .bookend {
+  border-color: #acacac;
+}
+.darkmode .notificationBtnMenu .bookend {
+  border-color: #2d3e50;
+}
+
+.FollowNotificationButton {
+  background-color: #8b8b8b;
+  border-color: #8b8b8b;
+}
+.darkmode .FollowNotificationButton {
+  color: #b3b3b3;
+  background-color: #202c39;
+  border-color: #2d3e50;
+}
+
+.notification-btn-icon.all {
+  background-image: url(../../images/follower/alarm-bell-ring-black.svg?e0f4045214c5);
+}
+.notification-btn-icon.all.static {
+  background-image: url(../../images/follower/alarm-bell-ring-white.svg?6adba4a48565);
+}
+.darkmode .notification-btn-icon.all {
+  background-image: url(../../images/follower/alarm-bell-ring-grey.svg?dbe47dc3d92a);
+}
+.notification-btn-icon.smart {
+  background-image: url(../../images/follower/alarm-bell-black.svg?281ea1ddd63e);
+}
+.notification-btn-icon.smart.static {
+  background-image: url(../../images/follower/alarm-bell-white.svg?6fc221c99185);
+}
+.darkmode .notification-btn-icon.smart {
+  background-image: url(../../images/follower/alarm-bell-grey.svg?41b1ce278423);
+}
+.notification-btn-icon.none {
+  background-image: url(../../images/follower/alarm-bell-off-black.svg?69c6917c7525);
+}
+.notification-btn-icon.none.static {
+  background-image: url(../../images/follower/alarm-bell-off-white.svg?a03b66ab9bcd);
+}
+.darkmode .notification-btn-icon.none {
+  background-image: url(../../images/follower/alarm-bell-off-grey.svg?f68550b4cde7);
+}
+
+#FollowSettingsModal .button {
+  background-color: #f47321;
+  color: #ffffff;
+  border-color: #cd5d26;
+}
+#FollowSettingsModal .textInput {
+  border-color: #acacac;
+  color: #525252;
+  background-color: #ffffff;
+}
+.darkmode #FollowSettingsModal .textInput {
+  color: #b3b3b3;
+  background-color: #1f2c39;
+  border-color: #2d3e50;
+}
+#FollowSettingsModal .popularBadge {
+  background-color: #e0e0e0;
+}
+.darkmode #FollowSettingsModal .popularBadge {
+  background-color: #1c2733;
+}
+#FollowSettingsModal .greenCheckbox {
+  background-color: #009900;
+}
+#FollowSettingsModal .errorMessage {
+  color: #cc0000;
+}
+#FollowSettingsModal .verifyLink {
+  color: #0c6a93;
+}
+.darkmode #FollowSettingsModal .verifyLink {
+  color: #68b5f0;
+}
+
+.fanclubButton:focus {
+  outline: -webkit-focus-ring-color auto 1px;
+}
+.darkmode .fanclubButton:is(textarea, input, button):is(:not(button, input[type=submit], input[type=button])) {
+  background-color: #202c39;
+}
+.darkmode .fanclubButton:is(textarea, input, button):focus {
+  outline: none;
+  box-shadow: 0 0 0 2px #68b5f0;
+}
+.darkmode .fanclubButton:is(select) {
+  background-color: #202c39;
+}
+.darkmode .fanclubButton:is(select):focus {
+  outline: 2px solid #68b5f0;
+}
+.fanclubButton, .darkmode .fanclubButton {
+  background-color: #009900;
+  color: #ffffff;
+  border: 1px solid #288a09;
+  border-radius: 4px;
+}
+.fanclubButton a {
+  color: #ffffff;
+}
+
+#satisfactionScore.modern.enabled {
+  text-shadow: none;
+}
+#satisfactionScore.modern.disabled {
+  color: #4c4c4c;
+  background-color: #c9c9c9;
+  text-shadow: none;
+}
+.darkmode #satisfactionScore.modern.disabled {
+  background-color: transparent;
+}
+#satisfactionScore.enabled {
+  background-color: #ffffff;
+  color: #0c6a93;
+  text-shadow: #94d2e6 1px 1px 0px;
+}
+.darkmode #satisfactionScore.enabled {
+  background-color: #2a323f;
+  color: #68b5f0;
+  text-shadow: none;
+}
+#satisfactionScore.disabled {
+  background-color: #bbbbbb;
+  color: #777777;
+  text-shadow: #bababa 1px 1px 0px;
+}
+.darkmode #satisfactionScore.disabled {
+  background-color: #202c39;
+  color: #6e6f70;
+  text-shadow: none;
+}
+.darkmode #satisfactionScore.disabled .satisfactionLabel {
+  color: #b3b3b3;
+}
+#satisfactionScore .highPercent {
+  color: #298a08;
+}
+#satisfactionScore .mediumPercent {
+  color: #af5c01;
+}
+#satisfactionScore .lowPercent {
+  color: #af0101;
+}
+
+#satisfactionComment {
+  background-color: var(--wl-bg-color, #ffffff);
+  border-color: #0c6a93;
+  color: var(--wl-text-color, #777777);
+}
+.darkmode #satisfactionComment {
+  background-color: #1c2733;
+  border-color: #1c2733;
+  color: #b3b3b3;
+}
+#satisfactionComment .divot .divotBorder {
+  border-color: #0c6a93;
+}
+.darkmode #satisfactionComment .divot .divotBorder {
+  border-color: #1c2733;
+}
+#satisfactionComment .divot .divotBackground {
+  border-color: #ffffff;
+}
+.darkmode #satisfactionComment .divot .divotBackground {
+  border-color: #1c2733;
+}
+#satisfactionComment .header {
+  color: var(--wl-h1-color, #0c6a93);
+  background-color: #e0e0e0;
+}
+.darkmode #satisfactionComment .header {
+  color: #ffffff;
+  background-color: #2d3e50;
+}
+#satisfactionComment .textBox:focus {
+  outline: -webkit-focus-ring-color auto 1px;
+}
+.darkmode #satisfactionComment .textBox:is(textarea, input, button):is(:not(button, input[type=submit], input[type=button])) {
+  background-color: #202c39;
+}
+.darkmode #satisfactionComment .textBox:is(textarea, input, button):focus {
+  outline: none;
+  box-shadow: 0 0 0 2px #68b5f0;
+}
+.darkmode #satisfactionComment .textBox:is(select) {
+  background-color: #202c39;
+}
+.darkmode #satisfactionComment .textBox:is(select):focus {
+  outline: 2px solid #68b5f0;
+}
+#satisfactionComment .textBox {
+  border-color: #777777;
+  color: #000000;
+}
+.darkmode #satisfactionComment .textBox {
+  border-color: #2d3e50;
+  color: #ffffff;
+  background-color: transparent;
+}
+#satisfactionComment .submitBtn:focus {
+  outline: -webkit-focus-ring-color auto 1px;
+}
+.darkmode #satisfactionComment .submitBtn:is(textarea, input, button):is(:not(button, input[type=submit], input[type=button])) {
+  background-color: #202c39;
+}
+.darkmode #satisfactionComment .submitBtn:is(textarea, input, button):focus {
+  outline: none;
+  box-shadow: 0 0 0 2px #68b5f0;
+}
+.darkmode #satisfactionComment .submitBtn:is(select) {
+  background-color: #202c39;
+}
+.darkmode #satisfactionComment .submitBtn:is(select):focus {
+  outline: 2px solid #68b5f0;
+}
+#satisfactionComment .submitBtn, .darkmode #satisfactionComment .submitBtn {
+  background-color: var(--wl-signup-bg-color, #f47321);
+  color: #ffffff;
+  border: 1px solid var(--wl-signup-alt-bg-color, #cd5d26);
+  border-radius: 4px;
+}
+
+.gender-tab.active a,
+.gender-tab a.active,
+a.gender-tab.active,
+div.gender-tab.active,
+.gender-tab a.hover,
+a.gender-tab.hover,
+div.gender-tab.hover,
+#main .top-section .sub-nav li.active a,
+#main .top-section .sub-nav li a.active,
+#main .top-section .sub-nav li a.hover,
+#main .top-section .sub-nav li a:hover:not(.hover-event) {
+  border: 1px solid #8bb3da;
+  background: #fff;
+  color: #f47321;
+  border-bottom-color: transparent;
+}
+.darkmode .gender-tab.active a,
+.darkmode .gender-tab a.active,
+.darkmode a.gender-tab.active,
+.darkmode div.gender-tab.active,
+.darkmode .gender-tab a.hover,
+.darkmode a.gender-tab.hover,
+.darkmode div.gender-tab.hover,
+.darkmode #main .top-section .sub-nav li.active a,
+.darkmode #main .top-section .sub-nav li a.active,
+.darkmode #main .top-section .sub-nav li a.hover,
+.darkmode #main .top-section .sub-nav li a:hover:not(.hover-event) {
+  color: #68b5f0;
+  border: 1px solid #2d3e50;
+  background-color: #17202a;
+  border-bottom-color: transparent;
+}
+
+.gender-tab.collapsed,
+.gender-tab.collapsed a {
+  background: transparent !important;
+  border: none !important;
+  border-bottom: 1px solid transparent !important;
+}
+.darkmode .gender-tab.collapsed {
+  background-color: transparent;
+}
+
+.gender-tab a,
+a.gender-tab,
+div.gender-tab,
+#main .top-section .sub-nav li a {
+  color: #0c6a93;
+  background: #dde9f5;
+  border-color: #8bb3da;
+}
+.darkmode .gender-tab a,
+.darkmode a.gender-tab,
+.darkmode div.gender-tab,
+.darkmode #main .top-section .sub-nav li a {
+  background-color: #202c39;
+  color: #b3b3b3;
+  border-color: #2d3e50;
+}
+.gender-tab a.hover:not(.active),
+a.gender-tab.hover:not(.active),
+div.gender-tab.hover:not(.active),
+#main .top-section .sub-nav li a.hover:not(.active) {
+  cursor: pointer;
+}
+.gender-tab a:hover:not(.hover-event, .active),
+a.gender-tab:hover:not(.hover-event, .active),
+div.gender-tab:hover:not(.hover-event, .active),
+#main .top-section .sub-nav li a:hover:not(.hover-event, .active) {
+  cursor: pointer;
+}
+.gender-tab a.active,
+a.gender-tab.active,
+div.gender-tab.active,
+#main .top-section .sub-nav li a.active {
+  cursor: default;
+}
+
+.darkmode .headline .buttons li.active a,
+.darkmode .headline .buttons li:hover a {
+  color: #68b5f0;
+  border-color: #2d3e50;
+}
+
+.darkmode .headline .buttons li a {
+  background-color: #202c39;
+  color: #b3b3b3;
+  border: 1px solid #2d3e50;
+  border-bottom-color: transparent;
+}
+
+.followedContainer a {
+  background-color: transparent;
+}
+
+.darkmode #main .top-section,
+.darkmode #main .headline .buttons {
+  background: #17202a;
+  border-bottom-color: #2d3e50;
+}
+#main .top-section #search_icon .search_svg,
+#main .headline .buttons #search_icon .search_svg {
+  width: 14px;
+  height: 14px;
+  display: inline-block;
+  position: relative;
+  top: 1px;
+  background-image: url(../../images/search.svg?515fad030780);
+  background-repeat: no-repeat;
+}
+.darkmode #main .top-section #search_icon .search_svg,
+.darkmode #main .headline .buttons #search_icon .search_svg {
+  background-image: url(../../images/search_dm.svg?3492defa25bc);
+}
+
+.darkmode .content_header .standout {
+  color: #68b5f0;
+}
+
+.darkmode #main .block {
+  background-color: #202c39;
+}
+.darkmode #main .block .info-user > div:not(:first-child) h2, .darkmode #main .block .info-user > div:not(:first-child) a {
+  color: #68b5f0 !important;
+}
+.darkmode #main .block .info-user > div:not(:first-child) .defaultTooltipColor {
+  color: #b3b3b3 !important;
+}
+.darkmode #main .block .previous_winners .form strong {
+  color: unset;
+}
+
+.previous_winners {
+  min-height: 800px;
+}
+
+#main .content .searching-overlay {
+  background-color: #f1f2f2;
+}
+.darkmode #main .content .searching-overlay {
+  background-color: #2a2c2e;
+}
+
+#roomTabs {
+  border: 1px solid #acacac;
+}
+#roomTabs.modern, .darkmode #roomTabs {
+  border: none;
+}
+#roomTabs {
+  background-color: #ffffff;
+  border-radius: 4px 4px 0 0;
+}
+.darkmode #roomTabs {
+  background-color: #202c39;
+}
+#roomTabs .tabBar {
+  background-color: #7f7f7f;
+}
+#roomTabs .tabBar.modern {
+  background-color: #c9c9c9;
+}
+.darkmode #roomTabs .tabBar {
+  background-color: #17202a;
+}
+#roomTabs .link {
+  color: #0c6a93;
+}
+.darkmode #roomTabs .link {
+  color: #68b5f0;
+}
+#roomTabs .label {
+  color: #0c6a93;
+}
+.darkmode #roomTabs .label {
+  color: #ffffff;
+}
+#roomTabs .contentText {
+  color: #000000;
+}
+#roomTabs .contentText.bioContentText {
+  padding-bottom: 9px;
+}
+.darkmode #roomTabs .contentText {
+  color: #b3b3b3;
+}
+#roomTabs .separator {
+  color: #222222;
+}
+.darkmode #roomTabs .separator {
+  color: rgb(179, 179, 179);
+}
+#roomTabs .fanclubMessage {
+  color: #494949;
+}
+.darkmode #roomTabs .fanclubMessage {
+  color: #b3b3b3;
+}
+#roomTabs .psContainer {
+  color: #0c6a93;
+}
+.darkmode #roomTabs .psContainer {
+  color: #68b5f0;
+}
+#roomTabs .previewBorder {
+  color: #cccccc;
+}
+.darkmode #roomTabs .previewBorder {
+  color: #2a2c2e;
+}
+
+.tabLink {
+  color: #4c4c4c;
+  background-color: #c9c9c9;
+}
+.darkmode .tabLink {
+  color: #b3b3b3;
+  background-color: #17202a;
+}
+.tabLink.tabOpen, .tabLink.active {
+  color: #f47321;
+  background-color: #ffffff;
+}
+.darkmode .tabLink.tabOpen, .darkmode .tabLink.active {
+  color: #f47321;
+  background-color: #202c39;
+}
+.tabLink.tabCollapsed {
+  background-color: transparent;
+}
+
+.room-tabs-dropdown-border {
+  border-color: rgb(127, 127, 127);
+}
+.room-tabs-dropdown-border.modern {
+  box-shadow: 0px 4px 13px rgba(0, 0, 0, 0.32);
+}
+.darkmode .room-tabs-dropdown-border {
+  border-color: #17202a;
+  box-shadow: 0px 4px 13px rgba(0, 0, 0, 0.32);
+}
+
+.opt-in-flag-display .checkboxComponent {
+  flex-shrink: 0;
+}
+.opt-in-flag-display {
+  display: flex;
+  height: auto;
+}
+
+span.auto-refill-section-strong {
+  font-family: UbuntuMedium, Arial, Helvetica, sans-serif;
+}
+
+.auto-refill-fieldset {
+  margin-left: -24px;
+  padding-left: 24px;
+  margin-right: -16px;
+  padding-right: 16px;
+  width: 100%;
+  padding-bottom: 20px;
+  padding-top: 15px;
+}
+
+@keyframes pulsate {
+  0% {
+    background-color: rgba(224, 224, 224, 0.3);
+  }
+  50% {
+    background-color: rgb(224, 224, 224);
+  }
+  100% {
+    background-color: rgba(224, 224, 224, 0.3);
+  }
+}
+@keyframes pulsate-darkmode {
+  0% {
+    background-color: rgba(3, 62, 88, 0.3);
+  }
+  50% {
+    background-color: rgb(3, 62, 88);
+  }
+  100% {
+    background-color: rgba(3, 62, 88, 0.3);
+  }
+}
+.pulsate-background {
+  animation: pulsate 1s ease-in-out infinite alternate;
+}
+.darkmode .pulsate-background {
+  animation: pulsate-darkmode 1s ease-in-out infinite alternate;
+}
+
+.auto-refill-legend {
+  margin-left: -24px;
+  padding-left: 24px !important;
+  margin-right: -16px;
+  padding-right: 16px !important;
+  width: 100%;
+  float: left;
+  display: flex;
+  align-items: center;
+}
+
+.auto-refill-newSign {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding: 4px 8px;
+  margin-left: 8px;
+  font-size: 12px;
+  color: #288a09;
+  background-color: #f3f9f1;
+  border-radius: 4px;
+}
+.darkmode .auto-refill-newSign {
+  background-color: #283932;
+  color: #599549;
+}
+.darkmode .auto-refill-newSign svg path {
+  fill: #599549;
+}
+
+.evolveMode#roomTabs {
+  border-radius: var(--corner-radius-md);
+  border: 1px solid var(--border-low);
+  background: var(--background-neutral);
+}
+.evolveMode#roomTabs .tabBar {
+  border-bottom: 1px solid var(--border-low);
+  background: transparent;
+  padding: 4px var(--spacing-sm) 0 var(--spacing-sm);
+}
+.evolveMode#roomTabs.darkmode .link {
+  color: #68b5f0;
+}
+.evolveMode#roomTabs.darkmode .label {
+  color: #ffffff;
+}
+.evolveMode#roomTabs.darkmode .GamesTab,
+.evolveMode#roomTabs.darkmode .MembershipsTab,
+.evolveMode#roomTabs.darkmode .SettingsTab,
+.evolveMode#roomTabs.darkmode .contentText,
+.evolveMode#roomTabs.darkmode .separator {
+  color: #b3b3b3;
+}
+.evolveMode#roomTabs.darkmode .EditBroadcastBioForm .activeChoicesContainer {
+  background-color: #202c39;
+}
+.evolveMode#roomTabs .SettingsTab:not(.evolveMode) .transparentCheckbox.checked,
+.evolveMode#roomTabs .EditBroadcastBioForm:not(.evolveMode) .transparentCheckbox.checked {
+  background-color: #0c6a93;
+}
+.evolveMode#roomTabs .ContestStats .link {
+  color: var(--text-button-brand);
+}
+.evolveMode#roomTabs .ContestStats .contentText {
+  color: var(--text-primary);
+}
+
+#TheaterModeRoomContents #video-mode,
+#TheaterModeRoomContents #fvm-link,
+#TheaterModeRoomContents .link {
+  color: #0c6a93;
+}
+.darkmode #TheaterModeRoomContents #video-mode,
+.darkmode #TheaterModeRoomContents #fvm-link,
+.darkmode #TheaterModeRoomContents .link {
+  color: #68b5f0;
+}
+#TheaterModeRoomContents .styledDiv {
+  font-size: 12px;
+  padding: 3px;
+  margin: 5px 0;
+  border-radius: 2px;
+  line-height: 16px;
+  background-color: #cccccc;
+  border-color: #acacac;
+}
+.darkmode #TheaterModeRoomContents .styledDiv {
+  background-color: #202c39;
+  border-color: #2d3e50;
+}
+#TheaterModeRoomContents .sendTipButton:focus {
+  outline: -webkit-focus-ring-color auto 1px;
+}
+.darkmode #TheaterModeRoomContents .sendTipButton:is(textarea, input, button):is(:not(button, input[type=submit], input[type=button])) {
+  background-color: #202c39;
+}
+.darkmode #TheaterModeRoomContents .sendTipButton:is(textarea, input, button):focus {
+  outline: none;
+  box-shadow: 0 0 0 2px #68b5f0;
+}
+.darkmode #TheaterModeRoomContents .sendTipButton:is(select) {
+  background-color: #202c39;
+}
+.darkmode #TheaterModeRoomContents .sendTipButton:is(select):focus {
+  outline: 2px solid #68b5f0;
+}
+#TheaterModeRoomContents .sendTipButton, .darkmode #TheaterModeRoomContents .sendTipButton {
+  background-color: #009900;
+  color: #ffffff;
+  border: 1px solid #288a09;
+  border-radius: 4px;
+}
+#TheaterModeRoomContents .sendDMButton:focus {
+  outline: -webkit-focus-ring-color auto 1px;
+}
+.darkmode #TheaterModeRoomContents .sendDMButton:is(textarea, input, button):is(:not(button, input[type=submit], input[type=button])) {
+  background-color: #202c39;
+}
+.darkmode #TheaterModeRoomContents .sendDMButton:is(textarea, input, button):focus {
+  outline: none;
+  box-shadow: 0 0 0 2px #68b5f0;
+}
+.darkmode #TheaterModeRoomContents .sendDMButton:is(select) {
+  background-color: #202c39;
+}
+.darkmode #TheaterModeRoomContents .sendDMButton:is(select):focus {
+  outline: 2px solid #68b5f0;
+}
+#TheaterModeRoomContents .sendDMButton, .darkmode #TheaterModeRoomContents .sendDMButton {
+  background-color: var(--wl-signup-bg-color, #f47321);
+  color: #ffffff;
+  border: 1px solid var(--wl-signup-alt-bg-color, #cd5d26);
+  border-radius: 4px;
+}
+
+.evolveMode #TheaterModeRoomContents .styledDiv {
+  background-color: var(--background-neutral);
+  padding: var(--spacing-xs);
+  border-radius: var(--corner-radius-md);
+  border: 1px solid var(--border-low);
+}
+.evolveMode #TheaterModeRoomContents .styledDiv a {
+  color: var(--text-button-brand);
+}
+.evolveMode #TheaterModeRoomContents .offlineButtonWrapper {
+  display: flex;
+  flex: 0 0 auto;
+  gap: 8px;
+}
+.evolveMode #TheaterModeRoomContents .offlineButtonWrapper .iconWrapper {
+  display: flex;
+  align-items: center;
+}
+.evolveMode #TheaterModeRoomContents .offlineButtonWrapper .sendTipButton,
+.evolveMode #TheaterModeRoomContents .offlineButtonWrapper .sendDMButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 auto;
+  gap: var(--spacing-xs);
+  border-radius: var(--corner-radius-full);
+  border: none;
+  padding: 6px var(--spacing-md);
+  position: relative;
+  cursor: pointer;
+  text-align: center;
+  text-transform: none;
+  font-family: "UbuntuRegular", Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+}
+.evolveMode #TheaterModeRoomContents .offlineButtonWrapper .sendTipButton.disabled,
+.evolveMode #TheaterModeRoomContents .offlineButtonWrapper .sendDMButton.disabled {
+  background-color: var(--background-button-grey);
+  color: var(--text-button-white);
+  cursor: not-allowed;
+}
+.evolveMode #TheaterModeRoomContents .offlineButtonWrapper .sendTipButton:hover:not(.evolveMode #TheaterModeRoomContents .offlineButtonWrapper .sendTipButton.disabled,
+.evolveMode #TheaterModeRoomContents .offlineButtonWrapper .sendDMButton.disabled),
+.evolveMode #TheaterModeRoomContents .offlineButtonWrapper .sendDMButton:hover:not(.evolveMode #TheaterModeRoomContents .offlineButtonWrapper .sendTipButton.disabled,
+.evolveMode #TheaterModeRoomContents .offlineButtonWrapper .sendDMButton.disabled) {
+  background-image: linear-gradient(0deg, var(--overlay-button-hover) 0%, var(--overlay-button-hover) 100%);
+}
+.evolveMode #TheaterModeRoomContents .offlineButtonWrapper .sendTipButton:active:not(.evolveMode #TheaterModeRoomContents .offlineButtonWrapper .sendTipButton.disabled,
+.evolveMode #TheaterModeRoomContents .offlineButtonWrapper .sendDMButton.disabled),
+.evolveMode #TheaterModeRoomContents .offlineButtonWrapper .sendDMButton:active:not(.evolveMode #TheaterModeRoomContents .offlineButtonWrapper .sendTipButton.disabled,
+.evolveMode #TheaterModeRoomContents .offlineButtonWrapper .sendDMButton.disabled) {
+  background-image: linear-gradient(0deg, var(--overlay-button-press) 0%, var(--overlay-button-press) 100%);
+}
+.evolveMode #TheaterModeRoomContents .offlineButtonWrapper .sendTipButton {
+  background: var(--background-button-brand-primary);
+  color: var(--text-button-white);
+}
+.evolveMode #TheaterModeRoomContents .offlineButtonWrapper .sendDMButton {
+  color: var(--text-button-neutral);
+  background: var(--background-button-grey-light-transparent);
+  backdrop-filter: var(--blur-mid-backdrop-filter);
+  font-family: "UbuntuRegular", Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+#AppPanelTable {
+  color: #000000;
+}
+.darkmode #AppPanelTable {
+  color: #b3b3b3;
+}
+#AppPanelTable .rowOne,
+#AppPanelTable .rowThree {
+  background-color: #d5ebf8;
+}
+.darkmode #AppPanelTable .rowOne,
+.darkmode #AppPanelTable .rowThree {
+  background-color: #1c2733;
+}
+#AppPanelTable .rowTwo {
+  background-color: #f2f9fd;
+}
+.darkmode #AppPanelTable .rowTwo {
+  background-color: #2d3e50;
+}
+#AppPanelTable .threeRows-11-21-31 {
+  color: #0c6a93;
+}
+.darkmode #AppPanelTable .threeRows-11-21-31 {
+  color: #68b5f0;
+}
+#AppPanelTable .threeRowsOfLabels {
+  color: #057205;
+}
+.darkmode #AppPanelTable .threeRowsOfLabels {
+  color: #009900;
+}
+
+.evolveMode .AppPanelTableWrapper {
+  background: var(--background-neutral);
+  border: 1px solid var(--border-low);
+  border-radius: var(--spacing-sm);
+  overflow: hidden;
+  max-height: fit-content;
+}
+.evolveMode #AppPanelTable {
+  font-family: "UbuntuRegular", Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  line-height: 16px;
+  color: var(--text-primary);
+  border-style: hidden;
+}
+.evolveMode #AppPanelTable tr {
+  border: 1px solid var(--border-low);
+}
+.evolveMode #AppPanelTable tr td {
+  color: var(--text-secondary);
+}
+.evolveMode #AppPanelTable tr th {
+  font-family: "UbuntuMedium", Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  line-height: 16px;
+}
+.evolveMode #AppPanelTable .rowOne,
+.evolveMode #AppPanelTable .rowThree {
+  background: var(--overlay-button-brand-secondary-hover);
+}
+.evolveMode #AppPanelTable .rowTwo {
+  background: var(--background-neutral);
+}
+.evolveMode #AppPanelTable .threeRows-11-21-31 {
+  color: var(--text-brand-secondary);
+}
+.evolveMode #AppPanelTable .threeRowsOfLabels {
+  color: var(--background-system-success);
+}
+
+/**
+ * Generic mixins
+ */
+.promoteRoomLink {
+  margin: 2px 0 0 0;
+}
+.promoteRoomLink.disabled {
+  cursor: pointer !important;
+}
+
+.promoteDisabledModal {
+  width: 306px;
+  background-color: #ffffff;
+  border-radius: 4px;
+  box-sizing: border-box;
+  overflow: hidden;
+  -webkit-box-shadow: 0 0 16px rgba(0, 0, 0, 0.16);
+  -moz-box-shadow: 0 0 16px rgba(0, 0, 0, 0.16);
+  -ms-box-shadow: 0 0 16px rgba(0, 0, 0, 0.16);
+  -o-box-shadow: 0 0 16px rgba(0, 0, 0, 0.16);
+  box-shadow: 0 0 16px rgba(0, 0, 0, 0.16);
+}
+.promoteDisabledModal .title {
+  color: #0c6a93;
+  font-family: "UbuntuBold", Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  padding: 14px 18px 5px;
+}
+.promoteDisabledModal .description {
+  color: #525252;
+  font-family: "UbuntuRegular", Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  padding: 5px 18px 14px;
+}
+.promoteDisabledModal .buttonDiv {
+  background-color: #f8f9fa;
+  border-top: 1px solid #efefef;
+  height: 45px;
+}
+.promoteDisabledModal .buttonDiv .okButton {
+  background-color: #0c6a93;
+  border: 1px solid #033e58;
+  color: #ffffff;
+  border-radius: 4px;
+  float: right;
+  font-family: "UbuntuRegular", Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  line-height: 16px;
+  height: 23px;
+  width: 74px;
+  text-align: center;
+  vertical-align: middle;
+  padding: 3px;
+  box-sizing: border-box;
+  margin-right: 10px;
+  margin-top: 11px;
+  cursor: pointer;
+}
+
+.darkmode .promoteDisabledModal,
+.darkMode .promoteDisabledModal {
+  background-color: #202c39;
+  -webkit-box-shadow: 0 0 32px rgba(0, 0, 0, 0.8);
+  -moz-box-shadow: 0 0 32px rgba(0, 0, 0, 0.8);
+  -ms-box-shadow: 0 0 32px rgba(0, 0, 0, 0.8);
+  -o-box-shadow: 0 0 32px rgba(0, 0, 0, 0.8);
+  box-shadow: 0 0 32px rgba(0, 0, 0, 0.8);
+}
+.darkmode .promoteDisabledModal .title,
+.darkMode .promoteDisabledModal .title {
+  color: #ffffff;
+}
+.darkmode .promoteDisabledModal .description,
+.darkMode .promoteDisabledModal .description {
+  color: #b3b3b3;
+}
+.darkmode .promoteDisabledModal .buttonDiv,
+.darkMode .promoteDisabledModal .buttonDiv {
+  background-color: #1c2733;
+  border-color: #2b323f;
+}
+
+.promoteRoomConfirmation {
+  border-radius: 4px;
+  overflow: hidden;
+  color: #525252;
+  background-color: #ffffff;
+  font-size: 12px;
+  font-family: "UbuntuRegular", Arial, Helvetica, sans-serif;
+  width: 249px;
+  border: 1px solid #efefef;
+  -webkit-box-shadow: 0 0 16px rgba(0, 0, 0, 0.16);
+  -moz-box-shadow: 0 0 16px rgba(0, 0, 0, 0.16);
+  -ms-box-shadow: 0 0 16px rgba(0, 0, 0, 0.16);
+  -o-box-shadow: 0 0 16px rgba(0, 0, 0, 0.16);
+  box-shadow: 0 0 16px rgba(0, 0, 0, 0.16);
+}
+.promoteRoomConfirmation .title {
+  height: 33px;
+  background-color: #f8f9fa;
+  color: #222222;
+  font-size: 14px;
+  box-sizing: border-box;
+  padding: 9px 14px;
+}
+.promoteRoomConfirmation .description {
+  line-height: 18px;
+  padding: 10px 14px;
+}
+.promoteRoomConfirmation .price {
+  color: #0c6a93;
+  font-family: "UbuntuBold", Arial, Helvetica, sans-serif;
+  padding: 3px 14px;
+  text-transform: capitalize;
+}
+.promoteRoomConfirmation .buttonDiv {
+  padding: 12px 14px;
+}
+.promoteRoomConfirmation .buttonDiv .notNowButton {
+  display: inline-block;
+  font-size: 14px;
+  height: 32px;
+  padding: 7px 8px;
+  box-sizing: border-box;
+  cursor: pointer;
+  border-radius: 4px;
+  border: 1px solid #525252;
+}
+.promoteRoomConfirmation .buttonDiv .promoteButton {
+  display: inline-block;
+  font-size: 14px;
+  height: 32px;
+  padding: 7px 8px;
+  box-sizing: border-box;
+  cursor: pointer;
+  border-radius: 4px;
+  border: 1px solid #cd5d26;
+  background-color: #f47321;
+  color: #ffffff;
+  margin-left: 8px;
+}
+
+.darkmode .promoteRoomConfirmation,
+.darkMode .promoteRoomConfirmation {
+  background-color: #202c39;
+  color: #b3b3b3;
+  border-color: #2a323f;
+}
+.darkmode .promoteRoomConfirmation .title,
+.darkMode .promoteRoomConfirmation .title {
+  background-color: #17202a;
+  color: #ffffff;
+}
+.darkmode .promoteRoomConfirmation .price,
+.darkMode .promoteRoomConfirmation .price {
+  color: #68b5f0;
+}
+.darkmode .promoteRoomConfirmation .buttonDiv .notNowButton,
+.darkMode .promoteRoomConfirmation .buttonDiv .notNowButton {
+  color: #ffffff;
+  border-color: #525252;
+}
+
+.promoBioHeaderText {
+  margin-right: 6px;
+}
+
+#VideoPanel {
+  border: 1px solid #acacac;
+}
+#VideoPanel.modern, .darkmode #VideoPanel {
+  border: none;
+}
+#VideoPanel {
+  background-color: #ffffff;
+  border-radius: 2px;
+}
+.darkmode #VideoPanel {
+  background-color: #202c39;
+  border: 1px solid transparent;
+}
+.darkmode #VideoPanel .roomSubject {
+  color: #ffffff;
+}
+#VideoPanel .reportAbuseLink a {
+  color: #0c6a93;
+}
+.darkmode #VideoPanel .reportAbuseLink a {
+  color: #68b5f0;
+}
+#VideoPanel .playerTitleBar a.reportRoom {
+  text-transform: uppercase;
+}
+#VideoPanel .currentBalance {
+  border-bottom: 1px solid #000000;
+}
+.darkmode #VideoPanel .currentBalance {
+  border-bottom: 1px solid #2d3e50;
+}
+#VideoPanel .panelLink {
+  color: #0c6a93;
+  line-height: 1.3;
+  display: block;
+  max-width: 130px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  cursor: pointer;
+}
+.darkmode #VideoPanel .panelLink {
+  color: #68b5f0;
+}
+#VideoPanel .panelLink:hover:not(.disabled) {
+  text-decoration: underline;
+}
+#VideoPanel .panelLink.disabled {
+  color: #b3b3b3;
+  cursor: default;
+}
+#VideoPanel .sendTipButton:focus {
+  outline: -webkit-focus-ring-color auto 1px;
+}
+.darkmode #VideoPanel .sendTipButton:is(textarea, input, button):is(:not(button, input[type=submit], input[type=button])) {
+  background-color: #202c39;
+}
+.darkmode #VideoPanel .sendTipButton:is(textarea, input, button):focus {
+  outline: none;
+  box-shadow: 0 0 0 2px #68b5f0;
+}
+.darkmode #VideoPanel .sendTipButton:is(select) {
+  background-color: #202c39;
+}
+.darkmode #VideoPanel .sendTipButton:is(select):focus {
+  outline: 2px solid #68b5f0;
+}
+#VideoPanel .sendTipButton, .darkmode #VideoPanel .sendTipButton {
+  background-color: #009900;
+  color: #ffffff;
+  border: 1px solid #288a09;
+  border-radius: 4px;
+}
+
+.roomSubjectTooltip {
+  border-color: #000;
+  background-color: #fff;
+}
+.darkmode .roomSubjectTooltip {
+  border-color: #fff;
+  background-color: rgb(32, 34, 35);
+}
+
+.evolveMode #VideoPanel {
+  background-color: var(--background-neutral);
+  border: 1px solid var(--border-low);
+  border-radius: var(--corner-radius-md);
+}
+.evolveMode #VideoPanel .reportAbuseLink a,
+.evolveMode #VideoPanel .panelLink {
+  color: var(--text-button-brand);
+}
+.evolveMode #VideoPanel .currentBalance {
+  color: var(--text-primary);
+  border-bottom: 1px solid var(--text-primary);
+}
+.evolveMode #VideoPanel .bottomSection {
+  margin: var(--spacing-md) var(--spacing-lg);
+  gap: var(--spacing-lg);
+}
+@media (max-width: 954px) {
+  .evolveMode #VideoPanel [data-paction=CurrentShowBuyBox] {
+    height: auto !important;
+  }
+}
+
+.resizeHandle {
+  background: #e0e0e0 url(../../tsdefaultassets/resize_arrows.svg?0421601a463a) no-repeat center/325%;
+}
+.resizeHandle:hover {
+  background-image: url(../../tsdefaultassets/resize_video.svg?44c622f3f81c);
+}
+.darkmode .resizeHandle {
+  background: #17202a url(../../tsdefaultassets/resize_arrows_dm.svg?111a200376fb) no-repeat center/325%;
+}
+.darkmode .resizeHandle:hover {
+  background-image: url(../../tsdefaultassets/resize_video_dm.svg?cc04ec06f40b);
+}
+
+.evolveMode .resizeHandle {
+  background: none;
+  padding: 0 3px;
+}
+.evolveMode .resizeHandle:hover .resizeHandle__indicatorContainer {
+  visibility: visible;
+}
+.evolveMode .resizeHandle__indicatorContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: center;
+  width: 6px;
+  height: 100%;
+  visibility: hidden;
+}
+.evolveMode .resizeHandle__indicatorBar {
+  background: var(--border-high);
+  border-radius: var(--corner-radius-full);
+  width: 2px;
+  height: 40px;
+  flex: 0 0 1;
+}
+
+#AbuseReport {
+  color: #454545;
+}
+.darkmode #AbuseReport {
+  color: #b3b3b3;
+}
+#AbuseReport .abuseInput:focus {
+  outline: -webkit-focus-ring-color auto 1px;
+}
+.darkmode #AbuseReport .abuseInput:is(textarea, input, button):is(:not(button, input[type=submit], input[type=button])) {
+  background-color: #202c39;
+}
+.darkmode #AbuseReport .abuseInput:is(textarea, input, button):focus {
+  outline: none;
+  box-shadow: 0 0 0 2px #68b5f0;
+}
+.darkmode #AbuseReport .abuseInput:is(select) {
+  background-color: #202c39;
+}
+.darkmode #AbuseReport .abuseInput:is(select):focus {
+  outline: 2px solid #68b5f0;
+}
+#AbuseReport .abuseInput {
+  border-color: #4b4c4b;
+}
+.darkmode #AbuseReport .abuseInput {
+  color: #ffffff !important;
+  border-color: #2d3e50;
+}
+.darkmode #AbuseReport .abuseInput#abuse-category {
+  -webkit-appearance: menulist;
+}
+
+#AbuseReportModal {
+  background-color: #ffffff;
+  border-color: #0c6a93;
+}
+.darkmode #AbuseReportModal {
+  background-color: #1c2733;
+  border-color: #17202a;
+  box-shadow: 0px 0px 32px rgba(0, 0, 0, 0.32);
+}
+#AbuseReportModal .header {
+  color: #0c6a93;
+  background-color: #e0e0e0;
+}
+.darkmode #AbuseReportModal .header {
+  color: #ffffff;
+  background-color: #2d3e50;
+}
+#AbuseReportModal .divot .divotBorder {
+  border-bottom-color: #0c6a93;
+}
+.darkmode #AbuseReportModal .divot .divotBorder {
+  border-bottom-color: #17202a;
+}
+#AbuseReportModal .divot .divotBackground {
+  border-bottom-color: #e0e0e0;
+}
+.darkmode #AbuseReportModal .divot .divotBackground {
+  border-bottom-color: #2d3e50;
+}
+
+.evolveMode .roomStatusNotifier {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--spacing-xl);
+}
+.evolveMode .roomStatusNotifier .roomStatusNotifier__header,
+.evolveMode .roomStatusNotifier .roomStatusNotifier__body {
+  text-align: center;
+  max-width: 360px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.evolveMode .roomStatusNotifier .roomStatusNotifier__header {
+  font-family: "UbuntuBold", Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  line-height: 28px;
+  color: var(--text-primary);
+}
+.evolveMode .roomStatusNotifier .roomStatusNotifier__body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--spacing-xl);
+}
+.evolveMode .roomStatusNotifier .roomStatusNotifier__text,
+.evolveMode .roomStatusNotifier .roomStatusNotifier__spyDisabledText,
+.evolveMode .roomStatusNotifier .roomStatusNotifier__moreRoomsLink,
+.evolveMode .roomStatusNotifier .roomStatusNotifier__joinShowLink {
+  font-family: "UbuntuRegular", Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+}
+.evolveMode .roomStatusNotifier .roomStatusNotifier__text,
+.evolveMode .roomStatusNotifier .roomStatusNotifier__spyDisabledText {
+  color: var(--text-secondary);
+}
+.evolveMode .roomStatusNotifier .roomStatusNotifier__moreRoomsLink,
+.evolveMode .roomStatusNotifier .roomStatusNotifier__joinShowLink {
+  color: var(--text-button-brand);
+  text-align: center;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: var(--spacing-xs);
+  padding: var(--spacing-xs) var(--spacing-lg);
+  border-radius: var(--corner-radius-full);
+  border: 1px solid var(--border-button-neutral);
+  background: var(--background-button-neutral-transparent);
+  backdrop-filter: var(--blur-mid-backdrop-filter);
+}
+.evolveMode .roomStatusNotifier .roomStatusNotifier__moreRoomsLink:hover,
+.evolveMode .roomStatusNotifier .roomStatusNotifier__joinShowLink:hover {
+  background: var(--overlay-button-brand-secondary-hover);
+}
+.evolveMode .roomStatusNotifier .roomStatusNotifier__moreRoomsLink:active,
+.evolveMode .roomStatusNotifier .roomStatusNotifier__joinShowLink:active {
+  background: var(--overlay-button-brand-secondary-press);
+}
+.evolveMode .roomStatusNotifier .roomStatusNotifier__fanClubJoinLink {
+  font-family: "UbuntuRegular", Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--text-button-white);
+  text-align: center;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: var(--spacing-sm) var(--spacing-lg);
+  border-radius: var(--corner-radius-full);
+  background: var(--background-button-fanclub);
+}
+.evolveMode .roomStatusNotifier .roomStatusNotifier__fanClubJoinLink:hover {
+  background: linear-gradient(0deg, var(--overlay-button-hover) 0%, var(--overlay-button-hover) 100%), var(--background-button-fanclub);
+}
+.evolveMode .roomStatusNotifier .roomStatusNotifier__fanClubJoinLink:active {
+  background: linear-gradient(0deg, var(--overlay-button-press) 0%, var(--overlay-button-press) 100%), var(--background-button-fanclub);
+}
+
+.evolveMode .roomStatusNotifier--mobile {
+  gap: var(--spacing-sm);
+}
+.evolveMode .roomStatusNotifier--mobile .roomStatusNotifier__header {
+  font-family: "UbuntuBold", Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+}
+.evolveMode .roomStatusNotifier--mobile .roomStatusNotifier__body {
+  gap: var(--spacing-sm);
+}
+.evolveMode .roomStatusNotifier--mobile .roomStatusNotifier__text,
+.evolveMode .roomStatusNotifier--mobile .roomStatusNotifier__spyDisabledText {
+  font-family: "UbuntuRegular", Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  line-height: 16px;
+}
+.evolveMode .roomStatusNotifier--mobile .roomStatusNotifier__moreRoomsLink,
+.evolveMode .roomStatusNotifier--mobile .roomStatusNotifier__joinShowLink,
+.evolveMode .roomStatusNotifier--mobile .roomStatusNotifier__fanClubJoinLink {
+  padding: var(--spacing-xs) var(--spacing-md);
+}
+
+.BaseRoomContents {
+  border: 1px solid #acacac;
+}
+.BaseRoomContents.modern, .darkmode .BaseRoomContents {
+  border: none;
+}
+.BaseRoomContents {
+  background-color: #e0e0e0;
+}
+.darkmode .BaseRoomContents {
+  background-color: #17202a;
+}
+.BaseRoomContents.noBackground {
+  background: none;
+}
+.BaseRoomContents {
+  border-radius: 4px;
+}
+.BaseRoomContents .offlineContentContainer {
+  background-color: #e0e0e0;
+}
+.darkmode .BaseRoomContents .offlineContentContainer {
+  background: none;
+}
+.BaseRoomContents .offlineRoomNotice {
+  color: #0c6a93;
+}
+.darkmode .BaseRoomContents .offlineRoomNotice {
+  color: #68b5f0;
+}
+.BaseRoomContents .topSectionWrapper {
+  background-color: #e0e0e0;
+}
+.darkmode .BaseRoomContents .topSectionWrapper {
+  background-color: #17202a;
+}
+.darkmode .BaseRoomContents {
+  border: 1px solid transparent;
+}
+
+.evolveMode.BaseRoomContents {
+  background-color: transparent;
+  border: none;
+}
+.evolveMode.BaseRoomContents .topSectionWrapper {
+  background-color: transparent;
+}
+.evolveMode.BaseRoomContents .offlineContentContainer {
+  background: var(--background-neutral);
+  border-radius: var(--corner-radius-md);
+  padding: var(--spacing-md) var(--spacing-lg);
+}
+.evolveMode.BaseRoomContents .offlineContentContainer .offlineRoomNotice {
+  color: var(--text-primary);
+  margin-bottom: var(--spacing-md);
+  font-family: "UbuntuMedium", Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.draggableCanvasChatWindow .chatInnerDiv {
+  background-color: rgba(0, 0, 0, 0.6);
+  border-color: #7f7f7f;
+}
+.darkmode .draggableCanvasChatWindow .chatInnerDiv {
+  border-color: #1c2733;
+}
+.draggableCanvasChatWindow .chatInnerDiv.evolveMode {
+  background: var(--background-black-light-transparent, rgba(16, 16, 16, 0.48));
+  clip-path: inset(-9999px 0 0 0 round var(--corner-radius-md));
+}
+.draggableCanvasChatWindow .chatInnerDiv.evolveMode > .closeButton {
+  position: absolute;
+  right: 4px;
+  top: 4px;
+  z-index: 1;
+}
+
+.desktopPmCanvas .chatInnerDiv.evolveMode,
+.desktopPmCanvasInbox .chatInnerDiv.evolveMode {
+  border: none;
+  border-radius: var(--corner-radius-md, 12px);
+  background: var(--background-black-light-transparent, rgba(16, 16, 16, 0.48));
+}
+
+.startShowComponent {
+  background-color: #f3f3f3;
+  border-color: #dedede;
+}
+.darkmode .startShowComponent {
+  background-color: #2d3e50;
+  border-color: #2a323f;
+}
+.startShowComponent .showsHeader {
+  color: #033e58;
+}
+.darkmode .startShowComponent .showsHeader {
+  color: #68b5f0;
+}
+.startShowComponent .showsButton:focus {
+  outline: -webkit-focus-ring-color auto 1px;
+}
+.darkmode .startShowComponent .showsButton:is(textarea, input, button):is(:not(button, input[type=submit], input[type=button])) {
+  background-color: #202c39;
+}
+.darkmode .startShowComponent .showsButton:is(textarea, input, button):focus {
+  outline: none;
+  box-shadow: 0 0 0 2px #68b5f0;
+}
+.darkmode .startShowComponent .showsButton:is(select) {
+  background-color: #202c39;
+}
+.darkmode .startShowComponent .showsButton:is(select):focus {
+  outline: 2px solid #68b5f0;
+}
+.startShowComponent .showsButton, .darkmode .startShowComponent .showsButton {
+  background-color: #0c6a93;
+  color: #ffffff;
+  border: 1px solid #0c6a93;
+  border-radius: 4px;
+}
+.startShowComponent .tokensRequirement {
+  color: #49494f;
+}
+.darkmode .startShowComponent .tokensRequirement {
+  color: #ffffff;
+}
+.startShowComponent .minutesRequirement,
+.startShowComponent .usersRequirement {
+  color: #999999;
+}
+.darkmode .startShowComponent .minutesRequirement,
+.darkmode .startShowComponent .usersRequirement {
+  color: #9a9a9a;
+}
+.startShowComponent .showsFooter {
+  color: #49494f;
+}
+.darkmode .startShowComponent .showsFooter {
+  color: #ffffff;
+}
+
+.cancelShowComponent .tokenTextArea {
+  color: rgb(73, 73, 73);
+}
+.darkmode .cancelShowComponent .tokenTextArea {
+  color: rgb(179, 179, 179);
+}
+.cancelShowComponent .cancelShowButton {
+  text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.25);
+  background-color: #fd5035;
+  color: #ffffff;
+}
+.cancelShowComponent .cancelShowButton.cancelShowButtonGradient {
+  background: linear-gradient(180deg, #fd5035 16.39%, #c51b01 86.03%);
+}
+
+.evolveMode .startShowComponent {
+  background: none;
+  padding: 12px 16px;
+  border: none;
+}
+.evolveMode .startShowComponent .showsHeader {
+  display: none;
+}
+.evolveMode .startShowComponent .showsFooter {
+  font-family: "UbuntuRegular", Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  line-height: 16px;
+  color: var(--text-secondary);
+  text-align: left;
+  margin: 5px 0px 12px;
+}
+.evolveMode .startShowComponent .showsButton {
+  box-sizing: border-box;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  border-radius: var(--corner-radius-full);
+  border: 0;
+  cursor: pointer;
+  position: relative;
+  font-family: "UbuntuRegular", Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+}
+.evolveMode .startShowComponent .showsButton:focus-visible {
+  outline: 2px solid var(--border-button-focused);
+  outline-offset: 2px;
+}
+.evolveMode .startShowComponent .showsButton:disabled {
+  color: var(--text-button-neutral-disabled);
+  cursor: not-allowed;
+}
+.evolveMode .startShowComponent .showsButton {
+  color: var(--text-button-white);
+}
+.evolveMode .startShowComponent .showsButton:hover:not(:disabled) {
+  background-image: linear-gradient(0deg, var(--overlay-button-hover-bright) 0%, var(--overlay-button-hover-bright) 100%);
+}
+.evolveMode .startShowComponent .showsButton:active:not(:disabled) {
+  background-image: linear-gradient(0deg, var(--overlay-button-press) 0%, var(--overlay-button-press) 100%);
+}
+.evolveMode .startShowComponent .showsButton:disabled {
+  color: var(--text-button-primary-disabled);
+  background-color: var(--background-button-grey);
+}
+.evolveMode .startShowComponent .showsButton {
+  font-family: "UbuntuRegular", Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  width: 100%;
+  border-radius: var(--corner-radius-full);
+  padding: var(--spacing-sm) var(--spacing-lg);
+  background-color: var(--background-button-grey-light);
+}
+.evolveMode .startShowComponent .privateShowRequirements {
+  text-align: left;
+  margin: 5px 0px 12px;
+}
+.evolveMode .startShowComponent .tokensRequirement {
+  color: var(--text-primary);
+  font-family: "UbuntuMedium", Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+}
+.evolveMode .startShowComponent .minutesRequirement {
+  color: var(--text-secondary);
+  font-family: "UbuntuRegular", Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+}
+.evolveMode .cancelShowComponent {
+  background: none;
+  border: none;
+  padding: 12px 16px;
+}
+.evolveMode .cancelShowComponent .tokenTextArea {
+  font-family: "UbuntuMedium", Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  color: var(--text-primary);
+  margin: 5px 0px 12px;
+  text-align: left;
+}
+.evolveMode .cancelShowComponent .cancelShowButton {
+  box-sizing: border-box;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  border-radius: var(--corner-radius-full);
+  border: 0;
+  cursor: pointer;
+  position: relative;
+  font-family: "UbuntuRegular", Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+}
+.evolveMode .cancelShowComponent .cancelShowButton:focus-visible {
+  outline: 2px solid var(--border-button-focused);
+  outline-offset: 2px;
+}
+.evolveMode .cancelShowComponent .cancelShowButton:disabled {
+  color: var(--text-button-neutral-disabled);
+  cursor: not-allowed;
+}
+.evolveMode .cancelShowComponent .cancelShowButton {
+  color: var(--text-button-white);
+}
+.evolveMode .cancelShowComponent .cancelShowButton:hover:not(:disabled) {
+  background-image: linear-gradient(0deg, var(--overlay-button-hover-bright) 0%, var(--overlay-button-hover-bright) 100%);
+}
+.evolveMode .cancelShowComponent .cancelShowButton:active:not(:disabled) {
+  background-image: linear-gradient(0deg, var(--overlay-button-press) 0%, var(--overlay-button-press) 100%);
+}
+.evolveMode .cancelShowComponent .cancelShowButton:disabled {
+  color: var(--text-button-primary-disabled);
+  background-color: var(--background-button-grey);
+}
+.evolveMode .cancelShowComponent .cancelShowButton {
+  font-family: "UbuntuRegular", Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  width: 100%;
+  border-radius: var(--corner-radius-full);
+  padding: var(--spacing-sm) var(--spacing-lg);
+  background: var(--background-button-error, #ef343f);
+}
+
+.draggableCanvasWindow {
+  color: #ffffff;
+}
+.darkmode .draggableCanvasWindow {
+  color: #b3b3b3;
+}
+.draggableCanvasWindow .titleBar {
+  color: #0c6a93;
+  background-color: #cccccc;
+}
+.darkmode .draggableCanvasWindow .titleBar {
+  color: #ffffff;
+  background-color: #2d3e50;
+}
+.draggableCanvasWindow .titleBar.tipWindowTitleBar {
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: 400;
+  padding: 3px 8px;
+  border-radius: 3px 3px 0 0;
+  background: #7f7f7f;
+}
+.darkmode .draggableCanvasWindow .titleBar.tipWindowTitleBar {
+  background: #151f2a;
+}
+.draggableCanvasWindow .titleBar.tipWindowTitleBar .closeButton {
+  right: 8px;
+}
+.draggableCanvasWindow .titleBar.titleBarWithPin {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+  height: 25px;
+  min-height: 25px;
+  padding: 0 8px;
+  font-size: 12px;
+  font-weight: 400;
+}
+.draggableCanvasWindow .titleBar.titleBarWithPin .titleBarInner {
+  flex: 1;
+  min-width: 0;
+  height: 20px;
+  display: flex;
+  align-items: center;
+}
+.draggableCanvasWindow .titleBar.titleBarWithPin .titleText {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 20px;
+  color: inherit;
+}
+.draggableCanvasWindow .titleBar.titleBarWithPin .tipTab {
+  appearance: none;
+  font: inherit;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 20px;
+  padding: 0;
+  color: rgba(255, 255, 255, 0.6);
+}
+.draggableCanvasWindow .titleBar.titleBarWithPin .tipTab.tipTabActive {
+  font-weight: 400;
+  color: #ffffff;
+}
+.draggableCanvasWindow .titleBar.titleBarWithPin .titleBarActions {
+  position: static;
+  right: auto;
+  top: auto;
+  transform: none;
+  flex-shrink: 0;
+  justify-content: space-between;
+  gap: 0;
+  width: 40px;
+  height: 16px;
+}
+.draggableCanvasWindow .titleBar.titleBarWithPin .keepOpenPinHost {
+  width: 16px;
+  height: 16px;
+  min-width: 16px;
+  min-height: 16px;
+}
+.draggableCanvasWindow .titleBar.titleBarWithPin .closeButton {
+  box-sizing: border-box;
+  width: 12px;
+  height: 12px;
+  min-width: 12px;
+  min-height: 12px;
+  border-radius: 1px;
+}
+.draggableCanvasWindow .titleBar.titleBarWithPin.tipWindowTitleBar {
+  padding: 0 8px;
+}
+.draggableCanvasWindow .titleBarActions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  position: absolute;
+  right: 8px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.draggableCanvasWindow .titleBarActions .closeButton {
+  position: static;
+  right: auto;
+  top: auto;
+}
+.draggableCanvasWindow .keepOpenPinHost {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 0;
+  color: #ffffff;
+  width: auto;
+  height: auto;
+  position: relative;
+  overflow: visible;
+  flex-shrink: 0;
+}
+.draggableCanvasWindow .keepOpenPinHost button {
+  border: none;
+  background: transparent;
+  box-shadow: none;
+  color: inherit;
+}
+.draggableCanvasWindow .tipTab {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 12px;
+  padding: 0 2px;
+}
+.darkmode .draggableCanvasWindow .tipTab {
+  color: rgba(255, 255, 255, 0.5);
+}
+.draggableCanvasWindow .tipTab.tipTabActive {
+  font-weight: bold;
+  color: #ffffff;
+}
+.draggableCanvasWindow .closeButton {
+  border-color: #eee;
+}
+.darkmode .draggableCanvasWindow .closeButton {
+  border-color: #999999;
+}
+.draggableCanvasWindow .closeButton:hover {
+  background-color: #c9c9c9;
+}
+.draggableCanvasWindow .closeButton.evolveCloseButton {
+  border-color: transparent;
+  background: transparent;
+}
+.draggableCanvasWindow .closeButton.evolveCloseButton:hover {
+  background: transparent;
+}
+.draggableCanvasWindow .innerDiv {
+  border-color: #0d5d81;
+  background-color: #ffffff;
+}
+.darkmode .draggableCanvasWindow .innerDiv {
+  border-color: #17202a;
+  background-color: #1c2733;
+}
+
+.evolveMode.draggableCanvasWindow .innerDiv {
+  border: none;
+  border-radius: var(--corner-radius-md);
+  background: var(--background-black-light-transparent);
+}
+.evolveMode.draggableCanvasWindow:not(.isResizing) .innerDiv:hover {
+  background: var(--background-black-transparent);
+}
+.evolveMode.draggableCanvasWindow .titleBar {
+  color: var(--text-primary);
+  font-family: "UbuntuBold", Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  overflow: hidden;
+  border-bottom: 1px solid var(--border-low);
+  background: var(--background-black-light-transparent);
+  backdrop-filter: var(--blur-mid-backdrop-filter);
+  border-radius: var(--corner-radius-md) var(--corner-radius-md) 0 0;
+  display: flex;
+  padding: var(--spacing-sm);
+  justify-content: space-between;
+  align-items: center;
+  align-self: stretch;
+}
+.evolveMode.draggableCanvasWindow .titleBarInner {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-md);
+  padding: 0 var(--spacing-sm);
+  overflow: hidden;
+  height: 32px;
+}
+.evolveMode.draggableCanvasWindow .titleBarActions {
+  position: static;
+  transform: none;
+  gap: var(--spacing-sm);
+  flex-shrink: 0;
+}
+.evolveMode.draggableCanvasWindow .tipWindowPurchaseBalanceHost {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+  line-height: 0;
+}
+.evolveMode.draggableCanvasWindow .titleBar.tipWindowTitleBar {
+  background: var(--background-black-light-transparent);
+  border-bottom: 1px solid var(--border-low);
+  /* blur/blur-mid */
+  backdrop-filter: var(--blur-mid-backdrop-filter);
+  -webkit-backdrop-filter: var(--blur-mid-backdrop-filter);
+}
+.evolveMode.draggableCanvasWindow .titleText {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  min-width: 0;
+  flex-shrink: 1;
+}
+.evolveMode.draggableCanvasWindow .refreshLink {
+  color: var(--text-button-brand);
+  font-family: "UbuntuRegular", Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  cursor: pointer;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  min-width: 0;
+  flex-shrink: 10000;
+}
+.evolveMode.draggableCanvasWindow .closeButton {
+  position: static;
+  top: auto;
+  right: auto;
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  border: none;
+  border-radius: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 0;
+  color: var(--text-primary);
+  background: none;
+  cursor: pointer;
+  flex-shrink: 0;
+}
+.evolveMode.draggableCanvasWindow > .closeButton {
+  position: absolute;
+  right: 4px;
+  top: 4px;
+  z-index: 1;
+}
+
+.evolveMode.draggableCanvasWindow .tipTab,
+.draggableCanvasWindow .evolveMode .tipTab {
+  font-family: "UbuntuRegular", Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: var(--text-secondary);
+  white-space: nowrap;
+  padding: 0 var(--spacing-md) 0 0;
+}
+.evolveMode.draggableCanvasWindow .tipTab.tipTabActive,
+.draggableCanvasWindow .evolveMode .tipTab.tipTabActive {
+  font-family: "UbuntuBold", Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--text-primary);
+}
+@media (hover: hover) {
+  .evolveMode.draggableCanvasWindow .tipTab:hover:not(.tipTabActive),
+  .draggableCanvasWindow .evolveMode .tipTab:hover:not(.tipTabActive) {
+    color: var(--text-primary);
+  }
+}
+
+.emojiSelectionModal {
+  background-color: #ffffff;
+  border-color: #efefef;
+  box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.08);
+}
+.darkmode .emojiSelectionModal {
+  background-color: #1c2733;
+  border-color: #2d3e50;
+  box-shadow: 0px 0px 32px rgba(0, 0, 0, 0.32);
+}
+.emojiSelectionModal .searchBar:focus {
+  outline: -webkit-focus-ring-color auto 1px;
+}
+.darkmode .emojiSelectionModal .searchBar:is(textarea, input, button):is(:not(button, input[type=submit], input[type=button])) {
+  background-color: #202c39;
+}
+.darkmode .emojiSelectionModal .searchBar:is(textarea, input, button):focus {
+  outline: none;
+  box-shadow: 0 0 0 2px #68b5f0;
+}
+.darkmode .emojiSelectionModal .searchBar:is(select) {
+  background-color: #202c39;
+}
+.darkmode .emojiSelectionModal .searchBar:is(select):focus {
+  outline: 2px solid #68b5f0;
+}
+.emojiSelectionModal .searchBar {
+  background-color: transparent;
+  border-color: #acacac;
+}
+.darkmode .emojiSelectionModal .searchBar {
+  border-color: #6e6f70;
+}
+.emojiSelectionModal .searchBar .searchIcon {
+  background-image: url("../../tsdefaultassets/search_emojis.svg?05c1318122e6");
+}
+.darkmode .emojiSelectionModal .searchBar .searchIcon {
+  background-image: url("../../tsdefaultassets/search_emojis_darkmode.svg?9a00a1affa02");
+}
+.emojiSelectionModal .searchBar input {
+  background-color: transparent;
+  color: #000;
+}
+.darkmode .emojiSelectionModal .searchBar input {
+  color: #ffffff;
+}
+.emojiSelectionModal .sectionTitle {
+  color: #acacac;
+}
+.darkmode .emojiSelectionModal .sectionTitle {
+  color: #b3b3b3;
+}
+.emojiSelectionModal .emojiDiv:hover {
+  background-color: #e0e0e0;
+}
+.darkmode .emojiSelectionModal .emojiDiv:hover {
+  background-color: #6e6f70;
+}
+.emojiSelectionModal .uploadLink {
+  color: #0c6a93;
+}
+.darkmode .emojiSelectionModal .uploadLink {
+  color: #68b5f0;
+}
+.emojiSelectionModal .toneSelect {
+  background-color: #f8f9fa;
+  border-color: #efefef;
+}
+.darkmode .emojiSelectionModal .toneSelect {
+  background-color: #202c39;
+  border-color: #2d3e50;
+}
+.emojiSelectionModal .currentToneContainer {
+  background-color: #e0e0e0;
+}
+.darkmode .emojiSelectionModal .currentToneContainer {
+  background-color: #6e6f70;
+}
+.emojiSelectionModal .divot .divotBorder {
+  border-top-color: #efefef;
+}
+.darkmode .emojiSelectionModal .divot .divotBorder {
+  border-top-color: #2d3e50;
+}
+.emojiSelectionModal .divot .divotBackground {
+  border-top-color: #f8f9fa;
+}
+.darkmode .emojiSelectionModal .divot .divotBackground {
+  border-top-color: #202c39;
+}
+
+/**
+ * Generic mixins
+ */
+.autocompleteModal {
+  background-color: #ffffff;
+  border-width: 1px;
+  border-style: solid;
+  border-bottom: none;
+  border-color: #acacac;
+  color: #494949;
+}
+.darkmode .autocompleteModal {
+  background-color: #1c2733;
+  border-color: #1c2733;
+  color: #b3b3b3;
+}
+.autocompleteModal.broadcasterTags {
+  border-color: #efefef;
+  -webkit-box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  -ms-box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  -o-box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+.darkmode .autocompleteModal.broadcasterTags {
+  border-color: #1c2733;
+}
+.autocompleteModal.broadcasterTags .selectedEmoticon {
+  background-color: #d9d9d9;
+}
+.autocompleteModal .selectedEmoticon {
+  background-color: #cccccc;
+}
+.darkmode .autocompleteModal .selectedEmoticon {
+  background-color: #885336;
+}
+.autocompleteModal .previewWrapper {
+  border-bottom-color: #acacac;
+}
+.darkmode .autocompleteModal .previewWrapper {
+  border-bottom-color: #6e6f70;
+}
+.autocompleteModal .hrefColor {
+  color: #0c6a93;
+}
+.darkmode .autocompleteModal .hrefColor {
+  color: #68b5f0;
+}
+.autocompleteModal .modalItem {
+  padding: 2px 8px;
+}
+.autocompleteModal .modalItem:hover {
+  background-color: #eeeeee;
+}
+.darkmode .autocompleteModal .modalItem:hover {
+  background-color: #17202a;
+}
+
+.evolveMode .autocompleteModal:not(.broadcasterTags) {
+  border-radius: var(--corner-radius-xl);
+  background: var(--background-others-popup-neutral);
+  box-shadow: 0 0 var(--blur-200) 0 var(--drop-shadow-low);
+  color: var(--text-primary);
+  border: none;
+}
+.evolveMode .autocompleteModal:not(.broadcasterTags) .autocompleteList {
+  padding: 8px;
+}
+.evolveMode .autocompleteModal:not(.broadcasterTags) .selectedEmoticon {
+  background-color: var(--overlay-button-hover);
+}
+.evolveMode .autocompleteModal:not(.broadcasterTags) .modalItem {
+  display: flex;
+  padding: var(--spacing-sm) var(--spacing-md);
+  align-items: flex-start;
+  gap: var(--spacing-sm);
+  align-self: stretch;
+  font-family: "UbuntuRegular", Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  border-radius: var(--corner-radius-lg);
+}
+.evolveMode .autocompleteModal:not(.broadcasterTags) .modalItem:hover {
+  background-color: var(--overlay-button-hover);
+}
+.evolveMode .autocompleteModal:not(.broadcasterTags).emoticonAutocompleteModal .tag-text {
+  flex: 1;
+}
+.evolveMode .autocompleteModal:not(.broadcasterTags).emoticonAutocompleteModal .modalItem {
+  display: flex;
+  align-items: center;
+}
+.evolveMode .autocompleteModal:not(.broadcasterTags).emoticonAutocompleteModal .emoticonIcon {
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+}
+.evolveMode .autocompleteModal:not(.broadcasterTags).emoticonAutocompleteModal .kebabIcon {
+  color: var(--text-secondary);
+}
+@media (hover: hover) {
+  .evolveMode .autocompleteModal:not(.broadcasterTags).emoticonAutocompleteModal .modalItem:not(:hover):not(.selectedEmoticon) .kebabIcon {
+    display: none;
+  }
+}
+
+.sendTip .buttons:focus {
+  outline: -webkit-focus-ring-color auto 1px;
+}
+.darkmode .sendTip .buttons:is(textarea, input, button):is(:not(button, input[type=submit], input[type=button])) {
+  background-color: #202c39;
+}
+.darkmode .sendTip .buttons:is(textarea, input, button):focus {
+  outline: none;
+  box-shadow: 0 0 0 2px #68b5f0;
+}
+.darkmode .sendTip .buttons:is(select) {
+  background-color: #202c39;
+}
+.darkmode .sendTip .buttons:is(select):focus {
+  outline: 2px solid #68b5f0;
+}
+.sendTip .buttons, .darkmode .sendTip .buttons {
+  background-color: var(--wl-signup-bg-color, #f47321);
+  color: #ffffff;
+  border: 1px solid var(--wl-signup-alt-bg-color, #cd5d26);
+  border-radius: 4px;
+}
+.darkmode .sendTip .buttons:focus {
+  outline: -webkit-focus-ring-color auto 1px;
+}
+.darkmode .darkmode .sendTip .buttons:is(textarea, input, button):is(:not(button, input[type=submit], input[type=button])) {
+  background-color: #202c39;
+}
+.darkmode .darkmode .sendTip .buttons:is(textarea, input, button):focus {
+  outline: none;
+  box-shadow: 0 0 0 2px #68b5f0;
+}
+.darkmode .darkmode .sendTip .buttons:is(select) {
+  background-color: #202c39;
+}
+.darkmode .darkmode .sendTip .buttons:is(select):focus {
+  outline: 2px solid #68b5f0;
+}
+.darkmode .sendTip .buttons, .darkmode .darkmode .sendTip .buttons {
+  background-color: var(--wl-signup-bg-color, #f47321);
+  color: #ffffff;
+  border: 1px solid var(--wl-signup-alt-bg-color, #cd5d26);
+  border-radius: 4px;
+}
+.sendTip .buttons.disabled {
+  color: #cccccc;
+  background-color: #888888;
+}
+.sendTip .buttons.mobile {
+  background: linear-gradient(#87c667, #53843a);
+}
+.sendTip .buttons.mobile.disabled {
+  background: linear-gradient(#b5b5b5, #6c6c78);
+}
+.sendTip .menu {
+  background-color: #ffffff;
+  box-shadow: 0 1px 5px #333;
+}
+.darkmode .sendTip .menu {
+  background-color: #202c39;
+  box-shadow: 0px 0px 32px rgba(0, 0, 0, 0.32);
+}
+.sendTip .menu .menuItem {
+  border-color: #c9cbcc;
+  color: #000000;
+}
+.darkmode .sendTip .menu .menuItem {
+  border-color: #2d3e50;
+  color: #ffffff;
+}
+.sendTip .menu .menuItem.disabled {
+  color: #aaaaaa;
+}
+.darkmode .sendTip .menu .menuItem.disabled {
+  color: #6e6f70;
+}
+.sendTip .menu .menuItem dt.selected {
+  background: transparent url(../../tsdefaultassets/black-checkmark.svg?b58253f8c0e7) no-repeat 8px 45%;
+}
+.darkmode .sendTip .menu .menuItem dt.selected {
+  background: transparent url(../../tsdefaultassets/white-checkmark.svg?8979b55ff488) no-repeat 8px 45%;
+}
+.sendTip .menu .menuItem:hover {
+  border-color: #767b7d;
+  text-shadow: #aaaaaa 0 0 0;
+}
+
+#FVTipCallout .tokenBalance, #SplitModeTipCallout .tokenBalance {
+  color: green;
+}
+.darkmode #FVTipCallout .tokenBalance, .darkmode #SplitModeTipCallout .tokenBalance {
+  color: #0f7f12;
+}
+#FVTipCallout .purchaseTokens, #SplitModeTipCallout .purchaseTokens {
+  color: #0c6a93;
+}
+.darkmode #FVTipCallout .purchaseTokens, .darkmode #SplitModeTipCallout .purchaseTokens {
+  color: #68b5f0;
+}
+#FVTipCallout .tipAmountInput:focus, #SplitModeTipCallout .tipAmountInput:focus,
+#FVTipCallout .tipMessageInput:focus,
+#SplitModeTipCallout .tipMessageInput:focus {
+  outline: -webkit-focus-ring-color auto 1px;
+}
+.darkmode #FVTipCallout .tipAmountInput:is(textarea, input, button):is(:not(button, input[type=submit], input[type=button])), .darkmode #SplitModeTipCallout .tipAmountInput:is(textarea, input, button):is(:not(button, input[type=submit], input[type=button])),
+.darkmode #FVTipCallout .tipMessageInput:is(textarea, input, button):is(:not(button, input[type=submit], input[type=button])),
+.darkmode #SplitModeTipCallout .tipMessageInput:is(textarea, input, button):is(:not(button, input[type=submit], input[type=button])) {
+  background-color: #202c39;
+}
+.darkmode #FVTipCallout .tipAmountInput:is(textarea, input, button):focus, .darkmode #SplitModeTipCallout .tipAmountInput:is(textarea, input, button):focus,
+.darkmode #FVTipCallout .tipMessageInput:is(textarea, input, button):focus,
+.darkmode #SplitModeTipCallout .tipMessageInput:is(textarea, input, button):focus {
+  outline: none;
+  box-shadow: 0 0 0 2px #68b5f0;
+}
+.darkmode #FVTipCallout .tipAmountInput:is(select), .darkmode #SplitModeTipCallout .tipAmountInput:is(select),
+.darkmode #FVTipCallout .tipMessageInput:is(select),
+.darkmode #SplitModeTipCallout .tipMessageInput:is(select) {
+  background-color: #202c39;
+}
+.darkmode #FVTipCallout .tipAmountInput:is(select):focus, .darkmode #SplitModeTipCallout .tipAmountInput:is(select):focus,
+.darkmode #FVTipCallout .tipMessageInput:is(select):focus,
+.darkmode #SplitModeTipCallout .tipMessageInput:is(select):focus {
+  outline: 2px solid #68b5f0;
+}
+#FVTipCallout .tipAmountInput, #SplitModeTipCallout .tipAmountInput,
+#FVTipCallout .tipMessageInput,
+#SplitModeTipCallout .tipMessageInput {
+  border-color: #b4b4b4;
+}
+.darkmode #FVTipCallout .tipAmountInput, .darkmode #SplitModeTipCallout .tipAmountInput,
+.darkmode #FVTipCallout .tipMessageInput,
+.darkmode #SplitModeTipCallout .tipMessageInput {
+  border-color: #2d3e50;
+  background-color: transparent;
+  color: #ffffff;
+}
+#FVTipCallout .tipOptionsSelect, #SplitModeTipCallout .tipOptionsSelect {
+  border-color: #4b4c4b;
+}
+.darkmode #FVTipCallout .tipOptionsSelect, .darkmode #SplitModeTipCallout .tipOptionsSelect {
+  background-color: #1c2733;
+  color: #b3b3b3;
+}
+.darkmode #FVTipCallout .tipOptionsSelect:focus, .darkmode #SplitModeTipCallout .tipOptionsSelect:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px #68b5f0;
+}
+#FVTipCallout .warning, #SplitModeTipCallout .warning {
+  color: #ff0000;
+}
+
+#SplitModeTipCallout {
+  background-color: #ffffff;
+  border-color: #0c6a93;
+}
+.darkmode #SplitModeTipCallout {
+  color: #b3b3b3;
+  background-color: #1c2733;
+  border-color: #17202a;
+  box-shadow: 0px 0px 32px rgba(0, 0, 0, 0.32);
+}
+#SplitModeTipCallout .titleBar {
+  color: #0c6a93;
+  background-color: #e0e0e0;
+}
+.darkmode #SplitModeTipCallout .titleBar {
+  color: #ffffff;
+  background-color: #2d3e50;
+}
+#SplitModeTipCallout .purchaseTokens {
+  color: #d55215;
+}
+.darkmode #SplitModeTipCallout .purchaseTokens {
+  color: #68b5f0;
+}
+#SplitModeTipCallout .bottomDivot .divotBackground {
+  border-top-color: #ffffff;
+}
+.darkmode #SplitModeTipCallout .bottomDivot .divotBackground {
+  border-top-color: #1c2733;
+}
+#SplitModeTipCallout .bottomDivot .divotBorder {
+  border-top-color: #0c6a93;
+}
+.darkmode #SplitModeTipCallout .bottomDivot .divotBorder {
+  border-top-color: #17202a;
+}
+#SplitModeTipCallout .topDivot .divotBackground {
+  border-bottom-color: #e0e0e0;
+}
+.darkmode #SplitModeTipCallout .topDivot .divotBackground {
+  border-bottom-color: #2d3e50;
+}
+#SplitModeTipCallout .topDivot .divotBorder {
+  border-bottom-color: #0c6a93;
+}
+.darkmode #SplitModeTipCallout .topDivot .divotBorder {
+  border-bottom-color: #17202a;
+}
+#SplitModeTipCallout .leftDivot .divotBackground {
+  border-right-color: #ffffff;
+}
+.darkmode #SplitModeTipCallout .leftDivot .divotBackground {
+  border-right-color: #1c2733;
+}
+#SplitModeTipCallout .leftDivot .divotBorder {
+  border-right-color: #0c6a93;
+}
+.darkmode #SplitModeTipCallout .leftDivot .divotBorder {
+  border-right-color: #17202a;
+}
+
+#FVTipCallout .checkbox:focus {
+  outline: -webkit-focus-ring-color auto 1px;
+}
+.darkmode #FVTipCallout .checkbox:is(textarea, input, button):is(:not(button, input[type=submit], input[type=button])) {
+  background-color: #202c39;
+}
+.darkmode #FVTipCallout .checkbox:is(textarea, input, button):focus {
+  outline: none;
+  box-shadow: 0 0 0 2px #68b5f0;
+}
+.darkmode #FVTipCallout .checkbox:is(select) {
+  background-color: #202c39;
+}
+.darkmode #FVTipCallout .checkbox:is(select):focus {
+  outline: 2px solid #68b5f0;
+}
+.darkmode #FVTipCallout .checkbox {
+  border-color: #4b4c4b;
+  background-color: #202223;
+  color: #ffffff;
+}
+
+#RemoveIgnoredUsersModal {
+  background-color: #ffffff;
+  box-shadow: 0 0 18px rgba(0, 0, 0, 0.4);
+}
+.darkmode #RemoveIgnoredUsersModal, .darkMode #RemoveIgnoredUsersModal {
+  background-color: #1c2733;
+  box-shadow: 0px 0px 32px rgba(0, 0, 0, 0.32);
+  color: #b3b3b3;
+}
+#RemoveIgnoredUsersModal .overlay {
+  background-color: #000000;
+}
+#RemoveIgnoredUsersModal .header {
+  color: #0c6a93;
+}
+.darkmode #RemoveIgnoredUsersModal .header, .darkMode #RemoveIgnoredUsersModal .header {
+  color: #ffffff;
+}
+#RemoveIgnoredUsersModal .bluetxt {
+  color: #0c6a93;
+}
+.darkmode #RemoveIgnoredUsersModal .bluetxt, .darkMode #RemoveIgnoredUsersModal .bluetxt {
+  color: inherit;
+}
+#RemoveIgnoredUsersModal .select:focus {
+  outline: -webkit-focus-ring-color auto 1px;
+}
+.darkmode #RemoveIgnoredUsersModal .select:is(textarea, input, button):is(:not(button, input[type=submit], input[type=button])) {
+  background-color: #202c39;
+}
+.darkmode #RemoveIgnoredUsersModal .select:is(textarea, input, button):focus {
+  outline: none;
+  box-shadow: 0 0 0 2px #68b5f0;
+}
+.darkmode #RemoveIgnoredUsersModal .select:is(select) {
+  background-color: #202c39;
+}
+.darkmode #RemoveIgnoredUsersModal .select:is(select):focus {
+  outline: 2px solid #68b5f0;
+}
+#RemoveIgnoredUsersModal .select {
+  background-color: transparent;
+  border-color: #b1b1b1;
+}
+.darkmode #RemoveIgnoredUsersModal .select, .darkMode #RemoveIgnoredUsersModal .select {
+  border-color: #2d3e50;
+  color: #ffffff !important;
+}
+#RemoveIgnoredUsersModal .saveButton:focus {
+  outline: -webkit-focus-ring-color auto 1px;
+}
+.darkmode #RemoveIgnoredUsersModal .saveButton:is(textarea, input, button):is(:not(button, input[type=submit], input[type=button])) {
+  background-color: #202c39;
+}
+.darkmode #RemoveIgnoredUsersModal .saveButton:is(textarea, input, button):focus {
+  outline: none;
+  box-shadow: 0 0 0 2px #68b5f0;
+}
+.darkmode #RemoveIgnoredUsersModal .saveButton:is(select) {
+  background-color: #202c39;
+}
+.darkmode #RemoveIgnoredUsersModal .saveButton:is(select):focus {
+  outline: 2px solid #68b5f0;
+}
+#RemoveIgnoredUsersModal .saveButton, .darkmode #RemoveIgnoredUsersModal .saveButton {
+  background-color: var(--wl-signup-bg-color, #f47321);
+  color: #ffffff;
+  border: 1px solid var(--wl-signup-alt-bg-color, #cd5d26);
+  border-radius: 4px;
+}
+#RemoveIgnoredUsersModal .darkCloseButton {
+  display: none;
+}
+.darkmode #RemoveIgnoredUsersModal .lightCloseButton, .darkMode #RemoveIgnoredUsersModal .lightCloseButton {
+  display: none;
+}
+.darkmode #RemoveIgnoredUsersModal .darkCloseButton, .darkMode #RemoveIgnoredUsersModal .darkCloseButton {
+  display: block;
+}
+
+.darkMode #RemoveIgnoredUsersModal .textColor {
+  color: rgb(179, 179, 179);
+}
+
+.mediaPreviewModal {
+  background-color: #ffffff;
+  color: #49494f;
+}
+.darkmode .mediaPreviewModal {
+  background-color: #1c2733;
+  color: #b3b3b3;
+}
+.mediaPreviewModal .closeButton {
+  background: url(../../tsdefaultassets/close.svg?9a87e6f7a4de) no-repeat center center;
+  background-size: cover;
+}
+.darkmode .mediaPreviewModal .closeButton {
+  background: url(../../tsdefaultassets/close-white.svg?b0389426f1cb) no-repeat center center;
+  background-size: cover;
+}
+
+#user-context-menu {
+  background-color: #fff;
+  border-color: #f0f0f0;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  color: #000;
+}
+.darkmode #user-context-menu {
+  background-color: #1c2733;
+  border-color: #17202a;
+  box-shadow: 0px 0px 32px rgba(0, 0, 0, 0.32);
+  color: #b3b3b3;
+}
+#user-context-menu .ucmPlaceholder {
+  background-color: #e0e0e0;
+}
+.darkmode #user-context-menu .ucmPlaceholder {
+  background-color: #5b5b5b;
+}
+#user-context-menu .ucmHeader {
+  background-color: #f9f9f9;
+}
+.darkmode #user-context-menu .ucmHeader {
+  background-color: #2d3e50;
+}
+#user-context-menu .ucmUserLabel {
+  border-top-color: #f0f0f0;
+}
+.darkmode #user-context-menu .ucmUserLabel {
+  border-top-color: #17202a;
+}
+#user-context-menu .ucmUserLabel .ucmSublabel {
+  color: #49494f;
+}
+.darkmode #user-context-menu .ucmUserLabel .ucmSublabel {
+  color: #b3b3b3;
+}
+#user-context-menu .ucmLinks {
+  border-top-color: #f0f0f0;
+}
+.darkmode #user-context-menu .ucmLinks {
+  border-top-color: #2d3e50;
+}
+#user-context-menu .ucmLinks .ucmReportLink .ucmReportIcon {
+  background: url(../../tsdefaultassets/report-msg-d.svg?eb708f4209bb) no-repeat center;
+}
+.darkmode #user-context-menu .ucmLinks .ucmReportLink .ucmReportIcon {
+  background: url(../../tsdefaultassets/report-msg.svg?9f05fef58682) no-repeat center;
+}
+#user-context-menu .ucmLinks .ucmIgnoreLink .ucmIgnoreIcon {
+  background: url(../../tsdefaultassets/ignore-user-d.svg?02a8f1bed31a) no-repeat center;
+}
+.darkmode #user-context-menu .ucmLinks .ucmIgnoreLink .ucmIgnoreIcon {
+  background: url(../../tsdefaultassets/ignore-user.svg?4ca83bc3b789) no-repeat center;
+}
+#user-context-menu .ucmLinks .ucmPMLink .ucmSendPmIcon {
+  background: url(../../tsdefaultassets/send-pvt-msg-d.svg?b766d83858cc) no-repeat center;
+}
+.darkmode #user-context-menu .ucmLinks .ucmPMLink .ucmSendPmIcon {
+  background: url(../../tsdefaultassets/send-pvt-msg.svg?d51491334f35) no-repeat center;
+}
+#user-context-menu .ucmLinks .ucmPMLink .ucmSendDmIcon {
+  background: url(../../tsdefaultassets/pms/ucm-chat-bubble-d.svg?2c7932b86012) no-repeat center;
+}
+.darkmode #user-context-menu .ucmLinks .ucmPMLink .ucmSendDmIcon {
+  background: url(../../tsdefaultassets/pms/ucm-chat-bubble.svg?86cc25a6e9b0) no-repeat center;
+}
+#user-context-menu .ucmLinks .ucmMentionIcon {
+  background: url(../../tsdefaultassets/mention-user-d.svg?d0a095711b30) no-repeat center/80%;
+}
+.darkmode #user-context-menu .ucmLinks .ucmMentionIcon {
+  background: url(../../tsdefaultassets/mention-user.svg?ae84e6e53ad6) no-repeat center/80%;
+}
+#user-context-menu .ucmLinks .ucmLinkColor {
+  color: #49494f;
+}
+.darkmode #user-context-menu .ucmLinks .ucmLinkColor {
+  color: #b3b3b3;
+}
+#user-context-menu .ucmModSection,
+#user-context-menu .ucmPromoteModSection,
+#user-context-menu .ucmHasTippedSection {
+  border-top-color: #f0f0f0;
+}
+.darkmode #user-context-menu .ucmModSection,
+.darkmode #user-context-menu .ucmPromoteModSection,
+.darkmode #user-context-menu .ucmHasTippedSection {
+  border-top-color: #17202a;
+}
+#user-context-menu .ucmLinkHover {
+  background-color: transparent;
+}
+#user-context-menu .ucmLinkHover:hover {
+  background-color: #f9e4d5;
+}
+.darkmode #user-context-menu .ucmLinkHover:hover {
+  background-color: #885336;
+}
+
+.onlineRoomsTitle,
+.recommendedRoomsTitle {
+  color: #494949;
+}
+.darkmode .onlineRoomsTitle,
+.darkmode .recommendedRoomsTitle {
+  color: #b3b3b3;
+}
+
+.followedDropdown.collapsed {
+  left: calc(50vw - 197px);
+}
+
+.followedContainer {
+  width: 314px;
+  max-height: 450px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  position: relative;
+  box-sizing: border-box;
+  padding: 8px;
+  border-radius: 4px 4px 4px 4px;
+  -webkit-border-radius: 4px 4px 4px 4px;
+}
+
+.followRecommendedContainer {
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+  box-sizing: border-box;
+  max-height: 480px;
+  overflow: hidden auto;
+  padding: 8px;
+  position: relative;
+  width: 350px;
+}
+.followRecommendedContainer .roomElementAnchor.notHighlighted {
+  background-color: transparent;
+}
+.darkmode .followRecommendedContainer .roomElementAnchor.notHighlighted {
+  background-color: #202c39;
+}
+
+.followRoomTable {
+  display: inline-block;
+  overflow: hidden;
+}
+
+.recommendationsBorder {
+  background-color: #e2e2e2;
+  height: 1px;
+  margin-bottom: 4px;
+}
+.darkmode .recommendationsBorder {
+  background-color: #2a323f;
+}
+
+.followRecommendedHeader {
+  margin: 5px 3px;
+  width: 100%;
+}
+.followRecommendedHeader .roomElement {
+  display: inline-block !important;
+}
+
+.followedContainer {
+  color: #0c6a93;
+}
+.darkmode .followedContainer {
+  color: #b3b3b3;
+}
+.followedContainer .followedCount {
+  color: #525252;
+  font-family: "UbuntuRegular", Arial, Helvetica, sans-serif;
+}
+.darkmode .followedContainer .followedCount {
+  color: #b3b3b3;
+}
+
+#followed_anchor.followed-header.orange:after {
+  display: inline-block;
+  content: "";
+  position: relative;
+  height: 8px;
+  width: 8px;
+  top: -8px;
+  right: 2px;
+  background-image: url(../../tsdefaultassets/orange_dot.svg?d12655f82ca4);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#followed_anchor.followed-header.orange.text:after {
+  content: var(--unseen-follow-count, "");
+  height: 13px;
+  min-width: 13px;
+  width: auto;
+  padding: 0 4px 1px;
+  top: -8px;
+  right: 0;
+  background-image: none;
+  background-color: #f47321;
+  border-radius: 8px;
+  font-family: "UbuntuBold", Arial, Helvetica, sans-serif;
+  font-size: 11px;
+  text-align: center;
+  text-shadow: none;
+}
+
+.followedDropdown {
+  border: 1px solid #8bb3da;
+  border-radius: 0 4px 4px;
+  background-color: white;
+  color: #0c6a93;
+}
+.darkmode .followedDropdown {
+  color: #b3b3b3;
+  background-color: #17202a;
+  border-color: #2d3e50;
+}
+
+.rulesModal {
+  background-color: white;
+  box-shadow: 0 0 10px #888;
+  border-color: #efefef;
+  color: #494940;
+  flex-direction: column;
+}
+.rulesModal > * {
+  flex-shrink: 0;
+}
+.rulesModal .rulesTextContainer {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 auto;
+  min-height: 0;
+}
+.rulesModal .rulesText {
+  flex: 1 1 auto;
+  min-height: 0;
+}
+.rulesModal > .acceptRulesButton {
+  align-self: center;
+}
+.rulesModal .rulesModal__languagePill {
+  background-color: #f1f1f1;
+  border-radius: 4px;
+  box-sizing: border-box;
+  display: block;
+  font-size: 12px;
+  margin: 0 0 8px;
+  padding: 4px 8px;
+  text-align: left;
+  text-align: left;
+  width: 100%;
+}
+.darkmode .rulesModal .rulesModal__languagePill {
+  background-color: #37414b;
+  color: #b3b3b3;
+}
+.darkmode .rulesModal {
+  background-color: #1c2733;
+  border-color: #17202a;
+  box-shadow: 0px 0px 32px rgba(0, 0, 0, 0.32);
+  color: #b3b3b3;
+}
+.rulesModal .closeRulesButton:focus {
+  outline: -webkit-focus-ring-color auto 1px;
+}
+.darkmode .rulesModal .closeRulesButton:is(textarea, input, button):is(:not(button, input[type=submit], input[type=button])) {
+  background-color: #202c39;
+}
+.darkmode .rulesModal .closeRulesButton:is(textarea, input, button):focus {
+  outline: none;
+  box-shadow: 0 0 0 2px #68b5f0;
+}
+.darkmode .rulesModal .closeRulesButton:is(select) {
+  background-color: #202c39;
+}
+.darkmode .rulesModal .closeRulesButton:is(select):focus {
+  outline: 2px solid #68b5f0;
+}
+.rulesModal .closeRulesButton {
+  background: none;
+  border-radius: 0;
+  border: none;
+}
+.darkmode .rulesModal .closeRulesButton {
+  background-color: transparent;
+}
+.rulesModal .acceptRulesButton:focus {
+  outline: -webkit-focus-ring-color auto 1px;
+}
+.darkmode .rulesModal .acceptRulesButton:is(textarea, input, button):is(:not(button, input[type=submit], input[type=button])) {
+  background-color: #202c39;
+}
+.darkmode .rulesModal .acceptRulesButton:is(textarea, input, button):focus {
+  outline: none;
+  box-shadow: 0 0 0 2px #68b5f0;
+}
+.darkmode .rulesModal .acceptRulesButton:is(select) {
+  background-color: #202c39;
+}
+.darkmode .rulesModal .acceptRulesButton:is(select):focus {
+  outline: 2px solid #68b5f0;
+}
+.rulesModal .acceptRulesButton, .darkmode .rulesModal .acceptRulesButton {
+  background-color: var(--wl-signup-bg-color, #f47321);
+  color: #ffffff;
+  border: 1px solid var(--wl-signup-alt-bg-color, #cd5d26);
+  border-radius: 4px;
+}
+.rulesModal .scrollIndicator {
+  background: linear-gradient(0deg, white 0%, rgba(255, 255, 255, 0) 100%);
+}
+.darkmode .rulesModal .scrollIndicator {
+  background: linear-gradient(0deg, rgb(32, 34, 35) 0%, rgba(32, 34, 35, 0) 100%);
+}
+
+.evolveMode.rulesModal {
+  background: var(--background-others-popup-neutral);
+  border-color: transparent;
+  border-radius: var(--spacing-xl);
+  box-shadow: 0 0 var(--blur-200) 0 var(--drop-shadow-low);
+  box-sizing: border-box;
+  color: var(--text-primary);
+  pointer-events: unset;
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-sm);
+}
+.evolveMode.rulesModal .rulesModal__heading {
+  align-items: center;
+  display: flex;
+  gap: var(--spacing-sm);
+  justify-content: space-between;
+  flex-shrink: 0;
+}
+.evolveMode.rulesModal .rulesModal__heading .rulesModal__title {
+  font-size: 1.14em;
+  height: 100%;
+  overflow: hidden;
+  text-align: start;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.evolveMode.rulesModal .rulesModal__heading .closeRulesButton {
+  box-sizing: border-box;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  border-radius: var(--corner-radius-full);
+  border: 0;
+  cursor: pointer;
+  position: relative;
+  font-family: "UbuntuRegular", Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+}
+.evolveMode.rulesModal .rulesModal__heading .closeRulesButton:focus-visible {
+  outline: 2px solid var(--border-button-focused);
+  outline-offset: 2px;
+}
+.evolveMode.rulesModal .rulesModal__heading .closeRulesButton:disabled {
+  color: var(--text-button-neutral-disabled);
+  cursor: not-allowed;
+}
+.evolveMode.rulesModal .rulesModal__heading .closeRulesButton {
+  color: var(--text-button-neutral);
+  background-color: var(--background-button-neutral-transparent);
+  box-shadow: inset 0 0 0 1px var(--border-button-neutral);
+}
+.evolveMode.rulesModal .rulesModal__heading .closeRulesButton:hover:not(:disabled) {
+  background-image: linear-gradient(0deg, var(--overlay-button-hover) 0%, var(--overlay-button-hover) 100%);
+}
+.evolveMode.rulesModal .rulesModal__heading .closeRulesButton:active:not(:disabled) {
+  background-image: linear-gradient(0deg, var(--overlay-button-press) 0%, var(--overlay-button-press) 100%);
+}
+.evolveMode.rulesModal .rulesModal__heading .closeRulesButton:disabled {
+  background-color: var(--background-button-neutral-transparent);
+}
+.evolveMode.rulesModal .rulesModal__heading .closeRulesButton {
+  background-color: transparent;
+  backdrop-filter: unset;
+  border: none;
+  box-shadow: none;
+  color: var(--text-primary);
+  height: fit-content;
+  padding: 6px;
+  flex: 0 0 auto;
+}
+.evolveMode.rulesModal .rulesModal__buttonContainer {
+  display: flex;
+  gap: var(--spacing-sm);
+  flex-direction: row-reverse;
+  flex-shrink: 0;
+}
+.evolveMode.rulesModal .rulesModal__buttonContainer .acceptRulesButton {
+  box-sizing: border-box;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  border-radius: var(--corner-radius-full);
+  border: 0;
+  cursor: pointer;
+  position: relative;
+  font-family: "UbuntuRegular", Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+}
+.evolveMode.rulesModal .rulesModal__buttonContainer .acceptRulesButton:focus-visible {
+  outline: 2px solid var(--border-button-focused);
+  outline-offset: 2px;
+}
+.evolveMode.rulesModal .rulesModal__buttonContainer .acceptRulesButton:disabled {
+  color: var(--text-button-neutral-disabled);
+  cursor: not-allowed;
+}
+.evolveMode.rulesModal .rulesModal__buttonContainer .acceptRulesButton {
+  background-color: var(--background-button-brand-primary);
+  color: var(--text-button-white);
+}
+.evolveMode.rulesModal .rulesModal__buttonContainer .acceptRulesButton:hover:not(:disabled) {
+  background-image: linear-gradient(0deg, var(--overlay-button-hover-bright) 0%, var(--overlay-button-hover-bright) 100%);
+}
+.evolveMode.rulesModal .rulesModal__buttonContainer .acceptRulesButton:active:not(:disabled) {
+  background-image: linear-gradient(0deg, var(--overlay-button-press) 0%, var(--overlay-button-press) 100%);
+}
+.evolveMode.rulesModal .rulesModal__buttonContainer .acceptRulesButton:disabled {
+  color: var(--text-button-primary-disabled);
+  background-color: var(--background-button-grey);
+}
+.evolveMode.rulesModal .rulesModal__buttonContainer .acceptRulesButton {
+  padding: 6px var(--spacing-md);
+  gap: var(--spacing-xs);
+  font-family: "UbuntuRegular", Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  flex: 0 1 auto;
+  font-size: unset;
+  line-height: 1.2;
+  height: auto;
+  min-width: 0;
+  z-index: 2;
+}
+.evolveMode.rulesModal .rulesModal__buttonContainer .acceptRulesButton span {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.evolveMode.rulesModal .rulesModal__body {
+  box-sizing: border-box;
+  color: var(--text-primary);
+  font-size: inherit;
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-sm);
+  padding: var(--spacing-lg);
+  flex: 1 1 auto;
+  min-height: 0;
+}
+.evolveMode.rulesModal .rulesModal__body .rulesModal__content {
+  font-size: 1em;
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-sm);
+  flex: inherit;
+  min-height: inherit;
+}
+.evolveMode.rulesModal .rulesModal__body .rulesModal__languagePill {
+  background: var(--background-others-popup-neutral-light-contrast, #f3f3f3);
+  border-radius: var(--corner-radius-md, 12px);
+  box-sizing: border-box;
+  color: var(--text-secondary);
+  display: block;
+  font-size: 0.875em;
+  padding: var(--spacing-sm) var(--spacing-md);
+  text-align: start;
+  width: 100%;
+  flex-shrink: 0;
+}
+.evolveMode.rulesModal .rulesModal__body .rulesModal__languagePill strong {
+  color: var(--text-primary);
+  font-weight: 600;
+}
+.evolveMode.rulesModal .rulesModal__body .scrollIndicator {
+  background: linear-gradient(0deg, var(--background-neutral) 0%, rgba(255, 255, 255, 0) 100%);
+}
+
+.languagePreferenceToast {
+  align-items: center;
+  background: #f1f1f1;
+  border-radius: 8px;
+  box-shadow: 0 0 20px 0 rgba(16, 16, 16, 0.2);
+  box-sizing: border-box;
+  color: #494940;
+  display: flex;
+  font-size: 14px;
+  gap: 8px;
+  justify-content: space-between;
+  margin: 0 8px;
+  padding: 8px 12px;
+}
+.darkmode .languagePreferenceToast {
+  background: #37414b;
+  box-shadow: 0 0 20px 0 rgba(16, 16, 16, 0.88);
+  color: #d6d6d6;
+}
+.languagePreferenceToast .languagePreferenceToast__text strong {
+  color: inherit;
+  font-weight: 600;
+}
+.languagePreferenceToast .languagePreferenceToast__closeButton {
+  background: none;
+  border: none;
+  cursor: pointer;
+  line-height: 0;
+  padding: 0;
+}
+.darkmode .languagePreferenceToast .languagePreferenceToast__closeButton {
+  background-color: transparent;
+}
+
+.evolveMode.languagePreferenceToast {
+  background: var(--background-low-contrast);
+  border-radius: var(--spacing-lg);
+  box-shadow: 0 0 var(--blur-300, 20px) 0 var(--drop-shadow-medium, rgba(16, 16, 16, 0.88));
+  color: var(--text-secondary);
+  margin: 0 var(--spacing-lg);
+  padding: var(--spacing-lg);
+}
+.evolveMode.languagePreferenceToast .languagePreferenceToast__text {
+  flex: 1;
+  font-size: 14px;
+}
+.evolveMode.languagePreferenceToast .languagePreferenceToast__text strong {
+  color: var(--text-primary);
+  font-weight: 600;
+}
+.evolveMode.languagePreferenceToast .languagePreferenceToast__closeButton {
+  color: var(--text-primary);
+  flex: 0 0 auto;
+  height: fit-content;
+}
+
+.tooltip {
+  color: #525252;
+  background-color: #ffffff;
+  border-color: #efefef;
+  box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.08);
+}
+.tooltip .tooltipCloseButton {
+  fill: #a7a7a7;
+}
+.darkmode .tooltip, .darkMode .tooltip {
+  color: #ffffff;
+  background-color: #1c2733;
+  border-color: #17202a;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.8);
+}
+.tooltip .divotTop .divotBackground {
+  border-bottom-color: #ffffff;
+}
+.darkmode .tooltip .divotTop .divotBackground, .darkMode .tooltip .divotTop .divotBackground {
+  border-bottom-color: #1c2733;
+}
+.tooltip .divotTop .divotBorder {
+  border-bottom-color: #efefef;
+}
+.darkmode .tooltip .divotTop .divotBorder, .darkMode .tooltip .divotTop .divotBorder {
+  border-bottom-color: #17202a;
+}
+.tooltip .divotBottom .divotBackground {
+  border-top-color: #ffffff;
+}
+.darkmode .tooltip .divotBottom .divotBackground, .darkMode .tooltip .divotBottom .divotBackground {
+  border-top-color: #1c2733;
+}
+.tooltip .divotBottom .divotBorder {
+  border-top-color: #efefef;
+}
+.darkmode .tooltip .divotBottom .divotBorder, .darkMode .tooltip .divotBottom .divotBorder {
+  border-top-color: #17202a;
+}
+.tooltip .divotLeft .divotBackground {
+  border-right-color: #ffffff;
+}
+.darkmode .tooltip .divotLeft .divotBackground, .darkMode .tooltip .divotLeft .divotBackground {
+  border-right-color: #1c2733;
+}
+.tooltip .divotLeft .divotBorder {
+  border-right-color: #efefef;
+}
+.darkmode .tooltip .divotLeft .divotBorder, .darkMode .tooltip .divotLeft .divotBorder {
+  border-right-color: #17202a;
+}
+.tooltip .divotRight .divotBackground {
+  border-left-color: #ffffff;
+}
+.darkmode .tooltip .divotRight .divotBackground, .darkMode .tooltip .divotRight .divotBackground {
+  border-left-color: #1c2733;
+}
+.tooltip .divotRight .divotBorder {
+  border-left-color: #efefef;
+}
+.darkmode .tooltip .divotRight .divotBorder, .darkMode .tooltip .divotRight .divotBorder {
+  border-left-color: #17202a;
+}
+
+#smc-preview-modal {
+  background-color: #f8f9fa;
+  color: #49494f;
+}
+.darkmode #smc-preview-modal {
+  background-color: #1c2733;
+  color: #ffffff;
+}
+#smc-preview-modal .title {
+  color: #0c6a93;
+}
+.darkmode #smc-preview-modal .title {
+  color: #68b5f0;
+}
+#smc-preview-modal video {
+  background-color: #000000;
+}
+#smc-preview-modal .infoPanel {
+  border-color: #cccccc;
+  background-color: #ffffd8;
+  color: #494949;
+}
+.darkmode #smc-preview-modal .infoPanel {
+  background-color: #253543;
+  border-color: #2d3e50;
+  color: #ffffff;
+}
+#smc-preview-modal .settingsPanel {
+  border-color: #bfbfbf;
+  background-color: #f8f9fa;
+}
+.darkmode #smc-preview-modal .settingsPanel {
+  border-color: #2d3e50;
+  color: #b3b3b3;
+  background-color: #2a323f;
+}
+#smc-preview-modal .settingsPanel select {
+  background-color: #f8f9fa;
+  border-color: #bcbcbc;
+  -webkit-appearance: menulist;
+  color: #525252 !important;
+}
+.darkmode #smc-preview-modal .settingsPanel select {
+  background-color: #1c2733;
+  border-color: #2d3e50;
+  color: #b3b3b3 !important;
+}
+#smc-preview-modal .startButton:focus {
+  outline: -webkit-focus-ring-color auto 1px;
+}
+.darkmode #smc-preview-modal .startButton:is(textarea, input, button):is(:not(button, input[type=submit], input[type=button])) {
+  background-color: #202c39;
+}
+.darkmode #smc-preview-modal .startButton:is(textarea, input, button):focus {
+  outline: none;
+  box-shadow: 0 0 0 2px #68b5f0;
+}
+.darkmode #smc-preview-modal .startButton:is(select) {
+  background-color: #202c39;
+}
+.darkmode #smc-preview-modal .startButton:is(select):focus {
+  outline: 2px solid #68b5f0;
+}
+#smc-preview-modal .startButton, .darkmode #smc-preview-modal .startButton {
+  background-color: var(--wl-signup-bg-color, #f47321);
+  color: #ffffff;
+  border: 1px solid var(--wl-signup-alt-bg-color, #cd5d26);
+  border-radius: 4px;
+}
+#smc-preview-modal .helpOverlay {
+  background-color: #f8f9fa;
+  border-color: #888;
+  box-shadow: 0px 0px 32px rgba(0, 0, 0, 0.32);
+}
+.darkmode #smc-preview-modal .helpOverlay {
+  background-color: #1c2733;
+  border-color: #2d3e50;
+  color: #b3b3b3;
+}
+#smc-preview-modal .helpOverlay .error {
+  color: #cc0000;
+}
+.darkmode #smc-preview-modal .helpOverlay .error {
+  color: #dc0000;
+}
+#smc-preview-modal .helpOverlay button:focus {
+  outline: -webkit-focus-ring-color auto 1px;
+}
+.darkmode #smc-preview-modal .helpOverlay button:is(textarea, input, button):is(:not(button, input[type=submit], input[type=button])) {
+  background-color: #202c39;
+}
+.darkmode #smc-preview-modal .helpOverlay button:is(textarea, input, button):focus {
+  outline: none;
+  box-shadow: 0 0 0 2px #68b5f0;
+}
+.darkmode #smc-preview-modal .helpOverlay button:is(select) {
+  background-color: #202c39;
+}
+.darkmode #smc-preview-modal .helpOverlay button:is(select):focus {
+  outline: 2px solid #68b5f0;
+}
+#smc-preview-modal .helpOverlay button, .darkmode #smc-preview-modal .helpOverlay button {
+  background-color: var(--wl-signup-bg-color, #f47321);
+  color: #ffffff;
+  border: 1px solid var(--wl-signup-alt-bg-color, #cd5d26);
+  border-radius: 4px;
+}
+
+.smc-status-tooltip {
+  color: #525252;
+  background-color: #ffffff;
+  border-color: #efefef;
+  box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.08);
+}
+.smc-status-tooltip .tooltipCloseButton {
+  fill: #a7a7a7;
+}
+.darkmode .smc-status-tooltip, .darkMode .smc-status-tooltip {
+  color: #ffffff;
+  background-color: #1c2733;
+  border-color: #17202a;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.8);
+}
+.smc-status-tooltip .divotTop .divotBackground {
+  border-bottom-color: #ffffff;
+}
+.darkmode .smc-status-tooltip .divotTop .divotBackground, .darkMode .smc-status-tooltip .divotTop .divotBackground {
+  border-bottom-color: #1c2733;
+}
+.smc-status-tooltip .divotTop .divotBorder {
+  border-bottom-color: #efefef;
+}
+.darkmode .smc-status-tooltip .divotTop .divotBorder, .darkMode .smc-status-tooltip .divotTop .divotBorder {
+  border-bottom-color: #17202a;
+}
+.smc-status-tooltip .divotBottom .divotBackground {
+  border-top-color: #ffffff;
+}
+.darkmode .smc-status-tooltip .divotBottom .divotBackground, .darkMode .smc-status-tooltip .divotBottom .divotBackground {
+  border-top-color: #1c2733;
+}
+.smc-status-tooltip .divotBottom .divotBorder {
+  border-top-color: #efefef;
+}
+.darkmode .smc-status-tooltip .divotBottom .divotBorder, .darkMode .smc-status-tooltip .divotBottom .divotBorder {
+  border-top-color: #17202a;
+}
+.smc-status-tooltip .divotLeft .divotBackground {
+  border-right-color: #ffffff;
+}
+.darkmode .smc-status-tooltip .divotLeft .divotBackground, .darkMode .smc-status-tooltip .divotLeft .divotBackground {
+  border-right-color: #1c2733;
+}
+.smc-status-tooltip .divotLeft .divotBorder {
+  border-right-color: #efefef;
+}
+.darkmode .smc-status-tooltip .divotLeft .divotBorder, .darkMode .smc-status-tooltip .divotLeft .divotBorder {
+  border-right-color: #17202a;
+}
+.smc-status-tooltip .divotRight .divotBackground {
+  border-left-color: #ffffff;
+}
+.darkmode .smc-status-tooltip .divotRight .divotBackground, .darkMode .smc-status-tooltip .divotRight .divotBackground {
+  border-left-color: #1c2733;
+}
+.smc-status-tooltip .divotRight .divotBorder {
+  border-left-color: #efefef;
+}
+.darkmode .smc-status-tooltip .divotRight .divotBorder, .darkMode .smc-status-tooltip .divotRight .divotBorder {
+  border-left-color: #17202a;
+}
+
+.c2cBadge {
+  mask-image: url("/static/broadcastassets/webcam.svg");
+  mask-repeat: no-repeat;
+  mask-position: center;
+  mask-size: contain;
+  background-color: var(--text-secondary);
+  display: inline-block;
+  position: relative;
+  height: 1.4em;
+  width: 1.4em;
+  top: 2px;
+}
+.c2cBadge--active {
+  background-color: var(--text-brand-primary);
+}
+.c2cBadge--hidden {
+  display: none;
+}
+.c2cBadge--ISSUMscRm {
+  height: 1.2em;
+  width: 1.2em;
+}
+
+.c2cNotice {
+  border-radius: var(--corner-radius-md);
+  background: var(--background-low-contrast);
+}
+
+.dismissibleMessage {
+  background-color: #c9c9c9;
+  border-color: #acacac;
+}
+.darkMode .dismissibleMessage, .darkmode .dismissibleMessage {
+  background-color: #1c2733;
+  border-color: #2d3e50;
+}
+.darkMode .dismissibleMessage .hrefColor, .darkmode .dismissibleMessage .hrefColor {
+  color: #68b5f0;
+}
+
+.RoomSignupPopup {
+  border: 1px solid #efefef;
+  background-color: white;
+}
+.darkmode .RoomSignupPopup {
+  background-color: #202c39;
+  border: 1px solid #2a323f;
+}
+.RoomSignupPopup .title {
+  color: #222222;
+}
+.darkmode .RoomSignupPopup .title {
+  color: white;
+}
+.RoomSignupPopup .body {
+  color: #525252;
+}
+.darkmode .RoomSignupPopup .body {
+  color: #b3b3b3;
+}
+.RoomSignupPopup .signupLink {
+  color: white;
+  background-color: #f47321;
+}
+
+.evolveMode.RoomSignupPopup {
+  background-color: var(--background-others-popup-neutral);
+  border: 0;
+  border-radius: var(--spacing-xl);
+  box-shadow: 0 0 var(--blur-300) 0 var(--drop-shadow-medium);
+}
+.evolveMode.RoomSignupPopup .RoomSignupPopup__logo {
+  background-color: var(--color-transparent-black-10);
+  height: 149px;
+  left: 130px;
+  -webkit-mask-image: url(../../tsdefaultassets/signup_popup_bg_evolve.svg?f0fbdde0574e);
+  mask-image: url(../../tsdefaultassets/signup_popup_bg_evolve.svg?f0fbdde0574e);
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-size: 100% 100%;
+  mask-size: 100% 100%;
+  pointer-events: none;
+  position: absolute;
+  top: 48px;
+  width: 220px;
+}
+.darkMode .evolveMode.RoomSignupPopup .RoomSignupPopup__logo {
+  background-color: var(--color-transparent-white-10);
+}
+.evolveMode.RoomSignupPopup .RoomSignupPopup__content {
+  display: flex;
+  flex-direction: column;
+  padding: var(--spacing-lg);
+  position: relative;
+}
+.evolveMode.RoomSignupPopup .RoomSignupPopup__closeContainer {
+  position: absolute;
+  right: var(--spacing-lg);
+  top: var(--spacing-lg);
+}
+.evolveMode.RoomSignupPopup .RoomSignupPopup__closeButton {
+  box-sizing: border-box;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  border-radius: var(--corner-radius-full);
+  border: 0;
+  cursor: pointer;
+  position: relative;
+  font-family: "UbuntuRegular", Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+}
+.evolveMode.RoomSignupPopup .RoomSignupPopup__closeButton:focus-visible {
+  outline: 2px solid var(--border-button-focused);
+  outline-offset: 2px;
+}
+.evolveMode.RoomSignupPopup .RoomSignupPopup__closeButton:disabled {
+  color: var(--text-button-neutral-disabled);
+  cursor: not-allowed;
+}
+.evolveMode.RoomSignupPopup .RoomSignupPopup__closeButton {
+  color: var(--text-button-neutral);
+  background-color: var(--background-button-neutral-transparent);
+  box-shadow: inset 0 0 0 1px var(--border-button-neutral);
+}
+.evolveMode.RoomSignupPopup .RoomSignupPopup__closeButton:hover:not(:disabled) {
+  background-image: linear-gradient(0deg, var(--overlay-button-hover) 0%, var(--overlay-button-hover) 100%);
+}
+.evolveMode.RoomSignupPopup .RoomSignupPopup__closeButton:active:not(:disabled) {
+  background-image: linear-gradient(0deg, var(--overlay-button-press) 0%, var(--overlay-button-press) 100%);
+}
+.evolveMode.RoomSignupPopup .RoomSignupPopup__closeButton:disabled {
+  background-color: var(--background-button-neutral-transparent);
+}
+.evolveMode.RoomSignupPopup .RoomSignupPopup__closeButton {
+  background-color: transparent;
+  backdrop-filter: unset;
+  padding: 6px var(--spacing-md);
+  gap: var(--spacing-xs);
+  font-family: "UbuntuRegular", Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  box-shadow: none;
+  color: var(--text-button-neutral);
+  padding: 6px;
+}
+.evolveMode.RoomSignupPopup .RoomSignupPopup__body {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-sm);
+}
+.evolveMode.RoomSignupPopup .title {
+  font-family: "UbuntuBold", Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  align-items: center;
+  color: var(--text-primary);
+  display: flex;
+  margin: 0;
+  min-height: 32px;
+  padding-right: 40px;
+}
+.evolveMode.RoomSignupPopup .body {
+  font-family: "UbuntuRegular", Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  color: var(--text-primary);
+  margin: 0;
+}
+.evolveMode.RoomSignupPopup .RoomSignupPopup__actions {
+  align-items: center;
+  display: flex;
+  gap: var(--spacing-sm);
+  justify-content: flex-end;
+  margin-top: var(--spacing-sm);
+}
+.evolveMode.RoomSignupPopup .signupLink {
+  box-sizing: border-box;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  border-radius: var(--corner-radius-full);
+  border: 0;
+  cursor: pointer;
+  position: relative;
+  font-family: "UbuntuRegular", Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+}
+.evolveMode.RoomSignupPopup .signupLink:focus-visible {
+  outline: 2px solid var(--border-button-focused);
+  outline-offset: 2px;
+}
+.evolveMode.RoomSignupPopup .signupLink:disabled {
+  color: var(--text-button-neutral-disabled);
+  cursor: not-allowed;
+}
+.evolveMode.RoomSignupPopup .signupLink {
+  background-color: var(--background-button-brand-primary);
+  color: var(--text-button-white);
+}
+.evolveMode.RoomSignupPopup .signupLink:hover:not(:disabled) {
+  background-image: linear-gradient(0deg, var(--overlay-button-hover-bright) 0%, var(--overlay-button-hover-bright) 100%);
+}
+.evolveMode.RoomSignupPopup .signupLink:active:not(:disabled) {
+  background-image: linear-gradient(0deg, var(--overlay-button-press) 0%, var(--overlay-button-press) 100%);
+}
+.evolveMode.RoomSignupPopup .signupLink:disabled {
+  color: var(--text-button-primary-disabled);
+  background-color: var(--background-button-grey);
+}
+.evolveMode.RoomSignupPopup .signupLink {
+  padding: var(--spacing-sm) var(--spacing-lg);
+  gap: var(--spacing-sm);
+  font-family: "UbuntuRegular", Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  min-width: 124px;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.cornerSurveyWrapper {
+  box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.16);
+}
+.cornerSurveyWrapper .cornerSurveyContainer {
+  background-color: #ffffff;
+  border-color: #efefef;
+}
+.darkmode .cornerSurveyWrapper .cornerSurveyContainer {
+  background-color: #1c2733;
+  border-color: #17202a;
+}
+.cornerSurveyWrapper .cornerSurveyContainer .timer {
+  background-color: #0c6a93;
+}
+.darkmode .cornerSurveyWrapper .cornerSurveyContainer .timer {
+  background-color: #68b5f0;
+}
+.cornerSurveyWrapper .cornerSurveyContainer .survey .title {
+  color: #272f35;
+}
+.darkmode .cornerSurveyWrapper .cornerSurveyContainer .survey .title {
+  color: #ffffff;
+}
+.cornerSurveyWrapper .cornerSurveyContainer .survey .emoteContainer {
+  background-color: transparent;
+  border-color: #acacac;
+}
+.darkmode .cornerSurveyWrapper .cornerSurveyContainer .survey .emoteContainer {
+  border-color: #2d3e50;
+}
+.cornerSurveyWrapper .cornerSurveyContainer .survey .emoteContainer:hover {
+  background-color: #e0eefb;
+  border-color: #0b5b7e;
+}
+.darkmode .cornerSurveyWrapper .cornerSurveyContainer .survey .emoteContainer:hover {
+  background-color: rgba(104, 181, 240, 0.1);
+  border-color: #68b5f0;
+}
+.cornerSurveyWrapper .cornerSurveyContainer .survey .emoteContainer.selected svg path, .cornerSurveyWrapper .cornerSurveyContainer .survey .emoteContainer:hover svg path {
+  fill: #0b5b7e;
+}
+.evolveMode .cornerSurveyWrapper .cornerSurveyContainer .survey .emoteContainer.selected svg path, .evolveMode .cornerSurveyWrapper .cornerSurveyContainer .survey .emoteContainer:hover svg path {
+  fill: var(--text-button-brand);
+}
+.cornerSurveyWrapper .cornerSurveyContainer .survey .emoteContainer.selected svg g, .cornerSurveyWrapper .cornerSurveyContainer .survey .emoteContainer:hover svg g {
+  opacity: 1;
+}
+.darkmode .cornerSurveyWrapper .cornerSurveyContainer .survey .emoteContainer svg path {
+  fill: #d1d1d1;
+}
+.evolveMode .darkmode .cornerSurveyWrapper .cornerSurveyContainer .survey .emoteContainer svg path {
+  fill: #68b5f0;
+}
+.darkmode .cornerSurveyWrapper .cornerSurveyContainer .survey .emoteContainer.selected svg path, .darkmode .cornerSurveyWrapper .cornerSurveyContainer .survey .emoteContainer:hover svg path {
+  fill: #68b5f0;
+}
+.evolveMode .cornerSurveyWrapper .cornerSurveyContainer .survey .emoteContainer svg path {
+  fill: var(--text-button-neutral);
+}
+.evolveMode .cornerSurveyWrapper .cornerSurveyContainer .survey .emoteContainer.selected svg path, .evolveMode .cornerSurveyWrapper .cornerSurveyContainer .survey .emoteContainer:hover svg path {
+  fill: var(--text-button-brand);
+}
+.cornerSurveyWrapper .cornerSurveyContainer .confirmation .title {
+  color: #525252;
+}
+.darkmode .cornerSurveyWrapper .cornerSurveyContainer .confirmation .title {
+  color: #b3b3b3;
+}
+.cornerSurveyWrapper .cornerSurveyContainer .confirmation .feedbackLink {
+  color: #0c6a93;
+}
+.darkmode .cornerSurveyWrapper .cornerSurveyContainer .confirmation .feedbackLink {
+  color: #68b5f0;
+}
+.cornerSurveyWrapper.mobile {
+  box-shadow: none;
+}
+.cornerSurveyWrapper.mobile .cornerSurveyContainer {
+  background-color: #e0eefb;
+  border-color: #8db4d9;
+}
+.cornerSurveyWrapper.mobile .survey .title {
+  color: #272f35;
+}
+.cornerSurveyWrapper.mobile .confirmation .title {
+  color: #49494f;
+}
+.cornerSurveyWrapper.mobile .timerContainer {
+  background-color: #8db4d9;
+}
+
+.OBSBroadcastInfo input#obs_token {
+  border: none;
+  width: 90%;
+  text-align: center;
+  color: #7f7f7f;
+}
+.OBSBroadcastInfo .infoOverlay {
+  background-color: #000000;
+}
+.OBSBroadcastInfo #obs_broadcast_info {
+  color: #7f7f7f;
+  background-color: #ffffff;
+  border-color: #cccccc;
+}
+.darkmode .OBSBroadcastInfo #obs_broadcast_info {
+  color: #b3b3b3;
+  background-color: #1c2733;
+  border-color: #17202a;
+}
+.OBSBroadcastInfo #obs_broadcast_info .supportLink {
+  color: #0c6a93;
+}
+.darkmode .OBSBroadcastInfo #obs_broadcast_info .supportLink {
+  color: #68b5f0;
+}
+.OBSBroadcastInfo #obs_broadcast_info .warning {
+  color: #0c6a93;
+}
+.darkmode .OBSBroadcastInfo #obs_broadcast_info .warning {
+  color: #68b5f0;
+}
+.darkmode .OBSBroadcastInfo #obs_broadcast_info .scroll {
+  border-color: #6e6f70;
+}
+.darkmode .OBSBroadcastInfo #obs_broadcast_info .scroll hr {
+  border-color: #6e6f70;
+}
+.OBSBroadcastInfo #obs_broadcast_info .scroll .tokenValue:focus {
+  outline: -webkit-focus-ring-color auto 1px;
+}
+.darkmode .OBSBroadcastInfo #obs_broadcast_info .scroll .tokenValue:is(textarea, input, button):is(:not(button, input[type=submit], input[type=button])) {
+  background-color: #202c39;
+}
+.darkmode .OBSBroadcastInfo #obs_broadcast_info .scroll .tokenValue:is(textarea, input, button):focus {
+  outline: none;
+  box-shadow: 0 0 0 2px #68b5f0;
+}
+.darkmode .OBSBroadcastInfo #obs_broadcast_info .scroll .tokenValue:is(select) {
+  background-color: #202c39;
+}
+.darkmode .OBSBroadcastInfo #obs_broadcast_info .scroll .tokenValue:is(select):focus {
+  outline: 2px solid #68b5f0;
+}
+.OBSBroadcastInfo #obs_broadcast_info .scroll .tokenValue {
+  background-color: transparent;
+}
+.darkmode .OBSBroadcastInfo #obs_broadcast_info .scroll .tokenValue {
+  color: #b3b3b3;
+}
+.darkmode .OBSBroadcastInfo #obs_broadcast_info .scroll .tokenValue:focus {
+  color: #ffffff;
+}
+.OBSBroadcastInfo #obs_broadcast_info .scroll .rtmpUrl {
+  color: #0c6a93;
+}
+.darkmode .OBSBroadcastInfo #obs_broadcast_info .scroll .rtmpUrl {
+  color: #68b5f0;
+}
+.OBSBroadcastInfo #obs_broadcast_info .button:focus {
+  outline: -webkit-focus-ring-color auto 1px;
+}
+.darkmode .OBSBroadcastInfo #obs_broadcast_info .button:is(textarea, input, button):is(:not(button, input[type=submit], input[type=button])) {
+  background-color: #202c39;
+}
+.darkmode .OBSBroadcastInfo #obs_broadcast_info .button:is(textarea, input, button):focus {
+  outline: none;
+  box-shadow: 0 0 0 2px #68b5f0;
+}
+.darkmode .OBSBroadcastInfo #obs_broadcast_info .button:is(select) {
+  background-color: #202c39;
+}
+.darkmode .OBSBroadcastInfo #obs_broadcast_info .button:is(select):focus {
+  outline: 2px solid #68b5f0;
+}
+.OBSBroadcastInfo #obs_broadcast_info .button, .darkmode .OBSBroadcastInfo #obs_broadcast_info .button {
+  background-color: var(--wl-signup-bg-color, #f47321);
+  color: #ffffff;
+  border: 1px solid var(--wl-signup-alt-bg-color, #cd5d26);
+  border-radius: 4px;
+}
+
+.evolveMode .OBSBroadcastInfo:has(.OBSBroadcastInfoContent) #obs_broadcast_info {
+  background: var(--background-others-popup-neutral);
+  border: none;
+  color: var(--text-primary);
+  padding: 0;
+}
+
+#gameInfoBar {
+  border-radius: 3px;
+  box-sizing: border-box;
+  margin-bottom: 6px;
+  overflow: visible;
+}
+
+.GameInfoBar {
+  color: #49494f;
+  background-color: white;
+  border-radius: 3px;
+  overflow: hidden;
+  padding: 6px;
+  position: relative;
+  display: flex;
+}
+.GameInfoBar .gameImage {
+  border-right: solid 1px #efefef;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.GameInfoBar .gameImage img {
+  border-radius: 5px;
+  margin-right: 8px;
+  object-fit: cover;
+  overflow: hidden;
+}
+.GameInfoBar .gameInfoBarTextContainer {
+  height: 100%;
+  vertical-align: center;
+  padding-left: 8px;
+  width: 100%;
+}
+.GameInfoBar .gameInfoBarTitle {
+  font-size: 14px;
+  line-height: 14px;
+  font-family: UbuntuMedium, Helvetica, Arial, sans-serif;
+  padding: 6px 0;
+}
+.GameInfoBar .gameInfoBarDescription {
+  padding-bottom: 6px;
+  width: 100%;
+}
+.GameInfoBar .gameInfoBarDescriptionText {
+  font-size: 12px;
+  line-height: 12px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+  -webkit-box-orient: vertical;
+  margin: 0;
+  width: 100%;
+}
+.GameInfoBar .gameInfoBarActions {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+}
+.GameInfoBar .stopStreamingButton {
+  border: 1px solid #49494f;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  line-height: 16px;
+  margin-right: 6px;
+  padding: 6px;
+  right: 0;
+}
+.GameInfoBar .publisherInfo {
+  margin: 6px 0;
+  padding: 8px;
+  text-align: right;
+  box-sizing: border-box;
+  width: 100%;
+}
+.darkmode .GameInfoBar {
+  color: #b3b3b3;
+  background-color: #2a2c2e;
+}
+.darkmode .GameInfoBar a {
+  color: #68b5f0;
+}
+.darkmode .GameInfoBar .gameImage {
+  border-right: solid 1px #666666;
+}
+.darkmode .GameInfoBar .stopStreamingButton {
+  border: 1px solid #b3b3b3;
+}
+
+.GameInfoBarCvolveStyle {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 12px;
+  padding: var(--spacing-md) var(--spacing-lg);
+  border-radius: 12px;
+  border: 1px solid var(--border-low);
+  box-sizing: border-box;
+  background-color: var(--background-neutral);
+  color: var(--text-primary);
+}
+.GameInfoBarCvolveStyle a {
+  color: var(--text-button-brand);
+}
+.GameInfoBarCvolveStyle .gameInfoBarCvolveStyleImage {
+  border-radius: 8px;
+  border: 1px solid var(--border-low);
+  object-fit: cover;
+  flex-shrink: 0;
+}
+.GameInfoBarCvolveStyle .gameInfoBarCvolveStyleText {
+  flex: 1 0 0;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.GameInfoBarCvolveStyle .gameInfoBarCvolveStylePrimary {
+  font-family: "UbuntuMedium", Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+.GameInfoBarCvolveStyle .gameInfoBarCvolveStyleSecondary {
+  font-family: "UbuntuRegular", Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  line-height: 16px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  color: var(--text-secondary);
+  flex-wrap: wrap;
+}
+.GameInfoBarCvolveStyle .gameInfoBarCvolveStyleButton {
+  box-sizing: border-box;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  border-radius: var(--corner-radius-full);
+  border: 0;
+  cursor: pointer;
+  position: relative;
+  font-family: "UbuntuRegular", Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+}
+.GameInfoBarCvolveStyle .gameInfoBarCvolveStyleButton:focus-visible {
+  outline: 2px solid var(--border-button-focused);
+  outline-offset: 2px;
+}
+.GameInfoBarCvolveStyle .gameInfoBarCvolveStyleButton:disabled {
+  color: var(--text-button-neutral-disabled);
+  cursor: not-allowed;
+}
+.GameInfoBarCvolveStyle .gameInfoBarCvolveStyleButton {
+  padding: var(--spacing-sm) var(--spacing-lg);
+  gap: var(--spacing-sm);
+  font-family: "UbuntuRegular", Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--text-button-brand);
+  background-color: transparent;
+  backdrop-filter: var(--blur-mid-backdrop-filter);
+  box-shadow: inset 0 0 0 1px var(--border-button-neutral);
+}
+.GameInfoBarCvolveStyle .gameInfoBarCvolveStyleButton:hover:not(:disabled) {
+  background-color: var(--overlay-button-brand-secondary-hover);
+}
+.GameInfoBarCvolveStyle .gameInfoBarCvolveStyleButton:active:not(:disabled) {
+  background-color: var(--overlay-button-brand-secondary-press);
+}
+
+.darkmode .OBSInfoSection a {
+  color: #68b5f0;
+}
+
+.GameSelection {
+  background-color: white;
+  color: #49494f;
+}
+.GameSelection .searchBar {
+  border: 1px solid #acacac;
+}
+.GameSelection .title {
+  color: #272f35;
+}
+.GameSelection .selectGameButton {
+  border: 1px solid #49494f;
+}
+.darkmode .GameSelection {
+  background-color: #202223;
+  color: #b3b3b3;
+  border: 1px solid #2e3137;
+}
+.darkmode .GameSelection .searchBar {
+  border: 1px solid #2e3137;
+}
+.darkmode .GameSelection .searchBar input[type=text] {
+  background-color: inherit;
+  color: inherit;
+}
+.darkmode .GameSelection .title {
+  color: white;
+}
+.darkmode .GameSelection .selectGameButton {
+  border: 1px solid #b3b3b3;
+}
+
+.noScrollbar {
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE 10+ */
+}
+.noScrollbar br {
+  display: none;
+}
+.noScrollbar::-webkit-scrollbar {
+  width: 0px;
+  height: 0px;
+  background: transparent; /* Chrome/Safari/Webkit */
+}
+
+.pmMediaDockContainer .scrollButton {
+  background-color: #ffffff;
+}
+.pmMediaDockContainer.SelectedMediaDock {
+  background: #f8f9fa;
+}
+.darkmode .pmMediaDockContainer.SelectedMediaDock, .hasDarkBackground .pmMediaDockContainer.SelectedMediaDock {
+  background: #17202a;
+}
+.pmMediaDockContainer.SelectedMediaDock {
+  border: 1px solid #acacac;
+}
+.darkmode .pmMediaDockContainer.SelectedMediaDock {
+  border: 1px solid #2d3e50;
+}
+.pmMediaDockContainer.SelectedMobileMediaDock {
+  border-top: 1px solid #efefef;
+}
+.darkmode .pmMediaDockContainer.SelectedMobileMediaDock {
+  border-top: 1px solid #2d3e50;
+}
+.pmMediaDockContainer .mediaDockItem .rejected {
+  background: #885336;
+  color: #cbcbcb;
+}
+
+.ChatMediaCarousel {
+  box-shadow: 0 0 3px black;
+  background: #ffffff;
+}
+.darkmode .ChatMediaCarousel {
+  box-shadow: 0px 0px 32px rgba(0, 0, 0, 0.32);
+  background: #202c39;
+}
+
+.timerBar25s {
+  animation: roundtime calc(25 * 1s) linear forwards;
+  transform-origin: left center;
+}
+@keyframes roundtime {
+  to {
+    /* More performant than animating `width` */
+    transform: scaleX(0);
+  }
+}
+.pauseOnHover:hover .timerBar25s {
+  animation-play-state: paused;
+}
+
+.timerBar15s {
+  animation: roundtime calc(15 * 1s) linear forwards;
+  transform-origin: left center;
+}
+@keyframes roundtime {
+  to {
+    /* More performant than animating `width` */
+    transform: scaleX(0);
+  }
+}
+.pauseOnHover:hover .timerBar15s {
+  animation-play-state: paused;
+}
+
+.timerBar7s {
+  animation: roundtime calc(7 * 1s) linear forwards;
+  transform-origin: left center;
+}
+@keyframes roundtime {
+  to {
+    /* More performant than animating `width` */
+    transform: scaleX(0);
+  }
+}
+.pauseOnHover:hover .timerBar7s {
+  animation-play-state: paused;
+}
+
+.darkmode .checkboxComponent input:focus-visible {
+  outline-color: #68b5f0;
+}
+.checkboxComponent.toggle {
+  background-color: #c9c9c9 !important;
+}
+.checkboxComponent.toggle.checked {
+  background-color: #f47321 !important;
+}
+.darkmode .checkboxComponent.toggle {
+  background-color: #6e6f70 !important;
+}
+.darkmode .checkboxComponent.toggle.checked {
+  background-color: #f47321 !important;
+}
+.checkboxComponent.toggle .toggleButton {
+  background-color: white;
+}
+
+.transparentCheckbox {
+  background-color: transparent;
+  border-color: #a8a8a8;
+}
+.darkmode .transparentCheckbox {
+  background-color: #17202a;
+  border-color: #2d3e50;
+}
+.transparentCheckbox.disabled {
+  background-color: #f8f9fa;
+  border-color: #efefef;
+}
+.darkmode .transparentCheckbox.disabled {
+  background-color: #202c39;
+  border-color: #2d3e50;
+}
+.transparentCheckbox.checked {
+  background: url(../../tsdefaultassets/settings-checkmark-white.svg?ae5c98f6a38e) no-repeat center center/60%, #0c6a93;
+  border-color: #033e58;
+}
+.evolveMode .transparentCheckbox.checked {
+  background-color: var(--background-button-brand-primary);
+}
+.transparentCheckbox.checked.disabled {
+  background-color: #d1d1d1;
+  border-color: #efefef;
+}
+.darkmode .transparentCheckbox.checked.disabled {
+  background-color: #17202a;
+  border-color: #2d3e50;
+}
+
+.darkmode .draggableCanvasWindow .transparentCheckbox {
+  border-color: #b3b3b3;
+}
+.draggableCanvasWindow .transparentCheckbox.checked {
+  background: url(../../tsdefaultassets/round-white-checkmark.svg?de510ac7d460) no-repeat center center, #b3b3b3;
+}
+.evolveMode .draggableCanvasWindow .transparentCheckbox.checked {
+  background-color: var(--background-button-brand-primary);
+}
+
+.fieldTextArea:focus,
+.fieldInput:not(.transparentCheckbox):focus {
+  outline: -webkit-focus-ring-color auto 1px;
+}
+.darkmode .fieldTextArea:is(textarea, input, button):is(:not(button, input[type=submit], input[type=button])),
+.darkmode .fieldInput:not(.transparentCheckbox):is(textarea, input, button):is(:not(button, input[type=submit], input[type=button])) {
+  background-color: #202c39;
+}
+.darkmode .fieldTextArea:is(textarea, input, button):focus,
+.darkmode .fieldInput:not(.transparentCheckbox):is(textarea, input, button):focus {
+  outline: none;
+  box-shadow: 0 0 0 2px #68b5f0;
+}
+.darkmode .fieldTextArea:is(select),
+.darkmode .fieldInput:not(.transparentCheckbox):is(select) {
+  background-color: #202c39;
+}
+.darkmode .fieldTextArea:is(select):focus,
+.darkmode .fieldInput:not(.transparentCheckbox):is(select):focus {
+  outline: 2px solid #68b5f0;
+}
+.fieldTextArea,
+.fieldInput:not(.transparentCheckbox) {
+  border-color: #b1b1b1;
+  background-color: #ffffff;
+}
+.darkmode .fieldTextArea,
+.darkmode .fieldInput:not(.transparentCheckbox) {
+  border-color: #6e6f70;
+  color: #ffffff !important;
+}
+.fieldTextArea.disabled,
+.fieldInput:not(.transparentCheckbox).disabled {
+  background-color: rgba(0, 0, 0, 0.05);
+  color: #b3b3b3;
+}
+.darkmode .fieldTextArea.disabled,
+.darkmode .fieldInput:not(.transparentCheckbox).disabled {
+  background-color: #6e6f70;
+  color: #b3b3b3;
+}
+
+.highlightLabel {
+  color: rgb(220, 85, 0);
+}
+
+.highlightField {
+  background-color: rgb(255, 255, 211);
+}
+
+.highlightFieldContainer {
+  border-color: rgb(220, 85, 0);
+  background-color: rgb(255, 255, 211);
+}
+.darkmode .highlightFieldContainer {
+  background-color: transparent;
+}
+
+.multiSelectDropdown {
+  position: relative;
+}
+.multiSelectDropdown .checkboxesDropdown {
+  bottom: auto !important;
+  top: auto !important;
+}
+.multiSelectDropdown .helpText {
+  margin-top: 0.2em;
+  overflow-x: auto;
+}
+
+.activeChoicesContainer {
+  box-sizing: border-box;
+  border: 1px solid #b1b1b1;
+  border-radius: 4px;
+  padding: 2px;
+  line-height: 18px;
+  margin-top: 4px;
+  width: 235px;
+  min-height: 24px;
+  background-color: #ffffff;
+}
+.activeChoicesContainer:hover {
+  cursor: pointer;
+}
+.activeChoicesContainer:focus, .activeChoicesContainer.dropdown-shown {
+  outline: -webkit-focus-ring-color auto 1px;
+}
+.darkmode .activeChoicesContainer:focus, .darkmode .activeChoicesContainer.dropdown-shown {
+  outline: none;
+  box-shadow: 0 0 0 2px #68b5f0;
+}
+.activeChoicesContainer:has(.activeChoiceElement) {
+  padding-bottom: 0px;
+}
+.darkmode .activeChoicesContainer {
+  background-color: transparent;
+  border: 1px solid #6e6f70;
+}
+.activeChoicesContainer .dropdownMenuIcon {
+  height: 18px;
+  width: 18px;
+  background: url(../../images/profile/dropdown-menu-icon.svg?223bff19c388);
+  float: right;
+}
+.darkmode .activeChoicesContainer .dropdownMenuIcon {
+  background: url(../../images/profile/dropdown-menu-icon_dm.svg?74792e824bc1);
+}
+.activeChoicesContainer .activeChoiceElement {
+  padding: 2px 7px;
+  height: 12px;
+  margin: 0px 2px 1px 0px;
+  color: #0c6a93;
+  border-radius: 4px;
+  background: #e0eefb;
+  border: 1px solid #e0eefb;
+  display: inline-block;
+  line-height: 12px;
+}
+.darkmode .activeChoicesContainer .activeChoiceElement {
+  background: #68b5f0;
+  color: #17202a;
+  border: 1px solid #68b5f0;
+}
+
+.checkboxesDropdown {
+  box-sizing: border-box;
+  flex-direction: column;
+  padding: 12px 16px 12px 16px;
+  box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.2509803922);
+  width: 235px;
+  height: 262px;
+  border-radius: 4px;
+  background: #fff;
+  margin-top: 6px;
+  position: absolute;
+  overflow-y: scroll;
+  z-index: 4;
+}
+.darkmode .checkboxesDropdown {
+  background: #253441;
+}
+.checkboxesDropdown .transparentCheckbox {
+  border: 1px solid #e0eefb;
+  border-radius: 4px;
+  margin-right: 8px;
+}
+.darkmode .checkboxesDropdown .transparentCheckbox {
+  border-color: #2d3e50;
+}
+.checkboxesDropdown .transparentCheckbox.disabled {
+  border-color: #efefef;
+}
+.checkboxesDropdown .transparentCheckbox.disabled + .checkFieldName {
+  color: #a7a7a7;
+}
+.darkmode .checkboxesDropdown .transparentCheckbox.disabled {
+  border-color: #2d3e50;
+}
+.darkmode .checkboxesDropdown .transparentCheckbox.disabled + .checkFieldName {
+  color: #6e6f70;
+}
+.checkboxesDropdown .checkFieldName {
+  display: inline-block;
+}
+
+@keyframes slide {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(calc(-100% + var(--notice-viewport-height-px, 0) * 1px));
+  }
+}
+.roomNotice__arrowDiv {
+  padding: 0 0 4px 4px;
+  cursor: pointer;
+}
+.roomNotice .collapsed .animated-scroll {
+  animation-name: slide;
+  animation-duration: calc(var(--scroll-time-s, 0) * 1s);
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+}
+.roomNotice .collapsed .scroll-to-end {
+  transform: translateY(calc(-100% + var(--notice-viewport-height-px, 0) * 1px));
+}
+.roomNotice:hover .animated-scroll,
+.roomNotice .animated-scroll:hover {
+  animation-play-state: paused;
+}
+.roomNotice.goalCompletion {
+  color: #101010 !important;
+  background: var(--background-chat-goal-completion, #f3f3f3) !important;
+  text-shadow: none !important;
+}
+
+.evolveMode .roomNotice__arrowDiv {
+  box-sizing: border-box;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  border-radius: var(--corner-radius-full);
+  border: 0;
+  cursor: pointer;
+  position: relative;
+  font-family: "UbuntuRegular", Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+}
+.evolveMode .roomNotice__arrowDiv:focus-visible {
+  outline: 2px solid var(--border-button-focused);
+  outline-offset: 2px;
+}
+.evolveMode .roomNotice__arrowDiv:disabled {
+  color: var(--text-button-neutral-disabled);
+  cursor: not-allowed;
+}
+.evolveMode .roomNotice__arrowDiv {
+  color: var(--text-button-neutral);
+  background-color: var(--background-button-neutral-transparent);
+  box-shadow: inset 0 0 0 1px var(--border-button-neutral);
+}
+.evolveMode .roomNotice__arrowDiv:hover:not(:disabled) {
+  background-image: linear-gradient(0deg, var(--overlay-button-hover) 0%, var(--overlay-button-hover) 100%);
+}
+.evolveMode .roomNotice__arrowDiv:active:not(:disabled) {
+  background-image: linear-gradient(0deg, var(--overlay-button-press) 0%, var(--overlay-button-press) 100%);
+}
+.evolveMode .roomNotice__arrowDiv:disabled {
+  background-color: var(--background-button-neutral-transparent);
+}
+.evolveMode .roomNotice__arrowDiv {
+  padding: 6px;
+  box-shadow: none;
+}
+.evolveMode .roomNotice__arrow {
+  width: 20px;
+  height: 20px;
+}
+
+.inputFieldChatPlaceholder::before {
+  content: attr(data-placeholder);
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  font: 14px "UbuntuRegular", Arial, Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  user-select: none;
+  color: #a7a7a7;
+  cursor: text;
+}
+.darkmode .inputFieldChatPlaceholder::before {
+  color: #6e6f70;
+}
+.pureChat .inputFieldChatPlaceholder::before {
+  color: #f8f9fa;
+}
+
+.evolveMode.inputFieldChatPlaceholder:before {
+  font-family: "UbuntuRegular", Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  color: var(--text-light, #ababab);
+  white-space: nowrap;
+  overflow: hidden;
+  max-width: 100%;
+  text-overflow: ellipsis;
+}

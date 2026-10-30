@@ -1,0 +1,31 @@
+.model-site-idea-box {
+  display: none !important;
+}
+
+[class^=cam-extension-idea] {
+  display: none !important;
+}
+
+#nav [class*=fanberry],
+#nav [class*=vibemate] {
+  display: none !important;
+}
+
+#roomTabs [class*=fanberry],
+#roomTabs [class*=vibemate],
+.RoomTabBar [class*=fanberry],
+.RoomTabBar [class*=vibemate] {
+  display: none !important;
+}
+
+#main [class^=fanberry][class$=container] {
+  display: none !important;
+}
+
+#main .fanberry-login-guide,
+#main .fb-guide,
+#main .free-enter-mark-control,
+#main .fanberry-tip-toolbar,
+#main .fanberry-praise-model-btn {
+  display: none !important;
+}
